@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/compiler_support/14 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:07:29 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/compiler_support/14 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:07:29 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Compiler support for C++14 - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Compiler support for C++14</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/compiler_support/14","wgTitle":"cpp/compiler support/14","wgCurRevisionId":169954,"wgArticleId":19809,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/compiler_support/14","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -85,93 +73,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_compiler_support_14 skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fcompiler+support%2F14&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fcompiler+support%2F14" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="14.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/compiler_support/14&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="14.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -258,61 +160,23 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../compiler_support.html" title="cpp/compiler support">compiler support</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="11.html" title="cpp/compiler support/11">C++11</a></td></tr>
-<tr class="t-nv"><td colspan="5"><strong class="selflink">C++14</strong></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="17.html" title="cpp/compiler support/17">C++17</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="20.html" title="cpp/compiler support/20">C++20</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="23.html" title="cpp/compiler support/23">C++23</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="26.html" title="cpp/compiler support/26">C++26</a></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/compiler_support/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
-<p><span title="pop-up tooltip example: implemented in Circle ver. 3.14 and above">*</span> - hover over a cell marked with the star <span title="another tooltip example">*</span> to see additional pop-up notes.<br />
-DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the Defect Report is applied to, e.g., DR20 &#8594; C++20.
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
+<p><span title="pop-up tooltip example: implemented in Circle ver. 3.14 and above">*</span> - hover over a cell marked with the star <span title="another tooltip example">*</span> to see additional pop-up notes.<br>
+DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the Defect Report is applied to, e.g., DR20 → C++20.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/compiler_support/14&amp;action=edit&amp;section=T-1" title="Template:cpp/compiler support/14">edit</a>]</span> <span class="mw-headline" id="C.2B.2B14_core_language_features">C++14 core language features</span></h3>
 <table class="wikitable tbody-scroll mw-collapsible t-compiler-support-top" style="font-size:0.8em; width:100%">
 
-<tr style="height:15em">
-<th style="vertical-align:bottom;">C++14 feature<br /><br />&#160;
+<tbody><tr style="height:15em">
+<th style="vertical-align:bottom;">C++14 feature<br><br>&nbsp;
 </th>
-<th style="vertical-align:bottom;">Paper(s)<br /><br />&#160;
+<th style="vertical-align:bottom;">Paper(s)<br><br>&nbsp;
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>GCC</div></div>
 </th>
@@ -330,7 +194,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th>
-<th style="width:40pt;"><div class="t-vertical"><div>Cray</div></div>&#160;
+<th style="width:40pt;"><div class="t-vertical"><div>Cray</div></div>&nbsp;
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>Embarcadero C++ Builder</div></div>
 </th>
@@ -365,7 +229,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -378,11 +242,11 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_binary_literals_201304L"></span><a href="../language/integer_literal.html" title="cpp/language/integer literal">Binary literals</a>&#160; (<a href="../feature_test.html#cpp_binary_literals" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_binary_literals = 201304L">*</span>
+<td><span id="cpp_binary_literals_201304L"></span><a href="../language/integer_literal.html" title="cpp/language/integer literal">Binary literals</a>&nbsp; (<a href="../feature_test.html#cpp_binary_literals" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_binary_literals = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3472">N3472</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="(GNU)">4.3*</span><br />4.9
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="(GNU)">4.3*</span><br>4.9
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2.9
 </td>
@@ -398,7 +262,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -411,13 +275,13 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.14
 </td></tr>
 <tr>
-<td><span id="cpp_decltype_auto_201304L"></span><span id="cpp_return_type_deduction_201304L"></span><a href="../language/auto.html" title="cpp/language/auto"><tt>decltype(auto)</tt></a>, Return type deduction for normal functions&#160; (<a href="../feature_test.html#cpp_decltype_auto" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_decltype_auto = 201304L">*</span>&#160; (<a href="../feature_test.html#cpp_return_type_deduction" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_return_type_deduction = 201304L">*</span>
+<td><span id="cpp_decltype_auto_201304L"></span><span id="cpp_return_type_deduction_201304L"></span><a href="../language/auto.html" title="cpp/language/auto"><tt>decltype(auto)</tt></a>, Return type deduction for normal functions&nbsp; (<a href="../feature_test.html#cpp_decltype_auto" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_decltype_auto = 201304L">*</span>&nbsp; (<a href="../feature_test.html#cpp_return_type_deduction" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_return_type_deduction = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3638">N3638</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.8 <span title="N3386 version">(partial)*</span><br />4.9
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.8 <span title="N3386 version">(partial)*</span><br>4.9
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">3.3 <span title="decltype(auto) only">(partial)*</span><br />3.4
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">3.3 <span title="decltype(auto) only">(partial)*</span><br>3.4
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
@@ -431,7 +295,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -444,11 +308,11 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_init_captures_201304L"></span>Initialized/Generalized lambda captures (init-capture)&#160; (<a href="../feature_test.html#cpp_init_captures" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_init_captures = 201304L">*</span>
+<td><span id="cpp_init_captures_201304L"></span>Initialized/Generalized lambda captures (init-capture)&nbsp; (<a href="../feature_test.html#cpp_init_captures" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_init_captures = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3648">N3648</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.5 (partial)<br />4.9
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.5 (partial)<br>4.9
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">3.4
 </td>
@@ -464,7 +328,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -477,7 +341,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_generic_lambdas_201304L"></span><a href="../language/lambda.html#Explanation" title="cpp/language/lambda">Generic lambda expressions</a>&#160; (<a href="../feature_test.html#cpp_generic_lambdas" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_generic_lambdas = 201304L">*</span>
+<td><span id="cpp_generic_lambdas_201304L"></span><a href="../language/lambda.html#Explanation" title="cpp/language/lambda">Generic lambda expressions</a>&nbsp; (<a href="../feature_test.html#cpp_generic_lambdas" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_generic_lambdas = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3649">N3649</a>
 </td>
@@ -497,7 +361,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -510,7 +374,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_variable_templates_201304L"></span><a href="../language/variable_template.html" title="cpp/language/variable template">Variable templates</a>&#160; (<a href="../feature_test.html#cpp_variable_templates" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_variable_templates = 201304L">*</span>
+<td><span id="cpp_variable_templates_201304L"></span><a href="../language/variable_template.html" title="cpp/language/variable template">Variable templates</a>&nbsp; (<a href="../feature_test.html#cpp_variable_templates" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_variable_templates = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3651">N3651</a>
 </td>
@@ -530,7 +394,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -543,7 +407,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_constexpr_201304L"></span>Extended <span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span>&#160; (<a href="../feature_test.html#cpp_constexpr" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_constexpr = 201304L">*</span>
+<td><span id="cpp_constexpr_201304L"></span>Extended <span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span>&nbsp; (<a href="../feature_test.html#cpp_constexpr" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_constexpr = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3652">N3652</a>
 </td>
@@ -563,7 +427,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -576,7 +440,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.15
 </td></tr>
 <tr>
-<td><span id="cpp_aggregate_nsdmi_201304L"></span>Aggregates with <a href="../language/data_members.html#Member_initialization" title="cpp/language/data members">default member initializers</a>&#160; (<a href="../feature_test.html#cpp_aggregate_nsdmi" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_aggregate_nsdmi = 201304L">*</span>
+<td><span id="cpp_aggregate_nsdmi_201304L"></span>Aggregates with <a href="../language/data_members.html#Member_initialization" title="cpp/language/data members">default member initializers</a>&nbsp; (<a href="../feature_test.html#cpp_aggregate_nsdmi" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_aggregate_nsdmi = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3653">N3653</a>
 </td>
@@ -596,7 +460,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -629,7 +493,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #ececec; color: grey; vertical-align: middle; text-align: center;" class="table-na"> <small>N/A</small>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -656,13 +520,13 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">4.9
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="Linux and OS X">15.0*</span><br />16.0
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="Linux and OS X">15.0*</span><br>16.0
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">16.1
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -675,7 +539,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.14
 </td></tr>
 <tr>
-<td><span id="cpp_sized_deallocation_201309L"></span><a href="../language/delete.html" title="cpp/language/delete">Sized deallocation</a>&#160; (<a href="../feature_test.html#cpp_sized_deallocation" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_sized_deallocation = 201309L">*</span>
+<td><span id="cpp_sized_deallocation_201309L"></span><a href="../language/delete.html" title="cpp/language/delete">Sized deallocation</a>&nbsp; (<a href="../feature_test.html#cpp_sized_deallocation" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_sized_deallocation = 201309L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3778">N3778</a>
 </td>
@@ -695,7 +559,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -728,7 +592,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">9.0
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">8.6&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td>
@@ -741,9 +605,9 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5.14
 </td></tr>
 <tr style="height:15em">
-<th style="vertical-align:top;">&#160;<br /><br />C++14 feature
+<th style="vertical-align:top;">&nbsp;<br><br>C++14 feature
 </th>
-<th style="vertical-align:top;">&#160;<br /><br />Paper(s)
+<th style="vertical-align:top;">&nbsp;<br><br>Paper(s)
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>GCC</div></div>
 </th>
@@ -761,7 +625,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>Nvidia nvcc</div></div>
 </th>
-<th style="width:40pt;"><div class="t-vertical"><div>Cray</div></div>&#160;
+<th style="width:40pt;"><div class="t-vertical"><div>Cray</div></div>&nbsp;
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>Embarcadero C++ Builder</div></div>
 </th>
@@ -772,14 +636,14 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <th style="width:40pt;"><div class="t-vertical"><div>IBM XL C++</div></div>
 </th>
 <th style="width:40pt;"><div class="t-vertical"><div>Sun/Oracle C++</div></div>
-</th></tr></table>
+</th></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/compiler_support/14&amp;action=edit&amp;section=T-2" title="Template:cpp/compiler support/14">edit</a>]</span> <span class="mw-headline" id="C.2B.2B14_library_features">C++14 library features</span></h3>
 <table class="wikitable tbody-scroll mw-collapsible t-standard-library-support-top" style="font-size:0.8em; width:100%">
 
-<tr style="height:15em">
-<th style="vertical-align:bottom;">C++14 feature<br /><br />&#160;
+<tbody><tr style="height:15em">
+<th style="vertical-align:bottom;">C++14 feature<br><br>&nbsp;
 </th>
-<th style="vertical-align:bottom;">Paper(s)<br /><br />&#160;
+<th style="vertical-align:bottom;">Paper(s)<br><br>&nbsp;
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div>GCC libstdc++</div></div>
 </th>
@@ -787,7 +651,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div>MSVC STL</div></div>
 </th>
-<th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Apple Clang*</span></div></div>&#160;
+<th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Apple Clang*</span></div></div>&nbsp;
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div><span title="C/C++ Standard Library">IBM Open XL C/C++ for AIX*</span></div></div>
 </th>
@@ -808,7 +672,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -817,7 +681,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_transparent_operators_201210L"></span>Transparent <a href="../utility/functional.html#Operator_function_objects" title="cpp/utility/functional">operator function objects</a>&#160; (<a href="../feature_test.html#cpp_lib_transparent_operators" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_transparent_operators = 201210L">*</span>
+<td><span id="cpp_lib_transparent_operators_201210L"></span>Transparent <a href="../utility/functional.html#Operator_function_objects" title="cpp/utility/functional">operator function objects</a>&nbsp; (<a href="../feature_test.html#cpp_lib_transparent_operators" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_transparent_operators = 201210L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3421">N3421</a>
 </td>
@@ -827,7 +691,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2013">18.0*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -836,7 +700,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_result_of_sfinae_201210L"></span><span class="t-lc"><a href="../types/result_of.html" title="cpp/types/result of">std::result_of</a></span> and <a href="../language/sfinae.html" title="cpp/language/sfinae">SFINAE</a>&#160; (<a href="../feature_test.html#cpp_lib_result_of_sfinae" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_result_of_sfinae = 201210L">*</span>
+<td><span id="cpp_lib_result_of_sfinae_201210L"></span><span class="t-lc"><a href="../types/result_of.html" title="cpp/types/result of">std::result_of</a></span> and <a href="../language/sfinae.html" title="cpp/language/sfinae">SFINAE</a>&nbsp; (<a href="../feature_test.html#cpp_lib_result_of_sfinae" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_result_of_sfinae = 201210L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3462">N3462</a>
 </td>
@@ -846,7 +710,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015 Update 2">19.0 (Update 2)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -865,7 +729,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -884,7 +748,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -903,7 +767,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -912,7 +776,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_integral_constant_callable_201304L"></span>Improved <span class="t-lc"><a href="../types/integral_constant.html" title="cpp/types/integral constant">std::integral_constant</a></span>&#160; (<a href="../feature_test.html#cpp_lib_integral_constant_callable" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_integral_constant_callable = 201304L">*</span>
+<td><span id="cpp_lib_integral_constant_callable_201304L"></span>Improved <span class="t-lc"><a href="../types/integral_constant.html" title="cpp/types/integral constant">std::integral_constant</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_integral_constant_callable" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_integral_constant_callable = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3545">N3545</a>
 </td>
@@ -922,7 +786,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -931,7 +795,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_chrono_udls_201304L"></span><span id="cpp_lib_string_udls_201304L"></span><a href="../language/user_literal.html#Standard_library" title="cpp/language/user literal">User-defined literals</a> for <a href="../header/chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a> and <a href="../header/string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a>&#160; (<a href="../feature_test.html#cpp_lib_chrono_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_chrono_udls = 201304L">*</span>&#160; (<a href="../feature_test.html#cpp_lib_string_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_string_udls = 201304L">*</span>
+<td><span id="cpp_lib_chrono_udls_201304L"></span><span id="cpp_lib_string_udls_201304L"></span><a href="../language/user_literal.html#Standard_library" title="cpp/language/user literal">User-defined literals</a> for <a href="../header/chrono.html" title="cpp/header/chrono"><tt>&lt;chrono&gt;</tt></a> and <a href="../header/string.html" title="cpp/header/string"><tt>&lt;string&gt;</tt></a>&nbsp; (<a href="../feature_test.html#cpp_lib_chrono_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_chrono_udls = 201304L">*</span>&nbsp; (<a href="../feature_test.html#cpp_lib_string_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_string_udls = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3642">N3642</a>
 </td>
@@ -941,7 +805,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -950,17 +814,17 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_null_iterators_201304L"></span><a href="../named_req/ForwardIterator.html#Singular_iterators" title="cpp/named req/ForwardIterator">Null forward iterators</a>&#160; (<a href="../feature_test.html#cpp_lib_null_iterators" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_null_iterators = 201304L">*</span>
+<td><span id="cpp_lib_null_iterators_201304L"></span><a href="../named_req/ForwardIterator.html#Singular_iterators" title="cpp/named req/ForwardIterator">Null forward iterators</a>&nbsp; (<a href="../feature_test.html#cpp_lib_null_iterators" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_null_iterators = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3644">N3644</a>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5 (partial) <br /> 10
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">5 (partial) <br> 10
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">3.4
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -969,7 +833,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_quoted_string_io_201304L"></span><span class="t-lc"><a href="../io/manip/quoted.html" title="cpp/io/manip/quoted">std::quoted</a></span>&#160; (<a href="../feature_test.html#cpp_lib_quoted_string_io" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_quoted_string_io = 201304L">*</span>
+<td><span id="cpp_lib_quoted_string_io_201304L"></span><span class="t-lc"><a href="../io/manip/quoted.html" title="cpp/io/manip/quoted">std::quoted</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_quoted_string_io" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_quoted_string_io = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3654">N3654</a>
 </td>
@@ -979,7 +843,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -988,7 +852,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_make_unique_201304L"></span><span class="t-lc"><a href="../memory/unique_ptr/make_unique.html" title="cpp/memory/unique ptr/make unique">std::make_unique</a></span>&#160; (<a href="../feature_test.html#cpp_lib_make_unique" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_make_unique = 201304L">*</span>
+<td><span id="cpp_lib_make_unique_201304L"></span><span class="t-lc"><a href="../memory/unique_ptr/make_unique.html" title="cpp/memory/unique ptr/make unique">std::make_unique</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_make_unique" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_make_unique = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3656">N3656</a>
 </td>
@@ -998,7 +862,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2013">18.0*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1007,7 +871,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_generic_associative_lookup_201304L"></span>Heterogeneous associative lookup&#160; (<a href="../feature_test.html#cpp_lib_generic_associative_lookup" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_generic_associative_lookup = 201304L">*</span>
+<td><span id="cpp_lib_generic_associative_lookup_201304L"></span>Heterogeneous associative lookup&nbsp; (<a href="../feature_test.html#cpp_lib_generic_associative_lookup" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_generic_associative_lookup = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3657">N3657</a>
 </td>
@@ -1017,7 +881,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1026,7 +890,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_integer_sequence_201304L"></span><span class="t-lc"><a href="../utility/integer_sequence.html" title="cpp/utility/integer sequence">std::integer_sequence</a></span>&#160; (<a href="../feature_test.html#cpp_lib_integer_sequence" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_integer_sequence = 201304L">*</span>
+<td><span id="cpp_lib_integer_sequence_201304L"></span><span class="t-lc"><a href="../utility/integer_sequence.html" title="cpp/utility/integer sequence">std::integer_sequence</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_integer_sequence" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_integer_sequence = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3658">N3658</a>
 </td>
@@ -1036,7 +900,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1055,7 +919,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1064,7 +928,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_exchange_function_201304L"></span><span class="t-lc"><a href="../utility/exchange.html" title="cpp/utility/exchange">std::exchange</a></span>&#160; (<a href="../feature_test.html#cpp_lib_exchange_function" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_exchange_function = 201304L">*</span>
+<td><span id="cpp_lib_exchange_function_201304L"></span><span class="t-lc"><a href="../utility/exchange.html" title="cpp/utility/exchange">std::exchange</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_exchange_function" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_exchange_function = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3668">N3668</a>
 </td>
@@ -1074,7 +938,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1093,7 +957,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1102,7 +966,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_tuples_by_type_201304L"></span>Addressing tuples by type: <a href="../utility/pair/get.html" title="cpp/utility/pair/get"><tt>std::get&lt;T&gt;()</tt></a>&#160; (<a href="../feature_test.html#cpp_lib_tuples_by_type" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_tuples_by_type = 201304L">*</span>
+<td><span id="cpp_lib_tuples_by_type_201304L"></span>Addressing tuples by type: <a href="../utility/pair/get.html" title="cpp/utility/pair/get"><tt>std::get&lt;T&gt;()</tt></a>&nbsp; (<a href="../feature_test.html#cpp_lib_tuples_by_type" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_tuples_by_type = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3670">N3670</a>
 </td>
@@ -1112,7 +976,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1121,7 +985,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_robust_nonmodifying_seq_ops_201304L"></span>Dual-Range <span class="t-lc"><a href="../algorithm/equal.html" title="cpp/algorithm/equal">std::equal</a></span>, <span class="t-lc"><a href="../algorithm/is_permutation.html" title="cpp/algorithm/is permutation">std::is_permutation</a></span>, <span class="t-lc"><a href="../algorithm/mismatch.html" title="cpp/algorithm/mismatch">std::mismatch</a></span>&#160; (<a href="../feature_test.html#cpp_lib_robust_nonmodifying_seq_ops" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_robust_nonmodifying_seq_ops = 201304L">*</span>
+<td><span id="cpp_lib_robust_nonmodifying_seq_ops_201304L"></span>Dual-Range <span class="t-lc"><a href="../algorithm/equal.html" title="cpp/algorithm/equal">std::equal</a></span>, <span class="t-lc"><a href="../algorithm/is_permutation.html" title="cpp/algorithm/is permutation">std::is_permutation</a></span>, <span class="t-lc"><a href="../algorithm/mismatch.html" title="cpp/algorithm/mismatch">std::mismatch</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_robust_nonmodifying_seq_ops" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_robust_nonmodifying_seq_ops = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3671">N3671</a>
 </td>
@@ -1131,7 +995,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">17.1.0
 </td>
@@ -1140,7 +1004,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">10.3
 </td></tr>
 <tr>
-<td><span id="cpp_lib_transformation_trait_aliases_201304L"></span>Alias templates for <a href="../meta.html#Type_transformations" title="cpp/meta">transformation traits</a>&#160; (<a href="../feature_test.html#cpp_lib_transformation_trait_aliases" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_transformation_trait_aliases = 201304L">*</span>
+<td><span id="cpp_lib_transformation_trait_aliases_201304L"></span>Alias templates for <a href="../meta.html#Type_transformations" title="cpp/meta">transformation traits</a>&nbsp; (<a href="../feature_test.html#cpp_lib_transformation_trait_aliases" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_transformation_trait_aliases = 201304L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3655">N3655</a>
 </td>
@@ -1150,7 +1014,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2013">18.0*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1159,7 +1023,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_complex_udls_201309L"></span><a href="../numeric/complex/operator__i.html" title="cpp/numeric/complex/operator&quot;&quot;i">User-defined Literals for <code>std::complex</code></a>&#160; (<a href="../feature_test.html#cpp_lib_complex_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_complex_udls = 201309L">*</span>
+<td><span id="cpp_lib_complex_udls_201309L"></span><a href="../numeric/complex/operator__i.html" title="cpp/numeric/complex/operator&quot;&quot;i">User-defined Literals for <code>std::complex</code></a>&nbsp; (<a href="../feature_test.html#cpp_lib_complex_udls" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_complex_udls = 201309L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3779">N3779</a>
 </td>
@@ -1169,7 +1033,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1178,7 +1042,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_is_null_pointer_201309L"></span>DR11: <span class="t-lc"><a href="../types/is_null_pointer.html" title="cpp/types/is null pointer">std::is_null_pointer</a></span>&#160; (<a href="../feature_test.html#cpp_lib_is_null_pointer" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_is_null_pointer = 201309L">*</span>
+<td><span id="cpp_lib_is_null_pointer_201309L"></span>DR11: <span class="t-lc"><a href="../types/is_null_pointer.html" title="cpp/types/is null pointer">std::is_null_pointer</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_is_null_pointer" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_is_null_pointer = 201309L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/LWG2247">LWG2247</a>
 </td>
@@ -1188,7 +1052,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &#160;
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1197,7 +1061,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_is_final_201402L"></span><span class="t-lc"><a href="../types/is_final.html" title="cpp/types/is final">std::is_final</a></span>&#160; (<a href="../feature_test.html#cpp_lib_is_final" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_is_final = 201402L">*</span>
+<td><span id="cpp_lib_is_final_201402L"></span><span class="t-lc"><a href="../types/is_final.html" title="cpp/types/is final">std::is_final</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_is_final" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_is_final = 201402L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/LWG2112">LWG2112</a>
 </td>
@@ -1207,7 +1071,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &#160;
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1216,7 +1080,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_make_reverse_iterator_201402L"></span><span class="t-lc"><a href="../iterator/make_reverse_iterator.html" title="cpp/iterator/make reverse iterator">std::make_reverse_iterator</a></span>&#160; (<a href="../feature_test.html#cpp_lib_make_reverse_iterator" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_make_reverse_iterator = 201402L">*</span>
+<td><span id="cpp_lib_make_reverse_iterator_201402L"></span><span class="t-lc"><a href="../iterator/make_reverse_iterator.html" title="cpp/iterator/make reverse iterator">std::make_reverse_iterator</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_make_reverse_iterator" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_make_reverse_iterator = 201402L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/LWG2285">LWG2285</a>
 </td>
@@ -1226,7 +1090,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &#160;
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no"> &nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1235,7 +1099,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_shared_timed_mutex_201402L"></span><span class="t-lc"><a href="../thread/shared_timed_mutex.html" title="cpp/thread/shared timed mutex">std::shared_timed_mutex</a></span>&#160; (<a href="../feature_test.html#cpp_lib_shared_timed_mutex" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_shared_timed_mutex = 201402L">*</span>
+<td><span id="cpp_lib_shared_timed_mutex_201402L"></span><span class="t-lc"><a href="../thread/shared_timed_mutex.html" title="cpp/thread/shared timed mutex">std::shared_timed_mutex</a></span>&nbsp; (<a href="../feature_test.html#cpp_lib_shared_timed_mutex" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_shared_timed_mutex = 201402L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3891">N3891</a>
 </td>
@@ -1245,7 +1109,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1254,7 +1118,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr>
-<td><span id="cpp_lib_tuple_element_t_201402L"></span><span class="t-lc">std::tuple_element_t</span>&#160; (<a href="../feature_test.html#cpp_lib_tuple_element_t" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:&#13;&#95;_cpp_lib_tuple_element_t = 201402L">*</span>
+<td><span id="cpp_lib_tuple_element_t_201402L"></span><span class="t-lc">std::tuple_element_t</span>&nbsp; (<a href="../feature_test.html#cpp_lib_tuple_element_t" title="cpp/feature test">FTM</a>)<span title="Feature-testing macro:__cpp_lib_tuple_element_t = 201402L">*</span>
 </td>
 <td><a rel="nofollow" class="external text" href="https://wg21.link/N3887">N3887</a>
 </td>
@@ -1264,7 +1128,7 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </td>
 <td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><span title="VS 2015">19.0 (2015)*</span>
 </td>
-<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&#160;
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes&nbsp;
 </td>
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td>
@@ -1273,9 +1137,9 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 <td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">
 </td></tr>
 <tr style="height:15em">
-<th style="vertical-align:top;">&#160;<br /><br /> C++14 feature
+<th style="vertical-align:top;">&nbsp;<br><br> C++14 feature
 </th>
-<th style="vertical-align:top;">&#160;<br /><br /> Paper(s)
+<th style="vertical-align:top;">&nbsp;<br><br> Paper(s)
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div>GCC libstdc++</div></div>
 </th>
@@ -1283,14 +1147,14 @@ DR<i>nn</i> - the number <i>nn</i> after "DR" denotes target C++ revision the De
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div>MSVC STL</div></div>
 </th>
-<th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Apple Clang*</span></div></div>&#160;
+<th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Apple Clang*</span></div></div>&nbsp;
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div><span title="C/C++ Standard Library">IBM Open XL C/C++ for AIX*</span></div></div>
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Sun/Oracle C++*</span></div></div>
 </th>
 <th style="width: 40pt;"><div class="t-vertical"><div><span title="C++ Standard Library">Embarcadero C++ Builder*</span></div></div>
-</th></tr></table>
+</th></tr></tbody></table>
 
 <!-- 
 NewPP limit report
@@ -1309,7 +1173,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;oldid=169954">https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;oldid=169954</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -1319,39 +1183,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/compiler_support/14" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/compiler_support/14" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;oldid=169954" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/compiler_support/14&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-pl"><a href="http://pl.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="pl" hreflang="pl">Polski</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/compiler_support/14" title="cpp/compiler support/14" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 27 February 2024, at 05:37.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1362,8 +1194,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 0.036 secs. -->
-	</body>
-<!-- Cached 20250125173954 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/compiler_support/14 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:07:29 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250125173954 --><!-- Mirrored from en.cppreference.com/w/cpp/compiler_support/14 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:07:29 GMT --></html>

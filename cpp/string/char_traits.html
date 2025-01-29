@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/string/char_traits by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:18 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/string/char_traits by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>std::char_traits - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>std::char_traits</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/string/char_traits","wgTitle":"cpp/string/char traits","wgCurRevisionId":158926,"wgArticleId":2238,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/string/char_traits","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -109,93 +97,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_string_char_traits skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fstring%2Fchar+traits&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fstring%2Fchar+traits" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="char_traits.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:cpp/string/char_traits"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="char_traits.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -282,61 +184,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../string.html" title="cpp/string">string</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../string.html" title="cpp/string">Strings library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5">Classes</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_string.html" title="cpp/string/basic string"><span class="t-lines"><span>basic_string</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_string_view.html" title="cpp/string/basic string view"><span class="t-lines"><span>basic_string_view</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>char_traits</span></span></strong></div></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><strong class="selflink"><tt>std::char_traits</tt></strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5">Member functions</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/assign.html" title="cpp/string/char traits/assign"><span class="t-lines"><span>char_traits::assign</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/cmp.html" title="cpp/string/char traits/cmp"><span class="t-lines"><span>char_traits::eq</span><span>char_traits::lt</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/move.html" title="cpp/string/char traits/move"><span class="t-lines"><span>char_traits::move</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/copy.html" title="cpp/string/char traits/copy"><span class="t-lines"><span>char_traits::copy</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/compare.html" title="cpp/string/char traits/compare"><span class="t-lines"><span>char_traits::compare</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/length.html" title="cpp/string/char traits/length"><span class="t-lines"><span>char_traits::length</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/find.html" title="cpp/string/char traits/find"><span class="t-lines"><span>char_traits::find</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/to_char_type.html" title="cpp/string/char traits/to char type"><span class="t-lines"><span>char_traits::to_char_type</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/to_int_type.html" title="cpp/string/char traits/to int type"><span class="t-lines"><span>char_traits::to_int_type</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/eq_int_type.html" title="cpp/string/char traits/eq int type"><span class="t-lines"><span>char_traits::eq_int_type</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/eof.html" title="cpp/string/char traits/eof"><span class="t-lines"><span>char_traits::eof</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="char_traits/not_eof.html" title="cpp/string/char traits/not eof"><span class="t-lines"><span>char_traits::not_eof</span></span></a></div></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
 <td> <div>Defined in header <code><a href="../header/string.html" title="cpp/header/string">&lt;string&gt;</a></code>
@@ -345,8 +199,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl">
-<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br />
-<p>&#160; &#160; <span class="kw1">class</span> CharT <br />
+<td class="t-dcl-nopad"> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span><br>
+<p>&nbsp; &nbsp; <span class="kw1">class</span> CharT <br>
 </p>
 <span class="sy1">&gt;</span> <span class="kw1">class</span> char_traits<span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
@@ -355,9 +209,9 @@ html { font-variant-ligatures: no-common-ligatures; }
 <tr class="t-dcl-sep"><td></td><td></td><td></td></tr>
 </tbody></table>
 <p>The <code>char_traits</code> class is a traits class template that abstracts basic character and string operations for a given character type. The defined operation set is such that generic algorithms almost always can be implemented in terms of it. It is thus possible to use such algorithms with almost any possible character or string type, just by supplying a customized <code>char_traits</code> class.
-</p><p>The <code>char_traits</code> class template serves as a basis for explicit instantiations. The user can <a href="../language/extending_std.html" title="cpp/language/extending std">provide a specialization</a> for any custom character types. Several explicit specializations are provided for the standard character types (see below), other specializations are not required to satisfy the requirements of <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, &#39;DejaVu Serif&#39;, serif; font-style:italic">CharTraits</span></a>.
+</p><p>The <code>char_traits</code> class template serves as a basis for explicit instantiations. The user can <a href="../language/extending_std.html" title="cpp/language/extending std">provide a specialization</a> for any custom character types. Several explicit specializations are provided for the standard character types (see below), other specializations are not required to satisfy the requirements of <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CharTraits</span></a>.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Specializations"><span class="tocnumber">1</span> <span class="toctext">Specializations</span></a>
 <ul>
@@ -369,13 +223,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-5"><a href="#Example"><span class="tocnumber">3</span> <span class="toctext">Example</span></a></li>
 <li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=1" title="Edit section: Specializations">edit</a>]</span> <span class="mw-headline" id="Specializations">Specializations</span></h3>
 <p>The standard library provides the following standard specializations:
 </p>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc-header">
+<tbody><tr class="t-dsc-header">
 <td colspan="2"> <div>Defined in header <code><a href="../header/string.html" title="cpp/header/string">&lt;string&gt;</a></code> </div>
 </td></tr>
 
@@ -413,20 +267,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> the standard character traits of <span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span>
 </td></tr>
 
-</table>
-<p>All these specializations satisfy the requirements of <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, &#39;DejaVu Serif&#39;, serif; font-style:italic">CharTraits</span></a>.
+</tbody></table>
+<p>All these specializations satisfy the requirements of <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CharTraits</span></a>.
 </p>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=2" title="Edit section: Member types">edit</a>]</span> <span class="mw-headline" id="Member_types">Member types</span></h4>
-<p>The standard specializations define the following member types required by <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, &#39;DejaVu Serif&#39;, serif; font-style:italic">CharTraits</span></a>:
+<p>The standard specializations define the following member types required by <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CharTraits</span></a>:
 </p>
 <table class="wikitable" style="text-align: center;">
-<tr>
+<tbody><tr>
 <th rowspan="2"><code>CharT</code>
 </th>
 <th colspan="5">Member type
 </th></tr>
 <tr>
-<th>&#160;<code>char_type</code>&#160;
+<th>&nbsp;<code>char_type</code>&nbsp;
 </th>
 <th><code>int_type</code>
 </th>
@@ -443,11 +297,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td><span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>
 </td>
-<td rowspan="5">&#160;<span class="t-lc"><a href="../io/streamoff.html" title="cpp/io/streamoff">std::streamoff</a></span>&#160;
+<td rowspan="5">&nbsp;<span class="t-lc"><a href="../io/streamoff.html" title="cpp/io/streamoff">std::streamoff</a></span>&nbsp;
 </td>
 <td><span class="t-lc"><a href="../io/fpos.html" title="cpp/io/fpos">std::streampos</a></span>
 </td>
-<td rowspan="5">&#160;<span class="t-lc"><a href="multibyte/mbstate_t.html" title="cpp/string/multibyte/mbstate t">std::mbstate_t</a></span>&#160;
+<td rowspan="5">&nbsp;<span class="t-lc"><a href="multibyte/mbstate_t.html" title="cpp/string/multibyte/mbstate t">std::mbstate_t</a></span>&nbsp;
 </td></tr>
 <tr>
 <td><span class="mw-geshi cpp source-cpp"><span class="kw4">wchar_t</span></span>
@@ -468,13 +322,13 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td><span class="t-lc"><a href="../io/fpos.html" title="cpp/io/fpos">std::u8streampos</a></span>
 </td></tr>
 <tr>
-<td>&#160;<span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>&#160;
+<td>&nbsp;<span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>&nbsp;
 </td>
 <td><span class="mw-geshi cpp source-cpp"><span class="kw4">char16_t</span></span>
 </td>
-<td>&#160;<span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>&#160;
+<td>&nbsp;<span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least16_t</a></span>&nbsp;
 </td>
-<td>&#160;<span class="t-lc"><a href="../io/fpos.html" title="cpp/io/fpos">std::u16streampos</a></span>&#160;
+<td>&nbsp;<span class="t-lc"><a href="../io/fpos.html" title="cpp/io/fpos">std::u16streampos</a></span>&nbsp;
 </td></tr>
 <tr>
 <td><span class="mw-geshi cpp source-cpp"><span class="kw4">char32_t</span></span>
@@ -484,93 +338,93 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td><span class="t-lc"><a href="../types/integer.html" title="cpp/types/integer">std::uint_least32_t</a></span>
 </td>
 <td><span class="t-lc"><a href="../io/fpos.html" title="cpp/io/fpos">std::u32streampos</a></span>
-</td></tr></table>
+</td></tr></tbody></table>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
+<tbody><tr class="t-rev t-since-cxx20"><td>
 <p>On top of that, the standard specializations also define the member type <code>comparison_category</code> as <a href="../utility/compare/strong_ordering.html" title="cpp/utility/compare/strong ordering"><tt>std::strong_ordering</tt></a>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
+</tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=3" title="Edit section: Member functions">edit</a>]</span> <span class="mw-headline" id="Member_functions">Member functions</span></h4>
-<p>The standard specializations define the following static member functions required by <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, &#39;DejaVu Serif&#39;, serif; font-style:italic">CharTraits</span></a>:
+<p>The standard specializations define the following static member functions required by <a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CharTraits</span></a>:
 </p>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/assign.html" title="cpp/string/char traits/assign"> <span class="t-lines"><span>assign</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  assigns a character <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_assign&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  assigns a character <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_assign&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/cmp.html" title="cpp/string/char traits/cmp"> <span class="t-lines"><span>eq</span><span>lt</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  compares two characters <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_cmp&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  compares two characters <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_cmp&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/move.html" title="cpp/string/char traits/move"> <span class="t-lines"><span>move</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  moves one character sequence onto another <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_move&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  moves one character sequence onto another <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_move&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/copy.html" title="cpp/string/char traits/copy"> <span class="t-lines"><span>copy</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  copies a character sequence <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_copy&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  copies a character sequence <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_copy&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/compare.html" title="cpp/string/char traits/compare"> <span class="t-lines"><span>compare</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  lexicographically compares two character sequences <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_compare&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  lexicographically compares two character sequences <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_compare&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/length.html" title="cpp/string/char traits/length"> <span class="t-lines"><span>length</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  returns the length of a character sequence <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_length&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  returns the length of a character sequence <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_length&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/find.html" title="cpp/string/char traits/find"> <span class="t-lines"><span>find</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  finds a character in a character sequence <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_find&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  finds a character in a character sequence <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_find&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/to_char_type.html" title="cpp/string/char traits/to char type"> <span class="t-lines"><span>to_char_type</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  converts <code>int_type</code> to equivalent <code>char_type</code> <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_to_char_type&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  converts <code>int_type</code> to equivalent <code>char_type</code> <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_to_char_type&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/to_int_type.html" title="cpp/string/char traits/to int type"> <span class="t-lines"><span>to_int_type</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  converts <code>char_type</code> to equivalent <code>int_type</code> <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_to_int_type&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  converts <code>char_type</code> to equivalent <code>int_type</code> <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_to_int_type&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/eq_int_type.html" title="cpp/string/char traits/eq int type"> <span class="t-lines"><span>eq_int_type</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  compares two <code>int_type</code> values <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_eq_int_type&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  compares two <code>int_type</code> values <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_eq_int_type&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/eof.html" title="cpp/string/char traits/eof"> <span class="t-lines"><span>eof</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  returns an <i>eof</i> value <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_eof&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  returns an <i>eof</i> value <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_eof&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="char_traits/not_eof.html" title="cpp/string/char traits/not eof"> <span class="t-lines"><span>not_eof</span></span></a></div><div><span class="t-lines"><span><span class="t-cmark">[static]</span></span></span></div></div>
 </td>
-<td>  checks whether a character is <i>eof</i> value <br /> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_not_eof&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  checks whether a character is <i>eof</i> value <br> <span class="t-mark">(public static member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/char_traits/dsc_not_eof&amp;action=edit">[edit]</a></span>
 </td></tr>
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=4" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
-<p><a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, &#39;DejaVu Serif&#39;, serif; font-style:italic">CharTraits</span></a> does not require defining the types and functions listed above as direct members, it only requires types like <code>X::type</code> and expressions like <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">func</span><span class="br0">&#40;</span>args<span class="br0">&#41;</span></span></span> are valid and have the required semantics. Users-defined character traits can be derived from other character traits classes and only override some of their members, see the example below.
+<p><a href="../named_req/CharTraits.html" title="cpp/named req/CharTraits"><span style="font-family: Georgia, 'DejaVu Serif', serif; font-style:italic">CharTraits</span></a> does not require defining the types and functions listed above as direct members, it only requires types like <code>X::type</code> and expressions like <span class="t-c"><span class="mw-geshi cpp source-cpp">X<span class="sy4">::</span><span class="me2">func</span><span class="br0">(</span>args<span class="br0">)</span></span></span> are valid and have the required semantics. Users-defined character traits can be derived from other character traits classes and only override some of their members, see the example below.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=5" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>User-defined character traits may be used to provide <a rel="nofollow" class="external text" href="http://www.gotw.ca/gotw/029.htm">case-insensitive comparison</a>:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
@@ -578,68 +432,68 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
 <span class="co2">#include &lt;string_view&gt;</span>
-&#160;
+&nbsp;
 <span class="kw1">struct</span> ci_char_traits <span class="sy4">:</span> <span class="kw1">public</span> std<span class="sy4">::</span><span class="me2">char_traits</span><span class="sy1">&lt;</span><span class="kw4">char</span><span class="sy1">&gt;</span>
-<span class="br0">&#123;</span>
-    <span class="kw4">static</span> <span class="kw4">char</span> to_upper<span class="br0">&#40;</span><span class="kw4">char</span> ch<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <span class="kw1">return</span> <a href="byte/toupper.html"><span class="kw3616">std::<span class="me2">toupper</span></span></a><span class="br0">&#40;</span><span class="br0">&#40;</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">&#41;</span> ch<span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
-    <span class="kw4">static</span> <span class="kw4">bool</span> eq<span class="br0">&#40;</span><span class="kw4">char</span> c1, <span class="kw4">char</span> c2<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <span class="kw1">return</span> to_upper<span class="br0">&#40;</span>c1<span class="br0">&#41;</span> <span class="sy1">==</span> to_upper<span class="br0">&#40;</span>c2<span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
-    <span class="kw4">static</span> <span class="kw4">bool</span> lt<span class="br0">&#40;</span><span class="kw4">char</span> c1, <span class="kw4">char</span> c2<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-         <span class="kw1">return</span> to_upper<span class="br0">&#40;</span>c1<span class="br0">&#41;</span> <span class="sy1">&lt;</span> to_upper<span class="br0">&#40;</span>c2<span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
-    <span class="kw4">static</span> <span class="kw4">int</span> compare<span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2, <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <span class="kw1">while</span> <span class="br0">&#40;</span>n<span class="sy2">--</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">&#41;</span>
-        <span class="br0">&#123;</span>
-            <span class="kw1">if</span> <span class="br0">&#40;</span>to_upper<span class="br0">&#40;</span><span class="sy2">*</span>s1<span class="br0">&#41;</span> <span class="sy1">&lt;</span> to_upper<span class="br0">&#40;</span><span class="sy2">*</span>s2<span class="br0">&#41;</span><span class="br0">&#41;</span>
+<span class="br0">{</span>
+    <span class="kw4">static</span> <span class="kw4">char</span> to_upper<span class="br0">(</span><span class="kw4">char</span> ch<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> <a href="byte/toupper.html"><span class="kw3616">std::<span class="me2">toupper</span></span></a><span class="br0">(</span><span class="br0">(</span><span class="kw4">unsigned</span> <span class="kw4">char</span><span class="br0">)</span> ch<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw4">static</span> <span class="kw4">bool</span> eq<span class="br0">(</span><span class="kw4">char</span> c1, <span class="kw4">char</span> c2<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">return</span> to_upper<span class="br0">(</span>c1<span class="br0">)</span> <span class="sy1">==</span> to_upper<span class="br0">(</span>c2<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw4">static</span> <span class="kw4">bool</span> lt<span class="br0">(</span><span class="kw4">char</span> c1, <span class="kw4">char</span> c2<span class="br0">)</span>
+    <span class="br0">{</span>
+         <span class="kw1">return</span> to_upper<span class="br0">(</span>c1<span class="br0">)</span> <span class="sy1">&lt;</span> to_upper<span class="br0">(</span>c2<span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw4">static</span> <span class="kw4">int</span> compare<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s1, <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s2, <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw1">while</span> <span class="br0">(</span>n<span class="sy2">--</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>to_upper<span class="br0">(</span><span class="sy2">*</span>s1<span class="br0">)</span> <span class="sy1">&lt;</span> to_upper<span class="br0">(</span><span class="sy2">*</span>s2<span class="br0">)</span><span class="br0">)</span>
                 <span class="kw1">return</span> <span class="sy2">-</span><span class="nu0">1</span><span class="sy4">;</span>
-            <span class="kw1">if</span> <span class="br0">&#40;</span>to_upper<span class="br0">&#40;</span><span class="sy2">*</span>s1<span class="br0">&#41;</span> <span class="sy1">&gt;</span> to_upper<span class="br0">&#40;</span><span class="sy2">*</span>s2<span class="br0">&#41;</span><span class="br0">&#41;</span>
+            <span class="kw1">if</span> <span class="br0">(</span>to_upper<span class="br0">(</span><span class="sy2">*</span>s1<span class="br0">)</span> <span class="sy1">&gt;</span> to_upper<span class="br0">(</span><span class="sy2">*</span>s2<span class="br0">)</span><span class="br0">)</span>
                 <span class="kw1">return</span> <span class="nu0">1</span><span class="sy4">;</span>
             <span class="sy2">++</span>s1<span class="sy4">;</span>
             <span class="sy2">++</span>s2<span class="sy4">;</span>
-        <span class="br0">&#125;</span>
+        <span class="br0">}</span>
         <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
-    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> find<span class="br0">&#40;</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n, <span class="kw4">char</span> a<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <span class="kw4">const</span> <span class="kw4">auto</span> ua<span class="br0">&#123;</span>to_upper<span class="br0">&#40;</span>a<span class="br0">&#41;</span><span class="br0">&#125;</span><span class="sy4">;</span>
-        <span class="kw1">while</span> <span class="br0">&#40;</span>n<span class="sy2">--</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">&#41;</span> 
-        <span class="br0">&#123;</span>
-            <span class="kw1">if</span> <span class="br0">&#40;</span>to_upper<span class="br0">&#40;</span><span class="sy2">*</span>s<span class="br0">&#41;</span> <span class="sy1">==</span> ua<span class="br0">&#41;</span>
+    <span class="br0">}</span>
+&nbsp;
+    <span class="kw4">static</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> find<span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> s, <a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n, <span class="kw4">char</span> a<span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw4">const</span> <span class="kw4">auto</span> ua<span class="br0">{</span>to_upper<span class="br0">(</span>a<span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
+        <span class="kw1">while</span> <span class="br0">(</span>n<span class="sy2">--</span> <span class="sy3">!</span><span class="sy1">=</span> <span class="nu0">0</span><span class="br0">)</span> 
+        <span class="br0">{</span>
+            <span class="kw1">if</span> <span class="br0">(</span>to_upper<span class="br0">(</span><span class="sy2">*</span>s<span class="br0">)</span> <span class="sy1">==</span> ua<span class="br0">)</span>
                 <span class="kw1">return</span> s<span class="sy4">;</span>
             s<span class="sy2">++</span><span class="sy4">;</span>
-        <span class="br0">&#125;</span>
+        <span class="br0">}</span>
         <span class="kw1">return</span> nullptr<span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-<span class="br0">&#125;</span><span class="sy4">;</span>
-&#160;
+    <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
+&nbsp;
 <span class="kw1">template</span><span class="sy1">&lt;</span><span class="kw1">class</span> DstTraits, <span class="kw1">class</span> CharT, <span class="kw1">class</span> SrcTraits<span class="sy1">&gt;</span>
 <span class="kw4">constexpr</span> <a href="basic_string_view.html"><span class="kw1254">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, DstTraits<span class="sy1">&gt;</span>
-    traits_cast<span class="br0">&#40;</span><span class="kw4">const</span> <a href="basic_string_view.html"><span class="kw1254">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, SrcTraits<span class="sy1">&gt;</span> src<span class="br0">&#41;</span> <span class="kw1">noexcept</span>
-<span class="br0">&#123;</span>
-    <span class="kw1">return</span> <span class="br0">&#123;</span>src.<span class="me1">data</span><span class="br0">&#40;</span><span class="br0">&#41;</span>, src.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#125;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+    traits_cast<span class="br0">(</span><span class="kw4">const</span> <a href="basic_string_view.html"><span class="kw1254">std::<span class="me2">basic_string_view</span></span></a><span class="sy1">&lt;</span>CharT, SrcTraits<span class="sy1">&gt;</span> src<span class="br0">)</span> <span class="kw1">noexcept</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> <span class="br0">{</span>src.<span class="me1">data</span><span class="br0">(</span><span class="br0">)</span>, src.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw1">using</span> <span class="kw1">namespace</span> std<span class="sy4">::</span><span class="me2">literals</span><span class="sy4">;</span>
-&#160;
-    <span class="kw4">constexpr</span> <span class="kw4">auto</span> s1 <span class="sy1">=</span> <span class="st0">&quot;Hello&quot;</span>sv<span class="sy4">;</span>
-    <span class="kw4">constexpr</span> <span class="kw4">auto</span> s2 <span class="sy1">=</span> <span class="st0">&quot;heLLo&quot;</span>sv<span class="sy4">;</span>
-&#160;
-    <span class="kw1">if</span> <span class="br0">&#40;</span>traits_cast<span class="sy1">&lt;</span>ci_char_traits<span class="sy1">&gt;</span><span class="br0">&#40;</span>s1<span class="br0">&#41;</span> <span class="sy1">==</span> traits_cast<span class="sy1">&lt;</span>ci_char_traits<span class="sy1">&gt;</span><span class="br0">&#40;</span>s2<span class="br0">&#41;</span><span class="br0">&#41;</span>
-        <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> s1 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; and &quot;</span> <span class="sy1">&lt;&lt;</span> s2 <span class="sy1">&lt;&lt;</span> <span class="st0">&quot; are equal<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+&nbsp;
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> s1 <span class="sy1">=</span> <span class="st0">"Hello"</span>sv<span class="sy4">;</span>
+    <span class="kw4">constexpr</span> <span class="kw4">auto</span> s2 <span class="sy1">=</span> <span class="st0">"heLLo"</span>sv<span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">if</span> <span class="br0">(</span>traits_cast<span class="sy1">&lt;</span>ci_char_traits<span class="sy1">&gt;</span><span class="br0">(</span>s1<span class="br0">)</span> <span class="sy1">==</span> traits_cast<span class="sy1">&lt;</span>ci_char_traits<span class="sy1">&gt;</span><span class="br0">(</span>s2<span class="br0">)</span><span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1774">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> s1 <span class="sy1">&lt;&lt;</span> <span class="st0">" and "</span> <span class="sy1">&lt;&lt;</span> s2 <span class="sy1">&lt;&lt;</span> <span class="st0">" are equal<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">Hello and heLLo are equal</pre></div></div> 
@@ -647,36 +501,36 @@ html { font-variant-ligatures: no-common-ligatures; }
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="basic_string.html" title="cpp/string/basic string"> <span class="t-lines"><span>basic_string</span></span></a></div></div>
 </td>
-<td>  stores and manipulates sequences of characters <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/dsc_basic_string&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  stores and manipulates sequences of characters <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/dsc_basic_string&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="basic_string_view.html" title="cpp/string/basic string view"> <span class="t-lines"><span>basic_string_view</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div>
 </td>
-<td>  read-only string view <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/dsc_basic_string_view&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  read-only string view <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/string/dsc_basic_string_view&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../io/basic_istream.html" title="cpp/io/basic istream"> <span class="t-lines"><span>basic_istream</span></span></a></div></div>
 </td>
-<td>  wraps a given abstract device (<span class="t-lc"><a href="../io/basic_streambuf.html" title="cpp/io/basic streambuf">std::basic_streambuf</a></span>)<br />and provides high-level input interface <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_istream&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  wraps a given abstract device (<span class="t-lc"><a href="../io/basic_streambuf.html" title="cpp/io/basic streambuf">std::basic_streambuf</a></span>)<br>and provides high-level input interface <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_istream&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../io/basic_ostream.html" title="cpp/io/basic ostream"> <span class="t-lines"><span>basic_ostream</span></span></a></div></div>
 </td>
-<td>  wraps a given abstract device (<span class="t-lc"><a href="../io/basic_streambuf.html" title="cpp/io/basic streambuf">std::basic_streambuf</a></span>)<br />and provides high-level output interface <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_ostream&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  wraps a given abstract device (<span class="t-lc"><a href="../io/basic_streambuf.html" title="cpp/io/basic streambuf">std::basic_streambuf</a></span>)<br>and provides high-level output interface <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_ostream&amp;action=edit">[edit]</a></span>
 </td></tr>
 
 <tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../io/basic_streambuf.html" title="cpp/io/basic streambuf"> <span class="t-lines"><span>basic_streambuf</span></span></a></div></div>
 </td>
-<td>  abstracts a raw device <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_streambuf&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  abstracts a raw device <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/io/dsc_basic_streambuf&amp;action=edit">[edit]</a></span>
 </td></tr>
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -695,7 +549,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;oldid=158926">https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;oldid=158926</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -705,39 +559,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/string/char_traits" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/string/char_traits" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;oldid=158926" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/string/char_traits&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/string/char_traits" title="cpp/string/char traits" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 12 September 2023, at 15:24.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -748,8 +570,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 4.601 secs. -->
-	</body>
-<!-- Cached 20250103104122 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/string/char_traits by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:22 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250103104122 --><!-- Mirrored from en.cppreference.com/w/cpp/string/char_traits by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:22 GMT --></html>

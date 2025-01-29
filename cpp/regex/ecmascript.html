@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/regex/ecmascript by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:50 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/regex/ecmascript by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:50 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Modified ECMAScript regular expression grammar - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Modified ECMAScript regular expression grammar</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/regex/ecmascript","wgTitle":"cpp/regex/ecmascript","wgCurRevisionId":175291,"wgArticleId":13030,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Todo no example"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/regex/ecmascript","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-javascript {line-height: normal;}
 .source-javascript li, .source-javascript pre {
@@ -145,93 +133,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_regex_ecmascript skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fregex%2Fecmascript&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fregex%2Fecmascript" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="ecmascript.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:cpp/regex/ecmascript"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="ecmascript.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -318,88 +220,17 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../regex.html" title="cpp/regex">regex</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../text.html" title="cpp/text">Text processing library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../locale.html" title="cpp/locale">Localization library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../regex.html" title="cpp/regex">Regular expressions library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility/format.html" title="cpp/utility/format">Formatting library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../text.html#Null-terminated_sequence_utilities" title="cpp/text">Null-terminated sequence utilities</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string/byte.html" title="cpp/string/byte">Byte strings</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string/multibyte.html" title="cpp/string/multibyte">Multibyte strings</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string/wide.html" title="cpp/string/wide">Wide strings</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../text.html#Primitive_numeric_conversions" title="cpp/text">Primitive numeric conversions</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_chars.html" title="cpp/utility/to chars"><span class="t-lines"><span>to_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/to_chars_result.html" title="cpp/utility/to chars result"><span class="t-lines"><span>to_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/from_chars.html" title="cpp/utility/from chars"><span class="t-lines"><span>from_chars</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/from_chars_result.html" title="cpp/utility/from chars result"><span class="t-lines"><span>from_chars_result</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../utility/chars_format.html" title="cpp/utility/chars format"><span class="t-lines"><span>chars_format</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx17">(C++17)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../text.html#Text_encoding_identifications" title="cpp/text">Text encoding identifications</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../text/text_encoding.html" title="cpp/text/text encoding"><span class="t-lines"><span>text_encoding</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/text/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../regex.html" title="cpp/regex">Regular expressions library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5">Classes</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="basic_regex.html" title="cpp/regex/basic regex"><span class="t-lines"><span>basic_regex</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="sub_match.html" title="cpp/regex/sub match"><span class="t-lines"><span>sub_match</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="match_results.html" title="cpp/regex/match results"><span class="t-lines"><span>match_results</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Algorithms</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_match.html" title="cpp/regex/regex match"><span class="t-lines"><span>regex_match</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_search.html" title="cpp/regex/regex search"><span class="t-lines"><span>regex_search</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_replace.html" title="cpp/regex/regex replace"><span class="t-lines"><span>regex_replace</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Iterators</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_iterator.html" title="cpp/regex/regex iterator"><span class="t-lines"><span>regex_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_token_iterator.html" title="cpp/regex/regex token iterator"><span class="t-lines"><span>regex_token_iterator</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Exceptions</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_error.html" title="cpp/regex/regex error"><span class="t-lines"><span>regex_error</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Traits</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regex_traits.html" title="cpp/regex/regex traits"><span class="t-lines"><span>regex_traits</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Constants</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="syntax_option_type.html" title="cpp/regex/syntax option type"><span class="t-lines"><span>syntax_option_type</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="match_flag_type.html" title="cpp/regex/match flag type"><span class="t-lines"><span>match_flag_type</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="error_type.html" title="cpp/regex/error type"><span class="t-lines"><span>error_type</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Regex Grammar</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>Modified ECMAScript-262</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/regex/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>This page describes the regular expression grammar that is used when <span class="t-lc"><a href="basic_regex.html" title="cpp/regex/basic regex">std::basic_regex</a></span> is constructed with <a href="syntax_option_type.html" title="cpp/regex/syntax option type"><code>syntax_option_type</code></a> set to <code>ECMAScript</code> (the default). See <a href="syntax_option_type.html" title="cpp/regex/syntax option type"><code>syntax_option_type</code></a> for the other supported regular expression grammars.
 </p><p>The <code>ECMAScript</code> 3 regular expression grammar in C++ is <a rel="nofollow" class="external text" href="https://ecma-international.org/ecma-262/5.1/#sec-15.10">ECMA-262 grammar</a> with modifications marked with <span class="t-mark">(C++ only)</span> below.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Alternatives"><span class="tocnumber">2</span> <span class="toctext">Alternatives</span></a></li>
@@ -413,20 +244,20 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-10"><a href="#Character_classes"><span class="tocnumber">10</span> <span class="toctext">Character classes</span></a></li>
 <li class="toclevel-1 tocsection-11"><a href="#POSIX-based_character_classes"><span class="tocnumber">11</span> <span class="toctext">POSIX-based character classes</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=1" title="Edit section: Overview">edit</a>]</span> <span class="mw-headline" id="Overview">Overview</span></h3>
 <p>The <a rel="nofollow" class="external text" href="https://eel.is/c++draft/re.grammar">modified regular expression grammar</a> is mostly ECMAScript RegExp grammar with a POSIX-type expansion on locales under <i>ClassAtom</i>. Some clarifications on equality checks and number parsing is made. For many of the examples here, you can try this equivalent in your browser console:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="kw2">function</span> match<span class="br0">&#40;</span>s<span class="sy0">,</span> re<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="kw1">return</span> s.<span class="me1">match</span><span class="br0">&#40;</span><span class="kw2">new</span> RegExp<span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="br0">&#125;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="javascript source-javascript"><pre class="de1"><span class="kw2">function</span> match<span class="br0">(</span>s<span class="sy0">,</span> re<span class="br0">)</span> <span class="br0">{</span> <span class="kw1">return</span> s.<span class="me1">match</span><span class="br0">(</span><span class="kw2">new</span> RegExp<span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span> <span class="br0">}</span></pre></div></div>
 <p>The "normative references" in the standard specifies ECMAScript 3. We link to the ECMAScript 5.1 spec here because it is a version with only minor changes from ECMAScript 3, and it also has an HTML version. See the <a rel="nofollow" class="external text" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">MDN Guide on JavaScript RegExp</a> for an overview on the dialect features.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=2" title="Edit section: Alternatives">edit</a>]</span> <span class="mw-headline" id="Alternatives">Alternatives</span></h3>
 <p>A regular expression pattern is a sequence of one or more <i>Alternative</i>s, separated by the disjunction operator <code><b>|</b></code> (in other words, the disjunction operator has the lowest precedence).
-</p><p><i>Pattern</i>&#160;::
+</p><p><i>Pattern</i>&nbsp;::
 </p>
 <dl><dd><i>Disjunction</i>
 </dd></dl>
-<p><i>Disjunction</i>&#160;::
+<p><i>Disjunction</i>&nbsp;::
 </p>
 <dl><dd><i>Alternative</i>
 </dd><dd><i>Alternative</i> <code><b>|</b></code> <i>Disjunction</i>
@@ -441,35 +272,35 @@ html { font-variant-ligatures: no-common-ligatures; }
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;regex&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">void</span> show_matches<span class="br0">&#40;</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">void</span> show_matches<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="match_results.html"><span class="kw2027">std::<span class="me2">smatch</span></span></a> m<span class="sy4">;</span>
-    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">&#40;</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  &quot;</span>
-                     <span class="st0">&quot;prefix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  smatch: &quot;</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">&#40;</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;m[&quot;</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]=[&quot;</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">&#91;</span>n<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>  suffix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
+    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">(</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  "</span>
+                     <span class="st0">"prefix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  smatch: "</span><span class="sy4">;</span>
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"m["</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">"]=["</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">[</span>n<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"] "</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>  suffix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
     <span class="kw1">else</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]: NO MATCH<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abcdef&quot;</span>, <span class="st0">&quot;abc|def&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abc&quot;</span>, <span class="st0">&quot;ab|abc&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first</span>
-&#160;
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]: NO MATCH<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    show_matches<span class="br0">(</span><span class="st0">"abcdef"</span>, <span class="st0">"abc|def"</span><span class="br0">)</span><span class="sy4">;</span>
+    show_matches<span class="br0">(</span><span class="st0">"abc"</span>, <span class="st0">"ab|abc"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first</span>
+&nbsp;
     <span class="co1">// Match of the input against the left Alternative (a) followed</span>
     <span class="co1">// by the remained of the regex (c|bc) succeeds, which results</span>
-    <span class="co1">// in m[1]=&quot;a&quot; and m[4]=&quot;bc&quot;.</span>
+    <span class="co1">// in m[1]="a" and m[4]="bc".</span>
     <span class="co1">// The skipped Alternatives (ab) and (c) leave their submatches</span>
     <span class="co1">// m[3] and m[5] empty.</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abc&quot;</span>, <span class="st0">&quot;((a)|(ab))((c)|(bc))&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    show_matches<span class="br0">(</span><span class="st0">"abc"</span>, <span class="st0">"((a)|(ab))((c)|(bc))"</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">input=[abcdef], regex=[abc|def]
@@ -487,7 +318,7 @@ input=[abc], regex=[((a)|(ab))((c)|(bc))]
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=3" title="Edit section: Terms">edit</a>]</span> <span class="mw-headline" id="Terms">Terms</span></h3>
 <p>Each <i>Alternative</i> is either empty or is a sequence of <i>Term</i>s (with no separators between the <i>Term</i>s)
-</p><p><i>Alternative</i>&#160;::
+</p><p><i>Alternative</i>&nbsp;::
 </p>
 <dl><dd> <i>[empty]</i>
 </dd><dd> <i>Alternative</i> <i>Term</i>
@@ -501,29 +332,29 @@ input=[abc], regex=[((a)|(ab))((c)|(bc))]
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;regex&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">void</span> show_matches<span class="br0">&#40;</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">void</span> show_matches<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="match_results.html"><span class="kw2027">std::<span class="me2">smatch</span></span></a> m<span class="sy4">;</span>
-    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">&#40;</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  &quot;</span>
-                     <span class="st0">&quot;prefix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  smatch: &quot;</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">&#40;</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;m[&quot;</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]=[&quot;</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">&#91;</span>n<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>  suffix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
+    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">(</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  "</span>
+                     <span class="st0">"prefix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  smatch: "</span><span class="sy4">;</span>
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"m["</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">"]=["</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">[</span>n<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"] "</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>  suffix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
     <span class="kw1">else</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]: NO MATCH<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abcdef&quot;</span>, <span class="st0">&quot;&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// empty regex is a single empty Alternative</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abc&quot;</span>, <span class="st0">&quot;abc|&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abc&quot;</span>, <span class="st0">&quot;|abc&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first, leaving abc unmatched</span>
-<span class="br0">&#125;</span></pre></div></div>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]: NO MATCH<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    show_matches<span class="br0">(</span><span class="st0">"abcdef"</span>, <span class="st0">""</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// empty regex is a single empty Alternative</span>
+    show_matches<span class="br0">(</span><span class="st0">"abc"</span>, <span class="st0">"abc|"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first</span>
+    show_matches<span class="br0">(</span><span class="st0">"abc"</span>, <span class="st0">"|abc"</span><span class="br0">)</span><span class="sy4">;</span> <span class="co1">// left Alternative matched first, leaving abc unmatched</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">input=[abcdef], regex=[]
@@ -542,14 +373,14 @@ input=[abc], regex=[|abc]
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=4" title="Edit section: Quantifiers">edit</a>]</span> <span class="mw-headline" id="Quantifiers">Quantifiers</span></h3>
 <ul><li> Each <i>Term</i> is either an <i>Assertion</i> (see below), or an <i>Atom</i> (see below), or an <i>Atom</i> immediately followed by a <i>Quantifier</i>
 </li></ul>
-<p><i>Term</i>&#160;::
+<p><i>Term</i>&nbsp;::
 </p>
 <dl><dd> <i>Assertion</i>
 </dd><dd> <i>Atom</i>
 </dd><dd> <i>Atom</i> <i>Quantifier</i>
 </dd></dl>
 <p>Each <i>Quantifier</i> is either a <i>greedy</i> quantifier (which consists of just one <i>QuantifierPrefix</i>) or a <i>non-greedy</i> quantifier (which consists of one <i>QuantifierPrefix</i> followed by the question mark <code><b>?</b></code>).
-</p><p><i>Quantifier</i>&#160;::
+</p><p><i>Quantifier</i>&nbsp;::
 </p>
 <dl><dd> <i>QuantifierPrefix</i>
 </dd><dd> <i>QuantifierPrefix</i> <code><b>?</b></code>
@@ -558,7 +389,7 @@ input=[abc], regex=[|abc]
 </p>
 <table class="wikitable">
 
-<tr>
+<tbody><tr>
 <th>QuantifierPrefix</th>
 <th>Minimum</th>
 <th>Maximum
@@ -604,61 +435,61 @@ input=[abc], regex=[|abc]
 <td> value of DecimalDigits before the comma
 </td>
 <td> value of DecimalDigits after the comma
-</td></tr></table>
+</td></tr></tbody></table>
 <p>The values of the individual <i>DecimalDigits</i> are obtained by calling <span class="t-lc"><a href="regex_traits/value.html" title="cpp/regex/regex traits/value">std::regex_traits::value</a></span><span class="t-mark">(C++ only)</span> on each of the digits.
 </p><p>An <i>Atom</i> followed by a <i>Quantifier</i> is repeated the number of times specified by the <i>Quantifier</i>. A <i>Quantifier</i> can be <i>non-greedy</i>, in which case the <i>Atom</i> pattern is repeated as few times as possible while still matching the remainder of the regular expression, or it can be <i>greedy</i>, in which case the <i>Atom</i> pattern is repeated as many times as possible while still matching the remainder of the regular expression.
 </p><p>The <i>Atom</i> pattern is what is repeated, not the input that it matches, so different repetitions of the <i>Atom</i> can match different input substrings.
 </p><p>If the <i>Atom</i> and the remainder of the regular expression all have choice points, the <i>Atom</i> is first matched as many (or as few, if <i>non-greedy</i>) times as possible. All choices in the remainder of the regular expression are tried before moving on to the next choice in the last repetition of <i>Atom</i>. All choices in the last (nth) repetition of <i>Atom</i> are tried before moving on to the next choice in the next-to-last (n–1)st repetition of <i>Atom</i>; at which point it may turn out that more or fewer repetitions of <i>Atom</i> are now possible; these are exhausted (again, starting with either as few or as many as possible) before moving on to the next choice in the (n-1)st repetition of <i>Atom</i> and so on.
-</p><p>The <i>Atom'</i>s captures are cleared each time it is repeated (see the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">&quot;(z)((a+)?(b+)?(c))*&quot;</span></span></span> example below)
+</p><p>The <i>Atom'</i>s captures are cleared each time it is repeated (see the <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">"(z)((a+)?(b+)?(c))*"</span></span></span> example below)
 </p>
 <div class="t-example"><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstddef&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;regex&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">void</span> show_matches<span class="br0">&#40;</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">void</span> show_matches<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="match_results.html"><span class="kw2027">std::<span class="me2">smatch</span></span></a> m<span class="sy4">;</span>
-    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">&#40;</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  &quot;</span>
-                     <span class="st0">&quot;prefix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  smatch: &quot;</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">&#40;</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;m[&quot;</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]=[&quot;</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">&#91;</span>n<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>  suffix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
+    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">(</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  "</span>
+                     <span class="st0">"prefix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  smatch: "</span><span class="sy4">;</span>
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"m["</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">"]=["</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">[</span>n<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"] "</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>  suffix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
     <span class="kw1">else</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]: NO MATCH<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]: NO MATCH<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="co1">// greedy match, repeats [a-z] 4 times</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abcdefghi&quot;</span>, <span class="st0">&quot;a[a-z]{2,4}&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    show_matches<span class="br0">(</span><span class="st0">"abcdefghi"</span>, <span class="st0">"a[a-z]{2,4}"</span><span class="br0">)</span><span class="sy4">;</span>
     <span class="co1">// non-greedy match, repeats [a-z] 2 times</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abcdefghi&quot;</span>, <span class="st0">&quot;a[a-z]{2,4}?&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    show_matches<span class="br0">(</span><span class="st0">"abcdefghi"</span>, <span class="st0">"a[a-z]{2,4}?"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// Choice point ordering for quantifiers results in a match</span>
-    <span class="co1">// with two repetitions, first matching the substring &quot;aa&quot;,</span>
-    <span class="co1">// second matching the substring &quot;ba&quot;, leaving &quot;ac&quot; not matched</span>
-    <span class="co1">// (&quot;ba&quot; appears in the capture clause m[1])</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;aabaac&quot;</span>, <span class="st0">&quot;(aa|aabaac|ba|b|c)*&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    <span class="co1">// with two repetitions, first matching the substring "aa",</span>
+    <span class="co1">// second matching the substring "ba", leaving "ac" not matched</span>
+    <span class="co1">// ("ba" appears in the capture clause m[1])</span>
+    show_matches<span class="br0">(</span><span class="st0">"aabaac"</span>, <span class="st0">"(aa|aabaac|ba|b|c)*"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// Choice point ordering for quantifiers makes this regex </span>
     <span class="co1">// calculate the greatest common divisor between 10 and 15</span>
-    <span class="co1">// (the answer is 5, and it populates m[1] with &quot;aaaaa&quot;)</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;aaaaaaaaaa,aaaaaaaaaaaaaaa&quot;</span>, <span class="st0">&quot;^(a+)<span class="es1">\\</span>1*,<span class="es1">\\</span>1+$&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    <span class="co1">// the substring &quot;bbb&quot; does not appear in the capture clause m[4]</span>
+    <span class="co1">// (the answer is 5, and it populates m[1] with "aaaaa")</span>
+    show_matches<span class="br0">(</span><span class="st0">"aaaaaaaaaa,aaaaaaaaaaaaaaa"</span>, <span class="st0">"^(a+)<span class="es1">\\</span>1*,<span class="es1">\\</span>1+$"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <span class="co1">// the substring "bbb" does not appear in the capture clause m[4]</span>
     <span class="co1">// because it is cleared when the second repetition of the atom</span>
-    <span class="co1">// (a+)?(b+)?(c) is matching the substring &quot;ac&quot;</span>
+    <span class="co1">// (a+)?(b+)?(c) is matching the substring "ac"</span>
     <span class="co1">// NOTE: gcc gets this wrong - it does not correctly clear the</span>
     <span class="co1">// matches[4] capture group as required by ECMA-262 21.2.2.5.1,</span>
-    <span class="co1">// and thus incorrectly captures &quot;bbb&quot; for that group.</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;zaacbbbcac&quot;</span>, <span class="st0">&quot;(z)((a+)?(b+)?(c))*&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    <span class="co1">// and thus incorrectly captures "bbb" for that group.</span>
+    show_matches<span class="br0">(</span><span class="st0">"zaacbbbcac"</span>, <span class="st0">"(z)((a+)?(b+)?(c))*"</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">input=[abcdefghi], regex=[a[a-z]{2,4}]
@@ -684,7 +515,7 @@ input=[zaacbbbcac], regex=[(z)((a+)?(b+)?(c))*]
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=5" title="Edit section: Assertions">edit</a>]</span> <span class="mw-headline" id="Assertions">Assertions</span></h3>
 <p><i>Assertion</i>s match conditions, rather than substrings of the input string. They never consume any characters from the input. Each <i>Assertion</i> is one of the following
-</p><p><i>Assertion</i>&#160;::
+</p><p><i>Assertion</i>&nbsp;::
 </p>
 <dl><dd> <code><b>^</b></code>
 </dd><dd> <code><b>$</b></code>
@@ -723,47 +554,47 @@ input=[zaacbbbcac], regex=[(z)((a+)?(b+)?(c))*]
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;regex&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">void</span> show_matches<span class="br0">&#40;</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">void</span> show_matches<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span> re<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="match_results.html"><span class="kw2027">std::<span class="me2">smatch</span></span></a> m<span class="sy4">;</span>
-    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">&#40;</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  &quot;</span>
-                     <span class="st0">&quot;prefix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>  smatch: &quot;</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">&#40;</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;m[&quot;</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]=[&quot;</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">&#91;</span>n<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;<span class="es1">\n</span>  suffix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
+    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">(</span>in, m, <a href="basic_regex.html"><span class="kw2017">std::<span class="me2">regex</span></span></a><span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  "</span>
+                     <span class="st0">"prefix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>  smatch: "</span><span class="sy4">;</span>
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"m["</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">"]=["</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">[</span>n<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"] "</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"<span class="es1">\n</span>  suffix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"]<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
     <span class="kw1">else</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;]: NO MATCH<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> <span class="st0">"]: NO MATCH<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="co1">// matches the a at the end of input</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;aaa&quot;</span>, <span class="st0">&quot;a$&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    show_matches<span class="br0">(</span><span class="st0">"aaa"</span>, <span class="st0">"a$"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// matches the o at the end of the first word</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;moo goo gai pan&quot;</span>, <span class="st0">&quot;o<span class="es1">\\</span>b&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    show_matches<span class="br0">(</span><span class="st0">"moo goo gai pan"</span>, <span class="st0">"o<span class="es1">\\</span>b"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// the lookahead matches the empty string immediately after the first b</span>
-    <span class="co1">// this populates m[1] with &quot;aaa&quot; although m[0] is empty</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;baaabac&quot;</span>, <span class="st0">&quot;(?=(a+))&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    <span class="co1">// this populates m[1] with "aaa" although m[0] is empty</span>
+    show_matches<span class="br0">(</span><span class="st0">"baaabac"</span>, <span class="st0">"(?=(a+))"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// because backtracking into lookaheads is prohibited, </span>
     <span class="co1">// this matches aba rather than aaaba</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;baaabac&quot;</span>, <span class="st0">&quot;(?=(a+))a*b<span class="es1">\\</span>1&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    show_matches<span class="br0">(</span><span class="st0">"baaabac"</span>, <span class="st0">"(?=(a+))a*b<span class="es1">\\</span>1"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// logical AND via lookahead: this password matches IF it contains</span>
     <span class="co1">// at least one lowercase letter</span>
     <span class="co1">// AND at least one uppercase letter</span>
     <span class="co1">// AND at least one punctuation character</span>
     <span class="co1">// AND be at least 6 characters long</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;abcdef&quot;</span>, <span class="st0">&quot;(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    show_matches<span class="br0">&#40;</span><span class="st0">&quot;aB,def&quot;</span>, <span class="st0">&quot;(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    show_matches<span class="br0">(</span><span class="st0">"abcdef"</span>, <span class="st0">"(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}"</span><span class="br0">)</span><span class="sy4">;</span>
+    show_matches<span class="br0">(</span><span class="st0">"aB,def"</span>, <span class="st0">"(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}"</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">input=[aaa], regex=[a$]
@@ -790,7 +621,7 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=6" title="Edit section: Atoms">edit</a>]</span> <span class="mw-headline" id="Atoms">Atoms</span></h3>
 <p>An <i>Atom</i> can be one of the following:
-</p><p><i>Atom</i>&#160;::
+</p><p><i>Atom</i>&nbsp;::
 </p>
 <dl><dd> <i>PatternCharacter</i>
 </dd><dd> <code><b>.</b></code>
@@ -800,7 +631,7 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 </dd><dd> <code><b>(</b></code> <code><b>?</b></code> <code><b>:</b></code> <i>Disjunction</i> <code><b>)</b></code>
 </dd></dl>
 <p>where
-<i>AtomEscape</i>&#160;::
+<i>AtomEscape</i>&nbsp;::
 </p>
 <dl><dd> <i>DecimalEscape</i>
 </dd><dd> <i>CharacterEscape</i>
@@ -813,9 +644,9 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 </p><p>Besides being returned in the <span class="t-lc"><a href="match_results.html" title="cpp/regex/match results">std::match_results</a></span>, the captured submatches are accessible as backreferences (<code>\1</code>, <code>\2</code>, ...) and can be referenced in regular expressions. Note that  <span class="t-lc"><a href="regex_replace.html" title="cpp/regex/regex replace">std::regex_replace</a></span> uses <code>$</code> instead of <code>\</code> for backreferences (<code>$1</code>, <code>$2</code>, ...) in the same manner as <code>String.prototype.replace</code> (ECMA-262, part 15.5.4.11).
 </p><p>The <i>Atom</i> <code><b>(</b></code> <code><b>?</b></code> <code><b>:</b></code> <i>Disjunction</i> <code><b>)</b></code> (non-marking subexpression) simply evaluates the <i>Disjunction</i> and does not store its results in the submatch. This is a purely lexical grouping.
 </p>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br />Reason: no example </td></tr></table>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=8" title="Edit section: Backreferences">edit</a>]</span> <span class="mw-headline" id="Backreferences">Backreferences</span></h3>
-<p><i>DecimalEscape</i>&#160;::
+<p><i>DecimalEscape</i>&nbsp;::
 </p>
 <dl><dd> <i>DecimalIntegerLiteral</i> [<i>lookahead</i> ∉ <i>DecimalDigit</i>]
 </dd></dl>
@@ -824,17 +655,17 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 </p><p>The decimal escape <code>\0</code> is NOT a backreference: it is a character escape that represents the <a href="../language/ascii.html" title="cpp/language/ascii"> <span class="t-c"><span class="mw-geshi cpp source-cpp">NUL</span></span></a> character. It cannot be followed by a decimal digit.
 </p><p>As above, note that  <span class="t-lc"><a href="regex_replace.html" title="cpp/regex/regex replace">std::regex_replace</a></span> uses <code>$</code> instead of <code>\</code> for backreferences (<code>$1</code>, <code>$2</code>, ...).
 </p>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br />Reason: no example </td></tr></table>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=9" title="Edit section: Single character matches">edit</a>]</span> <span class="mw-headline" id="Single_character_matches">Single character matches</span></h3>
 <p>The <i>Atom</i> <code><b>.</b></code> matches and consumes any one character from the input string except for <i>LineTerminator</i> (<code>U+000D</code>, <code>U+000A</code>, <code>U+2029</code>, or <code>U+2028</code>)
-</p><p>The <i>Atom</i> <i>PatternCharacter</i>, where <i>PatternCharacter</i> is any <i>SourceCharacter</i> EXCEPT the characters <code><b>^ $ \ . * +&#160;? ( ) [ ] { } |</b></code>, matches and consumes one character from the input if it is equal to this <i>PatternCharacter</i>.
+</p><p>The <i>Atom</i> <i>PatternCharacter</i>, where <i>PatternCharacter</i> is any <i>SourceCharacter</i> EXCEPT the characters <code><b>^ $ \ . * +&nbsp;? ( ) [ ] { } |</b></code>, matches and consumes one character from the input if it is equal to this <i>PatternCharacter</i>.
 </p><p>The equality for this and all other single character matches is defined as follows:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> If <span class="t-lc"><a href="syntax_option_type.html" title="cpp/regex/syntax option type">std::regex_constants::icase</a></span> is set, the characters are equal if the return values of <span class="t-lc"><a href="regex_traits/translate_nocase.html" title="cpp/regex/regex traits/translate nocase">std::regex_traits::translate_nocase</a></span> are equal <span class="t-mark">(C++ only)</span>.</div>
 <div class="t-li1"><span class="t-li">2)</span> Otherwise, if <span class="t-lc"><a href="syntax_option_type.html" title="cpp/regex/syntax option type">std::regex_constants::collate</a></span> is set, the characters are equal if the return values of <span class="t-lc"><a href="regex_traits/translate.html" title="cpp/regex/regex traits/translate">std::regex_traits::translate</a></span> are equal <span class="t-mark">(C++ only)</span>.</div>
 <div class="t-li1"><span class="t-li">3)</span> Otherwise, the characters are equal if <span class="t-c"><span class="mw-geshi cpp source-cpp">operator<span class="sy1">==</span></span></span> returns <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>.</div>
 <p>Each <i>Atom</i> that consists of the escape character <code><b>\</b></code> followed by <i>CharacterEscape</i> as well as the special DecimalEscape <code><b>\0</b></code>, matches and consumes one character from the input if it is equal to the character represented by the <i>CharacterEscape</i>. The following character escape sequences are recognized:
-</p><p><i>CharacterEscape</i>&#160;::
+</p><p><i>CharacterEscape</i>&nbsp;::
 </p>
 <dl><dd> <i>ControlEscape</i>
 </dd><dd> <code><b>c</b></code> <i>ControlLetter</i>
@@ -846,7 +677,7 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 </p>
 <table class="wikitable">
 
-<tr>
+<tbody><tr>
 <th>ControlEscape</th>
 <th>Code Unit</th>
 <th>Name
@@ -885,7 +716,7 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 <td>U+000B
 </td>
 <td>vertical tab
-</td></tr></table>
+</td></tr></tbody></table>
 <p><i>ControlLetter</i> is any lowercase or uppercase ASCII letters and this character escape matches the character whose code unit equals the remainder of dividing the value of the code unit of <i>ControlLetter</i> by <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu0">32</span></span></span>. For example, <code><b>\cD</b></code> and <code><b>\cd</b></code> both match code unit <code>U+0004</code> (EOT) because 'D' is <code>U+0044</code> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu12">0x44</span> <span class="sy2">%</span> <span class="nu0">32</span> <span class="sy1">==</span> <span class="nu0">4</span></span></span>, and 'd' is <code>U+0064</code> and <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="nu12">0x64</span> <span class="sy2">%</span> <span class="nu0">32</span> <span class="sy1">==</span> <span class="nu0">4</span></span></span>.
 </p><p><i>HexEscapeSequence</i> is the letter <code><b>x</b></code> followed by exactly two <i>HexDigit</i>s (where <i>HexDigit</i> is one of <code><b>0 1 2 3 4 5 6 7 8 9 a b c d e f A B C D E F</b></code>). This character escape matches the character whose code unit equals the numeric value of the two-digit hexadecimal number.
 </p><p><i>UnicodeEscapeSequence</i> is the letter <code><b>u</b></code> followed by exactly four <i>HexDigit</i>s. This character escape matches the character whose code unit equals the numeric value of this four-digit hexadecimal number. If the value does not fit in this <span class="t-lc"><a href="basic_regex.html" title="cpp/regex/basic regex">std::basic_regex</a></span>'s <code>CharT</code>, <span class="t-lc"><a href="regex_error.html" title="cpp/regex/regex error">std::regex_error</a></span> is thrown <span class="t-mark">(C++ only)</span>.
@@ -896,42 +727,41 @@ input=[aB,def], regex=[(?=.*[[:lower:]])(?=.*[[:upper:]])(?=.*[[:punct:]]).{6,}]
 <span class="co2">#include &lt;iostream&gt;</span>
 <span class="co2">#include &lt;regex&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">void</span> show_matches<span class="br0">&#40;</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a><span class="sy3">&amp;</span> re<span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">void</span> show_matches<span class="br0">(</span><span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a><span class="sy3">&amp;</span> in, <span class="kw4">const</span> <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a><span class="sy3">&amp;</span> re<span class="br0">)</span>
+<span class="br0">{</span>
     <a href="match_results.html"><span class="kw2028">std::<span class="me2">wsmatch</span></span></a> m<span class="sy4">;</span>
-    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">&#40;</span>in, m, <a href="basic_regex.html"><span class="kw2018">std::<span class="me2">wregex</span></span></a><span class="br0">&#40;</span>re<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <span class="kw1">if</span> <span class="br0">&#40;</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
-        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;]<span class="es1">\n</span>  &quot;</span>
-                      L<span class="st0">&quot;prefix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;]<span class="es1">\n</span>  wsmatch: &quot;</span><span class="sy4">;</span>
-        <span class="kw1">for</span> <span class="br0">&#40;</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">&#41;</span>
-            <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;m[&quot;</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;]=[&quot;</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">&#91;</span>n<span class="br0">&#93;</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;] &quot;</span><span class="sy4">;</span>
-        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;<span class="es1">\n</span>  suffix=[&quot;</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;]<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
+    <a href="regex_search.html"><span class="kw2030">std::<span class="me2">regex_search</span></span></a><span class="br0">(</span>in, m, <a href="basic_regex.html"><span class="kw2018">std::<span class="me2">wregex</span></span></a><span class="br0">(</span>re<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span><span class="sy3">!</span>m.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> L<span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> L<span class="st0">"]<span class="es1">\n</span>  "</span>
+                      L<span class="st0">"prefix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">prefix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">"]<span class="es1">\n</span>  wsmatch: "</span><span class="sy4">;</span>
+        <span class="kw1">for</span> <span class="br0">(</span><a href="../types/size_t.html"><span class="kw107">std::<span class="me2">size_t</span></span></a> n <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> n <span class="sy1">&lt;</span> m.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span> <span class="sy2">++</span>n<span class="br0">)</span>
+            <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">"m["</span> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> L<span class="st0">"]=["</span> <span class="sy1">&lt;&lt;</span> m<span class="br0">[</span>n<span class="br0">]</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">"] "</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">"<span class="es1">\n</span>  suffix=["</span> <span class="sy1">&lt;&lt;</span> m.<span class="me1">suffix</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> L<span class="st0">"]<span class="es1">\n</span>"</span><span class="sy4">;</span>
+    <span class="br0">}</span>
     <span class="kw1">else</span>
-        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;input=[&quot;</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;], regex=[&quot;</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> L<span class="st0">&quot;]: NO MATCH<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+        <a href="../io/cout.html"><span class="kw1776">std::<span class="me2">wcout</span></span></a> <span class="sy1">&lt;&lt;</span> L<span class="st0">"input=["</span> <span class="sy1">&lt;&lt;</span> in <span class="sy1">&lt;&lt;</span> <span class="st0">"], regex=["</span> <span class="sy1">&lt;&lt;</span> re <span class="sy1">&lt;&lt;</span> L<span class="st0">"]: NO MATCH<span class="es1">\n</span>"</span><span class="sy4">;</span>
+<span class="br0">}</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="co1">// Most escapes are similar to C++, save for metacharacters. You will have to</span>
     <span class="co1">// double-escape or use raw strings on the slashes though.</span>
-    show_matches<span class="br0">&#40;</span>L<span class="st0">&quot;C++<span class="es1">\\</span>&quot;</span>, LR<span class="st0">&quot;(C\+\+<span class="es1">\\</span>)&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    show_matches<span class="br0">(</span>L<span class="st0">"C++<span class="es1">\\</span>"</span>, LR<span class="st0">"(C\+\+<span class="es1">\\</span>)"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// Escape sequences and NUL.</span>
-    <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a> s<span class="br0">&#40;</span>L<span class="st0">&quot;ab<span class="es2">\xff</span><span class="es5">\0</span>cd&quot;</span>, <span class="nu0">5</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    show_matches<span class="br0">&#40;</span>s, L<span class="st0">&quot;(<span class="es1">\\</span>0|<span class="es1">\\</span>u00ff)&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    <a href="../string/basic_string.html"><span class="kw1240">std::<span class="me2">wstring</span></span></a> s<span class="br0">(</span>L<span class="st0">"ab<span class="es2">\xff</span><span class="es5">\0</span>cd"</span>, <span class="nu0">5</span><span class="br0">)</span><span class="sy4">;</span>
+    show_matches<span class="br0">(</span>s, L<span class="st0">"(<span class="es1">\\</span>0|<span class="es1">\\</span>u00ff)"</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// No matching for non-BMP Unicode is defined, because ECMAScript uses UTF-16</span>
     <span class="co1">// atoms. Whether this emoji banana matches can be platform dependent:</span>
     <span class="co1">// These need to be wide-strings!</span>
-    show_matches<span class="br0">&#40;</span>L<span class="st0">&quot;<span class="es4">\U0001f34c</span>&quot;</span>, L<span class="st0">&quot;[<span class="es1">\\</span>u0000-<span class="es1">\\</span>ufffe]+&quot;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    show_matches<span class="br0">(</span>L<span class="st0">"<span class="es4">\U0001f34c</span>"</span>, L<span class="st0">"[<span class="es1">\\</span>u0000-<span class="es1">\\</span>ufffe]+"</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">
-input=[C++\], regex=[C\+\+\\]
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">input=[C++\], regex=[C\+\+\\]
   prefix=[]
   wsmatch: m[0]=[C++\]
   suffix=[]
@@ -945,12 +775,12 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=10" title="Edit section: Character classes">edit</a>]</span> <span class="mw-headline" id="Character_classes">Character classes</span></h3>
 <p>An Atom can represent a character class, that is, it will match and consume one character if it belongs to one of the predefined groups of characters.
 </p><p>A character class can be introduced through a character class escape:
-</p><p><i>Atom</i>&#160;::
+</p><p><i>Atom</i>&nbsp;::
 </p>
 <dl><dd> <code><b>\</b></code> <i>CharacterClassEscape</i>
 </dd></dl>
 <p>or directly
-</p><p><i>Atom</i>&#160;::
+</p><p><i>Atom</i>&nbsp;::
 </p>
 <dl><dd> <i>CharacterClass</i>
 </dd></dl>
@@ -958,7 +788,7 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 </p>
 <table class="wikitable">
 
-<tr>
+<tbody><tr>
 <th>CharacterClassEscape</th>
 <th>ClassName expression<span class="t-mark">(C++ only)</span></th>
 <th>Meaning
@@ -1004,19 +834,19 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 <td> <code><b>[^_[:alnum:]]</b></code>
 </td>
 <td> characters other than alphanumeric or <code><b>_</b></code>
-</td></tr></table><span style="font-size:0.7em; line-height:130%">The exact meaning of each of these character class escapes in C++ is defined in terms of the locale-dependent named character classes, and not by explicitly listing the acceptable characters as in ECMAScript.</span>
+</td></tr></tbody></table><span style="font-size:0.7em; line-height:130%">The exact meaning of each of these character class escapes in C++ is defined in terms of the locale-dependent named character classes, and not by explicitly listing the acceptable characters as in ECMAScript.</span>
 <p>A <i>CharacterClass</i> is a bracket-enclosed sequence of <i>ClassRanges</i>, optionally beginning with the negation operator <code><b>^</b></code>. If it begins with <code><b>^</b></code>, this <i>Atom</i> matches any character that is NOT in the set of characters represented by the union of all <i>ClassRanges</i>. Otherwise, this <i>Atom</i> matches any character that IS in the set of the characters represented by the union of all <i>ClassRanges</i>.
-</p><p><i>CharacterClass</i>&#160;::
+</p><p><i>CharacterClass</i>&nbsp;::
 </p>
 <dl><dd> <code><b>[</b></code> <code><b>[</b></code> <i>lookahead ∉ {</i><code><b>^</b></code><i>}]</i> <i>ClassRanges</i> <code><b>]</b></code>
 </dd><dd> <code><b>[</b></code> <code><b>^</b></code> <i>ClassRanges</i> <code><b>]</b></code>
 </dd></dl>
-<p>ClassRanges&#160;::
+<p>ClassRanges&nbsp;::
 </p>
 <dl><dd> [empty]
 </dd><dd> <i>NonemptyClassRanges</i>
 </dd></dl>
-<p><i>NonemptyClassRanges</i>&#160;::
+<p><i>NonemptyClassRanges</i>&nbsp;::
 </p>
 <dl><dd> <i>ClassAtom</i>
 </dd><dd> <i>ClassAtom</i> <i>NonemptyClassRangesNoDash</i>
@@ -1037,13 +867,13 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 </li><li> immediately follows a dash-separated range specification.
 </li><li> escaped with a backslash as a <i>CharacterEscape</i>
 </li></ul>
-<p>NonemptyClassRangesNoDash&#160;::
+<p>NonemptyClassRangesNoDash&nbsp;::
 </p>
 <dl><dd> <i>ClassAtom</i>
 </dd><dd> <i>ClassAtomNoDash</i> <i>NonemptyClassRangesNoDash</i>
 </dd><dd> <i>ClassAtomNoDash</i> - <i>ClassAtom</i> <i>ClassRanges</i>
 </dd></dl>
-<p><i>ClassAtom</i>&#160;::
+<p><i>ClassAtom</i>&nbsp;::
 </p>
 <dl><dd> <code><b>-</b></code>
 </dd><dd> <i>ClassAtomNoDash</i>
@@ -1051,13 +881,13 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 </dd><dd> <i>ClassAtomCollatingElement</i><span class="t-mark">(C++ only)</span>
 </dd><dd> <i>ClassAtomEquivalence</i><span class="t-mark">(C++ only)</span>
 </dd></dl>
-<p>ClassAtomNoDash&#160;::
+<p>ClassAtomNoDash&nbsp;::
 </p>
 <dl><dd> <i>SourceCharacter</i> but not one of <code><b>\ or ] or -</b></code>
 </dd><dd> <code><b>\</b></code> <i>ClassEscape</i>
 </dd></dl>
 <p>Each <i>ClassAtomNoDash</i> represents a single character -- either <i>SourceCharacter</i> as-is or escaped as follows:
-</p><p>ClassEscape&#160;::
+</p><p>ClassEscape&nbsp;::
 </p>
 <dl><dd> <i>DecimalEscape</i>
 </dd><dd> <code><b>b</b></code>
@@ -1068,36 +898,36 @@ input=[?], regex=[[\u0000-\ufffe]+]: NO MATCH
 </p><p>The use of <code><b>\B</b></code> and the use of any backreference (<i>DecimalEscape</i> other than zero) inside a <i>CharacterClass</i> is an error.
 </p><p>The characters <code><b>-</b></code> and <code><b>]</b></code> may need to be escaped in some situations in order to be treated as atoms. Other characters that have special meaning outside of <i>CharacterClass</i>, such as <code><b>*</b></code> or <code><b>?</b></code>, do not need to be escaped.
 </p>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br />Reason: no example </td></tr></table>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=edit&amp;section=11" title="Edit section: POSIX-based character classes">edit</a>]</span> <span class="mw-headline" id="POSIX-based_character_classes">POSIX-based character classes</span></h3>
 <p>These character classes are an extension to the ECMAScript grammar, and are equivalent to character classes found in the POSIX regular expressions.
-</p><p>ClassAtomExClass<span class="t-mark">(C++ only)</span>&#160;::
+</p><p>ClassAtomExClass<span class="t-mark">(C++ only)</span>&nbsp;::
 </p>
 <dl><dd> <code><b>[:</b></code> <i>ClassName</i> <code><b>:]</b></code>
 </dd></dl>
 <p>Represents all characters that are members of the named character class <i>ClassName</i>. The name is valid only if <span class="t-lc"><a href="regex_traits/lookup_classname.html" title="cpp/regex/regex traits/lookup classname">std::regex_traits::lookup_classname</a></span> returns non-zero for this name. As described in <span class="t-lc"><a href="regex_traits/lookup_classname.html" title="cpp/regex/regex traits/lookup classname">std::regex_traits::lookup_classname</a></span>, the following names are guaranteed to be recognized: <code><b>alnum, alpha, blank, cntrl, digit, graph, lower, print, punct, space, upper, xdigit, d, s, w</b></code>. Additional names may be provided by system-supplied locales (such as <code><b>jdigit</b></code> or <code><b>jkanji</b></code> in Japanese) or implemented as a user-defined extension.
-</p><p>ClassAtomCollatingElement<span class="t-mark">(C++ only)</span>&#160;::
+</p><p>ClassAtomCollatingElement<span class="t-mark">(C++ only)</span>&nbsp;::
 </p>
 <dl><dd> <code><b>[.</b></code> <i>ClassName</i> <code><b>.]</b></code>
 </dd></dl>
 <p>Represents the named collating element, which may represent a single character or a sequence of characters that collates as a single unit under the imbued locale, such as <code>[.tilde.]</code> or <code>[.ch.]</code> in Czech. The name is valid only if <span class="t-lc"><a href="regex_traits/lookup_collatename.html" title="cpp/regex/regex traits/lookup collatename">std::regex_traits::lookup_collatename</a></span> is not an empty string.
 </p><p>When using <span class="t-lc"><a href="syntax_option_type.html" title="cpp/regex/syntax option type">std::regex_constants::collate</a></span>, collating elements can always be used as ends points of a range (e.g. <code>[[.dz.]-g]</code> in Hungarian).
-</p><p>ClassAtomEquivalence<span class="t-mark">(C++ only)</span>&#160;::
+</p><p>ClassAtomEquivalence<span class="t-mark">(C++ only)</span>&nbsp;::
 </p>
 <dl><dd> <code><b>[=</b></code> <i>ClassName</i> <code><b>=]</b></code>
 </dd></dl>
 <p>Represents all characters that are members of the same equivalence class as the named collating element, that is, all characters whose primary collation key is the same as that for collating element <i>ClassName</i>. The name is valid only if <span class="t-lc"><a href="regex_traits/lookup_collatename.html" title="cpp/regex/regex traits/lookup collatename">std::regex_traits::lookup_collatename</a></span> for that name is not an empty string and if the value returned by <span class="t-lc"><a href="regex_traits/transform_primary.html" title="cpp/regex/regex traits/transform primary">std::regex_traits::transform_primary</a></span> for the result of the call to <span class="t-lc"><a href="regex_traits/lookup_collatename.html" title="cpp/regex/regex traits/lookup collatename">std::regex_traits::lookup_collatename</a></span> is not an empty string.
 </p><p>A primary sort key is one that ignores case, accentuation, or locale-specific tailorings; so for example <code>[[=a=]]</code> matches any of the characters: <code>a, À, Á, Â, Ã, Ä, Å, A, à, á, â, ã, ä and å. </code>
-</p><p>ClassName<span class="t-mark">(C++ only)</span>&#160;::
+</p><p>ClassName<span class="t-mark">(C++ only)</span>&nbsp;::
 </p>
 <dl><dd> ClassNameCharacter
 </dd><dd> ClassNameCharacter ClassName
 </dd></dl>
-<p>ClassNameCharacter<span class="t-mark">(C++ only)</span>&#160;::
+<p>ClassNameCharacter<span class="t-mark">(C++ only)</span>&nbsp;::
 </p>
-<dl><dd> <i>SourceCharacter</i> but not one of <code><b>. =&#160;:</b></code>
+<dl><dd> <i>SourceCharacter</i> but not one of <code><b>. =&nbsp;:</b></code>
 </dd></dl>
-<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br />Reason: no example </td></tr></table>
+<table class="metadata plainlinks ambox mbox-small-left ambox-notice" style=""><tbody><tr><td class="mbox-empty-cell"></td><td class="mbox-text" style="">This section is incomplete<br>Reason: no example </td></tr></tbody></table>
 
 <!-- 
 NewPP limit report
@@ -1116,7 +946,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;oldid=175291">https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;oldid=175291</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.cppreference.com/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://en.cppreference.com/w/Category:Todo_no_example" title="Category:Todo no example">Todo no example</a></li></ul></div></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.cppreference.com/w/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="https://en.cppreference.com/w/Category:Todo_no_example" title="Category:Todo no example">Todo no example</a></li></ul></div></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -1126,39 +956,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/regex/ecmascript" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/regex/ecmascript" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;oldid=175291" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/regex/ecmascript&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/regex/ecmascript" title="cpp/regex/ecmascript" lang="es" hreflang="es">Español</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/regex/ecmascript" title="cpp/regex/ecmascript" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/regex/ecmascript" title="cpp/regex/ecmascript" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 18 August 2024, at 01:10.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1169,8 +967,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 3.788 secs. -->
-	</body>
-<!-- Cached 20250103163056 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/regex/ecmascript by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:53 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250103163056 --><!-- Mirrored from en.cppreference.com/w/cpp/regex/ecmascript by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:28:53 GMT --></html>

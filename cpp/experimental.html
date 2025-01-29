@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/experimental by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:04:21 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/experimental by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:04:21 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Experimental C++ Features - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Experimental C++ Features</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/experimental","wgTitle":"cpp/experimental","wgCurRevisionId":179779,"wgArticleId":13460,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/experimental","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -85,93 +73,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_experimental skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fexperimental&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fexperimental" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="experimental.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/experimental&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="experimental.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -258,77 +160,28 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../cpp.html" title="cpp">cpp</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><strong class="selflink">Technical specifications</strong></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><strong class="selflink">Experimental</strong><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"><a href="experimental.html#Technical_Specification" title="cpp/experimental">Technical Specification</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/fs.html" title="cpp/experimental/fs">Filesystem library</a> <span class="t-mark-rev t-since-fs-ts t-mark-ts">(filesystem TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/lib_extensions.html" title="cpp/experimental/lib extensions">Library fundamentals</a> <span class="t-mark-rev t-since-libfund-ts t-mark-ts">(library fundamentals TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/lib_extensions_2.html" title="cpp/experimental/lib extensions 2">Library fundamentals 2</a> <span class="t-mark-rev t-since-libfund-ts-2 t-mark-ts">(library fundamentals TS v2)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/lib_extensions_3.html" title="cpp/experimental/lib extensions 3">Library fundamentals 3</a> <span class="t-mark-rev t-since-libfund-ts-3 t-mark-ts">(library fundamentals TS v3)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/parallelism.html" title="cpp/experimental/parallelism">Extensions for parallelism</a> <span class="t-mark-rev t-since-parallelism-ts t-mark-ts">(parallelism TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/parallelism_2.html" title="cpp/experimental/parallelism 2">Extensions for parallelism 2</a> <span class="t-mark-rev t-since-parallelism-ts-2 t-mark-ts">(parallelism TS v2)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/concurrency.html" title="cpp/experimental/concurrency">Extensions for concurrency</a> <span class="t-mark-rev t-since-concurrency-ts t-mark-ts">(concurrency TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/concurrency_2&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/concurrency 2 (page does not exist)">Extensions for concurrency 2</a> <span class="t-mark-rev t-since-concurrency-ts-2 t-mark-ts">(concurrency TS v2)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/constraints.html" title="cpp/experimental/constraints">Concepts</a> <span class="t-mark-rev t-since-concepts-ts t-mark-ts">(concepts TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/ranges.html" title="cpp/experimental/ranges">Ranges</a> <span class="t-mark-rev t-since-ranges-ts t-mark-ts">(ranges TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/reflect.html" title="cpp/experimental/reflect">Reflection</a> <span class="t-mark-rev t-since-reflection-ts t-mark-ts">(reflection TS)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="experimental/special_functions.html" title="cpp/experimental/special functions">Mathematical special functions</a> <span class="t-mark-rev t-since-special-math-tr t-mark-ts">(special functions TR)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="experimental.html#Experimental_Non-TS" title="cpp/experimental">Experimental Non-TS</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/pm&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/pm (page does not exist)">Pattern Matching</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/la&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/la (page does not exist)">Linear Algebra</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="execution.html" title="cpp/experimental/execution" class="mw-redirect">std::execution</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/contracts&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/contracts (page does not exist)">Contracts</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental/2dgraphics&amp;action=edit&amp;redlink=1" class="new" title="cpp/experimental/2dgraphics (page does not exist)">2D Graphics</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/experimental/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>The C++ standards committee publishes experimental C++ language and library extensions for future standardization.
 </p><p>Note: until 2012, these publications used the <b>TR</b> (technical report) format. Since 2012 ISO procedure changed to use the <b>TS</b> (technical specification) format.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#TR.2FTS_specifications"><span class="tocnumber">1</span> <span class="toctext">TR/TS specifications</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Non-TS_proposals"><span class="tocnumber">2</span> <span class="toctext">Non-TS proposals</span></a></li>
 <li class="toclevel-1 tocsection-3"><a href="#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
 <li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit&amp;section=1" title="Edit section: TR/TS specifications">edit</a>]</span> <span class="mw-headline" id="TR.2FTS_specifications">TR/TS specifications</span></h4>
 <table class="wikitable">
 
-<tr>
+<tbody><tr>
 <th>ISO number</th>
 <th>Name</th>
 <th>Status</th>
@@ -351,7 +204,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td>Technical Report on C++ Library Extensions
 </td>
 <td>Published 2007-11-15 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/43289.html">ISO store</a>).
-<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n1836">N1836</a> (2005-06-24)<br />
+<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n1836">N1836</a> (2005-06-24)<br>
 ISO 29124 split off, the rest merged into C++11.
 </p>
 </td>
@@ -363,7 +216,7 @@ ISO 29124 split off, the rest merged into C++11.
 <td>Extensions to the C++ Library to support mathematical special functions
 </td>
 <td>Published 2010-09-03 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/50511.html">ISO Store</a>).
-<p>Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n3060">N3060</a> (2010-03-06).<br />
+<p>Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n3060">N3060</a> (2010-03-06).<br>
 <span style="font-size:21px;color:green"><b>✔</b></span><a href="numeric/special_functions.html" title="cpp/numeric/special functions">Merged into C++17</a>.
 </p>
 </td>
@@ -375,7 +228,7 @@ ISO 29124 split off, the rest merged into C++11.
 <td>Extensions for the programming language C++ to support decimal floating-point arithmetic
 </td>
 <td>Published 2011-10-25 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/38843.html">ISO Store</a>)
-<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n2849">N2849</a> (2009-03-06).<br />
+<p>Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n2849">N2849</a> (2009-03-06).<br>
 May be superseded by a future TS or merged into a future revision of C++ (most recent merge proposal was <a rel="nofollow" class="external text" href="https://wg21.link/n3871">N3871</a>).
 </p>
 </td>
@@ -386,7 +239,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ File System Technical Specification
 </td>
-<td>Published 2015-06-18 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/63483.html">ISO store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4100">N4100</a> (2014-07-04).<br />
+<td>Published 2015-06-18 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/63483.html">ISO store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4100">N4100</a> (2014-07-04).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span><a href="filesystem.html" title="cpp/filesystem">Merged into C++17</a>.
 </p>
 </td>
@@ -397,7 +250,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ Extensions for Parallelism
 </td>
-<td>Published 2015-06-24. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65241.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4507">N4507</a> (2015-05-05).<br />
+<td>Published 2015-06-24. (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65241.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4507">N4507</a> (2015-05-05).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span>Merged into C++17.
 </p>
 </td>
@@ -417,7 +270,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ Extensions for Library Fundamentals
 </td>
-<td>Published 2015-09-30, (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65238.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4480">N4480</a> (2015-04-07).<br />
+<td>Published 2015-09-30, (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65238.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4480">N4480</a> (2015-04-07).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span>Merged into C++17 except for invocation traits.
 </p>
 </td>
@@ -428,7 +281,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ Extensions for Concepts
 </td>
-<td>Published 2015-11-13 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/64031.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4553">N4553</a> (2015-10-02). Current draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0734r0">P0734R0</a> (2017-07-14).<br />
+<td>Published 2015-11-13 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/64031.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4553">N4553</a> (2015-10-02). Current draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0734r0">P0734R0</a> (2017-07-14).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span><a href="language/constraints.html" title="cpp/language/constraints">Merged into C++20</a> (with modifications).
 </p>
 </td>
@@ -439,7 +292,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ Extensions for Concurrency
 </td>
-<td>Published 2016-01-19 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65242.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0159r0">P0159R0</a> (2015-10-22).<br />
+<td>Published 2016-01-19 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/65242.html">ISO Store</a>). Final draft: <a rel="nofollow" class="external text" href="https://wg21.link/p0159r0">P0159R0</a> (2015-10-22).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span>Partially merged into C++20.
 </p>
 </td>
@@ -450,7 +303,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>C++ Extensions for Library Fundamentals, Version 2
 </td>
-<td>Published 2017-03-30 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70587.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4617">N4617</a> (2016-11-28).<br />
+<td>Published 2017-03-30 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70587.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4617">N4617</a> (2016-11-28).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span>Partially merged into C++17 and C++20.
 </p>
 </td>
@@ -461,7 +314,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>Ranges TS
 </td>
-<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70910.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4685">N4685</a> (2017-07-31).<br />
+<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/70910.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4685">N4685</a> (2017-07-31).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span><a href="ranges.html" title="cpp/ranges">Merged into C++20</a>.
 </p>
 </td>
@@ -472,7 +325,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>Coroutines TS
 </td>
-<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/73008.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4736">N4736</a> (2018-03-31). Latest draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4775">N4775</a> (2018-10-07).<br />
+<td>Published 2017-12-05 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/73008.html">ISO Store</a>). Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4736">N4736</a> (2018-03-31). Latest draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4775">N4775</a> (2018-10-07).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span><a href="coroutine.html" title="cpp/coroutine">Merged into C++20</a>.
 </p>
 </td>
@@ -487,7 +340,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">See also non-TS proposals</span>
 </th></tr>
 <tr>
@@ -497,7 +350,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> A proposed direction for C++ Standard Networking based on <a rel="nofollow" class="external text" href="https://datatracker.ietf.org/doc/draft-ietf-taps-arch/">IETF TAPS</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3185R0">P3185R0</a> (2024-12-14)
 </li><li> Proposed API for creating TAPS based networking connections - <a rel="nofollow" class="external text" href="https://wg21.link/P3482R0">P3482R0</a> (2024-12-14)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td><a href="experimental/networking.html" title="cpp/experimental/networking">Networking</a>
 </td></tr>
@@ -506,7 +359,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </td>
 <td>Modules TS
 </td>
-<td>Published 2018-05-16 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/71051.html">ISO Store</a>). Final Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4720">N4720</a> (2018-01-29).<br />
+<td>Published 2018-05-16 (<a rel="nofollow" class="external text" href="https://www.iso.org/standard/71051.html">ISO Store</a>). Final Draft: <a rel="nofollow" class="external text" href="https://wg21.link/n4720">N4720</a> (2018-01-29).<br>
 <p><span style="font-size:21px;color:green"><b>✔</b></span><a href="language/modules.html" title="cpp/language/modules">Merged into C++20</a>.
 </p>
 </td>
@@ -574,11 +427,11 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <td><span style="font-size:21px;color:red"><b>×</b></span> Withdrawn. Abandoned draft: <a rel="nofollow" class="external text" href="https://wg21.link/n3820">N3820</a> (2013-10-10).
 </td>
 <td>
-</td></tr></table>
+</td></tr></tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit&amp;section=2" title="Edit section: Non-TS proposals">edit</a>]</span> <span class="mw-headline" id="Non-TS_proposals">Non-TS proposals</span></h4>
 <table class="wikitable">
 
-<tr>
+<tbody><tr>
 <th>Name</th>
 <th>Status</th>
 <th>Links, Headers
@@ -590,7 +443,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -601,7 +454,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Fix C++26 by optimizing <span class="mw-geshi cpp source-cpp"><a href="numeric/linalg/conjugated.html"><span class="kw3547">linalg::<span class="me2">conjugated</span></span></a></span> for non-complex value types - <a rel="nofollow" class="external text" href="https://wg21.link/P3050R3">P3050R3</a> (2024-10-29)
 </li><li> Fix C++26 by making the <a href="https://en.wikipedia.org/wiki/Symmetric_matrix" class="extiw" title="enwiki:Symmetric matrix">symmetric</a> and <a href="https://en.wikipedia.org/wiki/Hermitian_matrix" class="extiw" title="enwiki:Hermitian matrix">Hermitian</a> rank-k and rank-2k updates consistent with the <a href="https://en.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms" class="extiw" title="enwiki:Basic Linear Algebra Subprograms">BLAS</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3371R3">P3371R3</a> (2024-10-29)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td><a href="header/linalg.html" title="cpp/header/linalg"><tt>&lt;linalg&gt;</tt></a>
 </td></tr>
@@ -612,7 +465,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -634,12 +487,12 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span></span> wording fixes - <a rel="nofollow" class="external text" href="https://wg21.link/P3396R1">P3396R1</a> (2024-11-19)
 </li><li> Enabling more efficient stop-token based cancellation of senders - <a rel="nofollow" class="external text" href="https://wg21.link/P3409R1">P3409R1</a> (2024-11-17)
 </li><li> <code>system_scheduler</code> on Win32, Darwin and Linux - <a rel="nofollow" class="external text" href="https://wg21.link/P3456R0">P3456R0</a> (2024-10-15)
-</li><li> Summarizing <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span><span class="sy4">::</span><span class="me2">bulk</span><span class="br0">&#40;</span><span class="br0">&#41;</span></span> issues - <a rel="nofollow" class="external text" href="https://wg21.link/P3481R1">P3481R1</a> (2025-01-13)
+</li><li> Summarizing <span class="mw-geshi cpp source-cpp">std<span class="sy4">::</span><span class="me2">execution</span><span class="sy4">::</span><span class="me2">bulk</span><span class="br0">(</span><span class="br0">)</span></span> issues - <a rel="nofollow" class="external text" href="https://wg21.link/P3481R1">P3481R1</a> (2025-01-13)
 </li><li> High-Quality Sender Diagnostics with Constexpr Exceptions - <a rel="nofollow" class="external text" href="https://wg21.link/P3557R0">P3557R0</a> (2025-01-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
-<td><a href="execution.html" title="cpp/experimental/execution" class="mw-redirect">Execution</a> (experimental),<br /><a href="execution.html" title="cpp/execution">Execution</a>,<br /><a href="header/execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a>
+<td><a href="execution.html" title="cpp/experimental/execution" class="mw-redirect">Execution</a> (experimental),<br><a href="execution.html" title="cpp/execution">Execution</a>,<br><a href="header/execution.html" title="cpp/header/execution"><tt>&lt;execution&gt;</tt></a>
 </td></tr>
 <tr>
 <td><span class="mw-geshi cpp source-cpp"><a href="container/inplace_vector.html"><span class="kw3363">std::<span class="me2">inplace_vector</span></span></a></span>
@@ -648,7 +501,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -657,18 +510,18 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> A direction for Vector - <a rel="nofollow" class="external text" href="https://wg21.link/P3147R1">P3147R1</a> (2024-03-18)
 </li><li> An allocator-aware <span class="t-lc">std::inplace_vector</span> - <a rel="nofollow" class="external text" href="https://wg21.link/P3160R2">P3160R2</a> (2024-10-15)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td><a href="header/inplace_vector.html" title="cpp/header/inplace vector"><tt>&lt;inplace_vector&gt;</tt></a>
 </td></tr>
 <tr id="SIMD_proposals">
-<td><a href="experimental/simd.html" title="cpp/experimental/simd"><code>experimental::simd</code></a><br /><span class="t-lc">std::simd</span>
+<td><a href="experimental/simd.html" title="cpp/experimental/simd"><code>experimental::simd</code></a><br><span class="t-lc">std::simd</span>
 </td>
-<td><span style="font-size:21px;color:green"><b>✔</b></span><a href="header/simd.html" title="cpp/header/simd">Merged into C++26</a>. Proposal: <a rel="nofollow" class="external text" href="https://wg21.link/P1928R15">P1928R15</a> (2024-11-22).<br />The main document (TS ISO/IEC 19570:2018) is described in <a href="#Parallelism_TS_Version_2">"C++ Extensions for Parallelism V2"</a> above.
+<td><span style="font-size:21px;color:green"><b>✔</b></span><a href="header/simd.html" title="cpp/header/simd">Merged into C++26</a>. Proposal: <a rel="nofollow" class="external text" href="https://wg21.link/P1928R15">P1928R15</a> (2024-11-22).<br>The main document (TS ISO/IEC 19570:2018) is described in <a href="#Parallelism_TS_Version_2">"C++ Extensions for Parallelism V2"</a> above.
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -689,7 +542,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Allowing user-defined types in <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P2964R1">P2964R1</a> (2024-05-22)
 </li><li> Interface Directions for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3024R0">P3024R0</a> (2023-11-30)
 </li><li> Provide predefined <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> permute generator functions for common operations - <a rel="nofollow" class="external text" href="https://wg21.link/P3067R0">P3067R0</a> (2024-05-22)
-</li><li> Replace <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> <span class="mw-geshi cpp source-cpp">operator<span class="br0">&#91;</span><span class="br0">&#93;</span></span> with getter and setter functions - or not - <a rel="nofollow" class="external text" href="https://wg21.link/P3275R0">P3275R0</a> (2024-05-22)
+</li><li> Replace <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> <span class="mw-geshi cpp source-cpp">operator<span class="br0">[</span><span class="br0">]</span></span> with getter and setter functions - or not - <a rel="nofollow" class="external text" href="https://wg21.link/P3275R0">P3275R0</a> (2024-05-22)
 </li><li> Exploration of namespaces for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3287R2">P3287R2</a> (2024-11-13)
 </li><li> Range constructors for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3299R3">P3299R3</a> (2024-12-17)
 </li><li> Add an <code>iota</code> object for <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> (and more) - <a rel="nofollow" class="external text" href="https://wg21.link/P3319R2">P3319R2</a> (2024-11-19)
@@ -699,9 +552,9 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Add utilities for easier type-bit casting in <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3445R0">P3445R0</a> (2024-10-16)
 </li><li> <a href="experimental/simd.html" title="cpp/experimental/simd"><code>std::simd</code></a> is a <a href="ranges/range.html" title="cpp/ranges/range"><code>range</code></a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3480R3">P3480R3</a> (2025-01-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
-<td><a href="experimental/simd.html" title="cpp/experimental/simd">Data parallel types</a> (experimental),<br /><a href="numeric/simd.html" title="cpp/numeric/simd">Data parallel types</a>,<br /><a href="header/simd.html" title="cpp/header/simd"><tt>&lt;simd&gt;</tt></a>
+<td><a href="experimental/simd.html" title="cpp/experimental/simd">Data parallel types</a> (experimental),<br><a href="numeric/simd.html" title="cpp/numeric/simd">Data parallel types</a>,<br><a href="header/simd.html" title="cpp/header/simd"><tt>&lt;simd&gt;</tt></a>
 </td></tr>
 <tr>
 <td>Pattern Matching
@@ -710,7 +563,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -727,7 +580,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Pattern Matching: *variant-like* and 'std::expected' - <a rel="nofollow" class="external text" href="https://wg21.link/P3527R1">P3527R1</a> (2025-01-13)
 </li><li> Pattern matching - <a rel="nofollow" class="external text" href="https://wg21.link/P3572R0">P3572R0</a> (2025-01-12)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td>
 </td></tr>
@@ -738,7 +591,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -769,7 +622,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Split define_aggregate from Reflection - <a rel="nofollow" class="external text" href="https://wg21.link/P3569R0">P3569R0</a> (2025-01-11)
 </li><li> Reconsider reflection access for C++26 - <a rel="nofollow" class="external text" href="https://wg21.link/P3587R0">P3587R0</a> (2025-01-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td> <a href="experimental/reflect.html" title="cpp/experimental/reflect">Reflection</a> (experimental)
 </td></tr>
@@ -780,7 +633,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -875,7 +728,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Observed a contract violation? Skip subsequent assertions! - <a rel="nofollow" class="external text" href="https://wg21.link/P3582R0">P3582R0</a> (2025-01-13)
 </li><li> Contracts, Types &amp; Functions - <a rel="nofollow" class="external text" href="https://wg21.link/P3583R0">P3583R0</a> (2025-01-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td>
 </td></tr>
@@ -893,7 +746,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -903,7 +756,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> Graph Library: Graph Container Interface - <a rel="nofollow" class="external text" href="https://wg21.link/P3130R2">P3130R2</a> (2024-08-05)
 </li><li> Graph Library: Graph Containers - <a rel="nofollow" class="external text" href="https://wg21.link/P3131R2">P3131R2</a> (2024-08-05)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td>
 </td></tr>
@@ -914,7 +767,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -922,7 +775,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <ul><li> Basic Statistics - <a rel="nofollow" class="external text" href="https://wg21.link/P1708R9">P1708R9</a> (2024-10-15)
 </li><li> Remarks on Basic Statistics, <a rel="nofollow" class="external text" href="https://wg21.link/P1708R9">P1708R9</a> - <a rel="nofollow" class="external text" href="https://wg21.link/P3495R0">P3495R0</a> (2024-11-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td>
 </td></tr>
@@ -933,7 +786,7 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">More proposals:</span>
 </th></tr>
 <tr>
@@ -949,29 +802,29 @@ May be superseded by a future TS or merged into a future revision of C++ (most r
 </li><li> The Plethora of Problems With Profiles - <a rel="nofollow" class="external text" href="https://wg21.link/P3586R0">P3586R0</a> (2025-01-13)
 </li><li> C++ Profiles: The Framework - <a rel="nofollow" class="external text" href="https://wg21.link/P3589R0">P3589R0</a> (2025-01-13)
 </li></ul>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 </td>
 <td>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit&amp;section=3" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/c/experimental" title="c/experimental">C documentation</a></span> for <span class=""><span>Experimental C features</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h3>
 <table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
 
-<tr style="vertical-align:top;">
-<td>1.&#160;</td>
+<tbody><tr style="vertical-align:top;">
+<td>1.&nbsp;</td>
 <td><a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/sd-1.htm">PL22.16/WG21 document list</a> - All C++ committee documents (TS/proposals) for 2016-2025.
 </td></tr>
 <tr style="vertical-align:top;">
-<td>2.&#160;</td>
+<td>2.&nbsp;</td>
 <td><a rel="nofollow" class="external text" href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/">JTC1/SC22/WG21 Proposals (mailing) for 2025</a>.
-</td></tr></table>
+</td></tr></tbody></table>
 
 <!-- 
 NewPP limit report
@@ -990,7 +843,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=179779">https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=179779</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -1000,39 +853,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/experimental" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/experimental" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;oldid=179779" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/experimental&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/experimental" title="cpp/experimental" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/experimental" title="cpp/experimental" lang="es" hreflang="es">Español</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/experimental" title="cpp/experimental" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/experimental" title="cpp/experimental" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/experimental" title="cpp/experimental" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 January 2025, at 17:14.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1043,8 +864,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 0.030 secs. -->
-	</body>
-<!-- Cached 20250121012521 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/experimental by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:04:24 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250121012521 --><!-- Mirrored from en.cppreference.com/w/cpp/experimental by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:04:24 GMT --></html>

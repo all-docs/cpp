@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/language/switch by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:07 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/language/switch by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:07 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>switch statement - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>switch statement</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/switch","wgTitle":"cpp/language/switch","wgCurRevisionId":178554,"wgArticleId":713,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/switch","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -109,93 +97,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_language_switch skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Flanguage%2Fswitch&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Flanguage%2Fswitch" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="switch.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:cpp/language/switch"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="switch.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -282,247 +184,16 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../language.html" title="cpp/language">language</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ language</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5">General topics</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../preprocessor.html" title="cpp/preprocessor">Preprocessor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../comment.html" title="cpp/comment">Comments</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../keyword.html" title="cpp/keyword">Keywords</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="statements.html" title="cpp/language/statements">Flow control</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Conditional execution statements</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="if.html" title="cpp/language/if"><tt>if</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><strong class="selflink"><tt>switch</tt></strong></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Iteration statements (loops)</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="for.html" title="cpp/language/for"><tt>for</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="range-for.html" title="cpp/language/range-for">range-<code>for</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="while.html" title="cpp/language/while"><tt>while</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="do.html" title="cpp/language/do"><code>do-while</code></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Jump statements</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="continue.html" title="cpp/language/continue"><tt>continue</tt></a> - <a href="break.html" title="cpp/language/break"><tt>break</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="goto.html" title="cpp/language/goto"><tt>goto</tt></a> - <a href="return.html" title="cpp/language/return"><tt>return</tt></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="functions.html" title="cpp/language/functions">Functions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda function expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="inline.html" title="cpp/language/inline"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span></span> specifier</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="except_spec.html" title="cpp/language/except spec">Dynamic exception specifications</a> <span class="t-mark">(<span title="deprecated in C++11">until C++17*</span>)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Exceptions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span>-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="catch.html" title="cpp/language/catch">handler</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Namespaces</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="namespace.html" title="cpp/language/namespace">Namespace declaration</a><code>&#160;&#160;</code></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="namespace_alias.html" title="cpp/language/namespace alias">Namespace aliases</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="types.html" title="cpp/language/types">Fundamental types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="enum.html" title="cpp/language/enum">Enumeration types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function types</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class/struct types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="union.html" title="cpp/language/union">Union types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Specifiers</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="decltype.html" title="cpp/language/decltype"><tt>decltype</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="auto.html" title="cpp/language/auto"><tt>auto</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="constexpr.html" title="cpp/language/constexpr"><tt>constexpr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="consteval.html" title="cpp/language/consteval"><tt>consteval</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-</table></div></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="storage_duration.html" title="cpp/language/storage duration">Storage duration specifiers</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="initialization.html" title="cpp/language/initialization">Initialization</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="default_initialization.html" title="cpp/language/default initialization">Default-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="value_initialization.html" title="cpp/language/value initialization">Value-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="zero_initialization.html" title="cpp/language/zero initialization">Zero-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="copy_initialization.html" title="cpp/language/copy initialization">Copy-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="direct_initialization.html" title="cpp/language/direct initialization">Direct-initialization</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">Aggregate initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="list_initialization.html" title="cpp/language/list initialization">List-initialization</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>&#160;&#160;</code></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constant_initialization.html" title="cpp/language/constant initialization">Constant initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="reference_initialization.html" title="cpp/language/reference initialization">Reference initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-</table></div>
-</div>
-<div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"><a href="expressions.html" title="cpp/language/expressions">Expressions</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#Literals" title="cpp/language/expressions">Literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean</a> - <a href="integer_literal.html" title="cpp/language/integer literal">Integer</a> - <a href="floating_literal.html" title="cpp/language/floating literal">Floating-point</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character</a> - <a href="string_literal.html" title="cpp/language/string literal">String</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Utilities</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="typedef.html" title="cpp/language/typedef"><code>typedef</code> declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="type_alias.html" title="cpp/language/type alias">Type alias declaration</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Casts</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="implicit_conversion.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><tt>static_cast</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><tt>reinterpret_cast</tt></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Memory allocation</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code> expression</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code> expression</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="classes.html" title="cpp/language/classes">Classes</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constructor.html" title="cpp/language/constructor">Constructors</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="this.html" title="cpp/language/this"><code>this</code> pointer</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="access.html" title="cpp/language/access">Access specifiers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="friend.html" title="cpp/language/friend"><span class="mw-geshi cpp source-cpp"><span class="kw1">friend</span></span> specifier</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Class-specific function properties</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="virtual.html" title="cpp/language/virtual">Virtual function</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="override.html" title="cpp/language/override"><span class="mw-geshi cpp source-cpp">override</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>&#160;&#160;</code></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="final.html" title="cpp/language/final"><span class="mw-geshi cpp source-cpp">final</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="explicit.html" title="cpp/language/explicit"><tt>explicit</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="static.html" title="cpp/language/static"><tt>static</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Special member functions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="default_constructor.html" title="cpp/language/default constructor">Default constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="move_constructor.html" title="cpp/language/move constructor">Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="copy_assignment.html" title="cpp/language/as operator" class="mw-redirect">Copy assignment</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="move_assignment.html" title="cpp/language/move operator" class="mw-redirect">Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="destructor.html" title="cpp/language/destructor">Destructor</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="templates.html" title="cpp/language/templates">Templates</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">Class template</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">Function template</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">Template specialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="pack.html" title="cpp/language/pack">Parameter packs</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Miscellaneous</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="asm.html" title="cpp/language/asm">Inline assembly</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="history.html" title="cpp/language/history">History of C++</a></td></tr>
-</table></div></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/language/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="statements.html" title="cpp/language/statements"> Statements</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Labeled_statements" title="cpp/language/statements">Labels</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="statements.html#Labeled_statements" title="cpp/language/statements"><span class="t-spar">label</span> : <span class="t-spar">statement</span></a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Expression_statements" title="cpp/language/statements">Expression statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="statements.html#Expression_statements" title="cpp/language/statements"><span class="t-spar">expression</span> ; </a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Compound_statements" title="cpp/language/statements">Compound statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="statements.html#Compound_statements" title="cpp/language/statements"><code>{</code> <span class="t-spar">statement</span>... <code>}</code></a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Selection_statements" title="cpp/language/statements">Selection statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="if.html" title="cpp/language/if"><tt>if</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><strong class="selflink"><tt>switch</tt></strong></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Iteration_statements" title="cpp/language/statements">Iteration statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="while.html" title="cpp/language/while"><tt>while</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="do.html" title="cpp/language/do"><tt>do while</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="for.html" title="cpp/language/for"><tt>for</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="range-for.html" title="cpp/language/range-for">range <span class="mw-geshi cpp source-cpp"><span class="kw1">for</span></span></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Jump_statements" title="cpp/language/statements">Jump statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="break.html" title="cpp/language/break"><tt>break</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="continue.html" title="cpp/language/continue"><tt>continue</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="return.html" title="cpp/language/return"><tt>return</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="goto.html" title="cpp/language/goto"><tt>goto</tt></a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Declaration_statements" title="cpp/language/statements">Declaration statements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="declarations.html" title="cpp/language/declarations"><span class="t-spar">declaration</span> ; </a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="statements.html#Try_blocks" title="cpp/language/statements">Try blocks</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="transactional_memory.html" title="cpp/language/transactional memory">Transactional memory</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="transactional_memory.html#Synchronized_blocks" title="cpp/language/transactional memory"><code>synchronized</code></a>, <a href="transactional_memory.html#Atomic_blocks" title="cpp/language/transactional memory"><code>atomic_commit</code></a>, etc <span class="t-mark-rev t-since-tm-ts t-mark-ts">(TM TS)</span></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/language/statements/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>Transfers control to one of several statements, depending on the value of a condition.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Syntax"><span class="tocnumber">1</span> <span class="toctext">Syntax</span></a></li>
 <li class="toclevel-1"><a href="#Condition"><span class="tocnumber">2</span> <span class="toctext">Condition</span></a>
@@ -547,15 +218,15 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-10"><a href="#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
 <li class="toclevel-1 tocsection-11"><a href="#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=1" title="Edit section: Syntax">edit</a>]</span> <span class="mw-headline" id="Syntax">Syntax</span></h3>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <span class="t-spar">attr</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">init-statement</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span>
+<td class="t-sdsc-nopad"> <span class="t-spar">attr</span> ﻿<span class="t-mark">(optional)</span> <code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">init-statement</span> ﻿<span class="t-mark">(optional)</span> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span>
 </td>
 <td class="t-sdsc-nopad">
 </td>
@@ -566,11 +237,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <table class="t-par-begin">
 
 
-<tr class="t-par">
+<tbody><tr class="t-par">
 <td> <span class="t-spar">attr</span>
 </td>
 <td> -
@@ -587,12 +258,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 </li><li> a <a href="declarations.html#Simple_declaration" title="cpp/language/declarations">simple declaration</a>, typically a declaration of a variable with initializer, but it may declare arbitrarily many variables or <a href="structured_binding.html" title="cpp/language/structured binding">structured bindings</a>
 </li></ul>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx23"><td>
+<tbody><tr class="t-rev t-since-cxx23"><td>
 <ul><li> an <a href="type_alias.html" title="cpp/language/type alias">alias declaration</a>
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx23">(since C++23)</span></td></tr>
-</table>
+</tbody></table>
 <p>Note that any <span class="t-spar">init-statement</span> must end with a semicolon. This is why it is often described informally as an expression or a declaration followed by a semicolon.
 </p>
 </td></tr>
@@ -609,17 +280,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> -
 </td>
 <td> a statement (typically a compound statement)
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/language/condition&amp;action=edit&amp;section=T-1" title="Template:cpp/language/condition">edit</a>]</span> <span class="mw-headline" id="Condition">Condition</span></h3>
 <p>A <span class="t-spar">condition</span> can either be an <a href="expressions.html" title="cpp/language/expressions">expression</a> or a <a href="declarations.html#Simple_declaration" title="cpp/language/declarations">simple declaration</a>.
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx26"><td>
+<tbody><tr class="t-rev t-since-cxx26"><td>
 <ul><li> If it can be syntactically resolved as a <a href="structured_binding.html" title="cpp/language/structured binding">structured binding</a> declaration, it is interpreted as a structured binding declaration.
 </li></ul>
 </td>
 <td><span class="t-mark-rev t-since-cxx26">(since C++26)</span></td></tr>
-</table>
+</tbody></table>
 <ul><li> If it can be syntactically resolved as an expression, it is treated as an expression. Otherwise, it is treated as a declaration<span class="t-rev-inl t-since-cxx26"><span> that is not a structured binding declaration</span><span><span class="t-mark-rev t-since-cxx26">(since C++26)</span></span></span>.
 </li></ul>
 <p>When control reaches condition, the condition will yield a value, which is used to determine which label the control will go to.
@@ -636,7 +307,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <ul><li> Syntactically conforms to the following form:
 </li></ul>
 <table class="t-rev-begin">
-<tr class="t-rev t-until-cxx11"><td>
+<tbody><tr class="t-rev t-until-cxx11"><td>
 <dl><dd><ul><li> <span class="t-spar">type-specifier-seq</span> <span class="t-spar">declarator</span> <code><b>=</b></code> <span class="t-spar">assignment-expression</span>
 </li></ul>
 </dd></dl>
@@ -648,14 +319,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </dd></dl>
 </td>
 <td><span class="t-mark-rev t-since-cxx11">(since C++11)</span></td></tr>
-</table>
+</tbody></table>
 <ul><li> The declarator cannot specify a <a href="function.html" title="cpp/language/function">function</a> or an <a href="array.html" title="cpp/language/array">array</a>.
 </li><li> The <span class="t-rev-inl t-until-cxx11"><span><a href="declarations.html#Specifiers" title="cpp/language/declarations">type specifier sequence</a></span><span><span class="t-mark-rev t-until-cxx11">(until C++11)</span></span></span><span class="t-rev-inl t-since-cxx11"><span><a href="declarations.html#Specifiers" title="cpp/language/declarations">declaration specifier sequence</a> can only contain type specifiers and <span class="mw-geshi cpp source-cpp"><span class="kw4">constexpr</span></span>, and it</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> cannot define a <a href="class.html" title="cpp/language/class">class</a> or <a href="enum.html" title="cpp/language/enum">enumeration</a>.
 </li></ul>
 <p>The decision variable of the declaration is the declared variable.
 </p>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx26"><td>
+<tbody><tr class="t-rev t-since-cxx26"><td>
 <h5> <span class="mw-headline" id="Structured_binding_declaration">Structured binding declaration</span></h5>
 <p>The declaration has the following restrictions:
 </p>
@@ -666,7 +337,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx26">(since C++26)</span></td></tr>
-</table>
+</tbody></table>
 <h4><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=2" title="Edit section: Type">edit</a>]</span> <span class="mw-headline" id="Type">Type</span></h4>
 <p><span class="t-spar">condition</span> can only yield the following types:
 </p>
@@ -682,11 +353,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 </p>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">attr</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <code><b>case</b></code> <span class="t-spar">constant-expression</span> <code><b>:</b></code>
+<td> <span class="t-spar">attr</span> ﻿<span class="t-mark">(optional)</span> <code><b>case</b></code> <span class="t-spar">constant-expression</span> <code><b>:</b></code>
 </td>
 <td> (1)
 </td>
@@ -699,7 +370,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td> <span class="t-spar">attr</span>&#x200a;&#xfeff;<span class="t-mark">(optional)</span> <code><b>default:</b></code>
+<td> <span class="t-spar">attr</span> ﻿<span class="t-mark">(optional)</span> <code><b>default:</b></code>
 </td>
 <td> (2)
 </td>
@@ -710,11 +381,11 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <table class="t-par-begin">
 
 
-<tr class="t-par">
+<tbody><tr class="t-par">
 <td> <span class="t-spar">attr</span>
 </td>
 <td> -
@@ -727,12 +398,12 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> -
 </td>
 <td> a <a href="constant_expression.html#Converted_constant_expression" title="cpp/language/constant expression">converted constant expression</a> of the adjusted type of the <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> condition
-</td></tr></table>
-<p><br />
+</td></tr></tbody></table>
+<p><br>
 A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or <span class="mw-geshi cpp source-cpp"><span class="kw1">default</span></span> label is associated with the innermost <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement enclosing it.
 </p><p>If any of the following conditions is satisfied, the program is ill-formed:
 </p>
-<ul><li> A <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement is associated with multiple <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> labels whose <span class="t-spar">constant-expression</span>&#x200a;&#xfeff;s have the same value after conversions.
+<ul><li> A <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement is associated with multiple <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> labels whose <span class="t-spar">constant-expression</span> ﻿s have the same value after conversions.
 </li><li> A <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement is associated with multiple <span class="mw-geshi cpp source-cpp"><span class="kw1">default</span></span> labels.
 </li></ul>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=4" title="Edit section: Control flow transfer">edit</a>]</span> <span class="mw-headline" id="Control_flow_transfer">Control flow transfer</span></h3>
@@ -745,24 +416,24 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
 <p><span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw1">default</span></span> labels in themselves do not alter the flow of control. To exit from a <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement from the middle, see <a href="break.html" title="cpp/language/break"><span class="mw-geshi cpp source-cpp"><span class="kw1">break</span></span> statements</a>.
 </p><p>Compilers may issue warnings on fallthrough (reaching the next <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or <span class="mw-geshi cpp source-cpp"><span class="kw1">default</span></span> label without a <span class="mw-geshi cpp source-cpp"><span class="kw1">break</span></span>)<span class="t-rev-inl t-since-cxx17"><span> unless the attribute <code>[[<a href="attributes/fallthrough.html" title="cpp/language/attributes/fallthrough">fallthrough</a>]]</code> appears immediately before the <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> label to indicate that the fallthrough is intentional</span><span><span class="t-mark-rev t-since-cxx17">(since C++17)</span></span></span>.
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints &quot;1&quot;,</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1",</span>
     <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span> <span class="co1">// then prints &quot;2&quot;</span>
-<span class="br0">&#125;</span></pre></div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span> <span class="co1">// then prints "2"</span>
+<span class="br0">}</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints &quot;1&quot;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span> <span class="co1">// prints "1"</span>
         <span class="kw1">break</span><span class="sy4">;</span>            <span class="co1">// and exits the switch</span>
     <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>
         <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span>
         <span class="kw1">break</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx17"><td>
+<tbody><tr class="t-rev t-since-cxx17"><td>
 <p><span id="switch_statements_with_initializer"></span>
 </p>
 <h3> <span class="mw-headline" id="switch_statements_with_initializer"><span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statements with initializer</span></h3>
@@ -770,13 +441,13 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
 </p>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
-<td class="t-sdsc-nopad"> <code><b>{</b></code><br />
-<dl><dd><span class="t-spar">init-statement</span><br />
-</dd><dd><code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span><br />
+<td class="t-sdsc-nopad"> <code><b>{</b></code><br>
+<dl><dd><span class="t-spar">init-statement</span><br>
+</dd><dd><code><b>switch</b></code> <code><b>(</b></code> <span class="t-spar">condition</span> <code><b>)</b></code> <span class="t-spar">statement</span><br>
 </dd></dl>
 <p><code></code>}
 </p>
@@ -790,17 +461,17 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <p>Except that names declared by the <span class="t-spar">init-statement</span> (if <span class="t-spar">init-statement</span> is a declaration) and names declared by <span class="t-spar">condition</span> (if <span class="t-spar">condition</span> is a declaration) are in the same scope, which is also the scope of <span class="t-spar">statement</span>.
 </p>
 </td>
 <td><span class="t-mark-rev t-since-cxx17">(since C++17)</span></td></tr>
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=6" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>Because transfer of control is <a href="goto.html" title="cpp/language/goto">not permitted to enter the scope</a> of a variable, if a declaration statement is encountered inside the <span class="t-spar">statement</span>, it has to be scoped in its own compound statement:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
         <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span> <span class="co1">// initialization</span>
         <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
@@ -808,21 +479,21 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
     <span class="kw1">default</span><span class="sy4">:</span>
         <span class="co1">// compilation error: jump to default:</span>
         <span class="co1">// would enter the scope of 'x' without initializing it</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;default<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span>
         <span class="kw1">break</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">&#40;</span><span class="nu0">1</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+<span class="br0">}</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
-        <span class="br0">&#123;</span>
+        <span class="br0">{</span>
             <span class="kw4">int</span> x <span class="sy1">=</span> <span class="nu0">0</span><span class="sy4">;</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> x <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>
-        <span class="br0">&#125;</span> <span class="co1">// scope of 'x' ends here</span>
+        <span class="br0">}</span> <span class="co1">// scope of 'x' ends here</span>
     <span class="kw1">default</span><span class="sy4">:</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;default<span class="es1">\n</span>&quot;</span><span class="sy4">;</span> <span class="co1">// no error</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"default<span class="es1">\n</span>"</span><span class="sy4">;</span> <span class="co1">// no error</span>
         <span class="kw1">break</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=7" title="Edit section: Keywords">edit</a>]</span> <span class="mw-headline" id="Keywords">Keywords</span></h3>
 <p><a href="../keyword/switch.html" title="cpp/keyword/switch"><tt>switch</tt></a>,
 <a href="../keyword/case.html" title="cpp/keyword/case"><tt>case</tt></a>,
@@ -831,76 +502,76 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=8" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
 <div class="t-example"><p>The following code shows several usage cases of the <span class="mw-geshi cpp source-cpp"><span class="kw1">switch</span></span> statement:</p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;iostream&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="kw4">const</span> <span class="kw4">int</span> i <span class="sy1">=</span> <span class="nu0">2</span><span class="sy4">;</span>
-    <span class="kw1">switch</span> <span class="br0">&#40;</span>i<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'1'</span><span class="sy4">;</span>
         <span class="kw1">case</span> <span class="nu0">2</span><span class="sy4">:</span>              <span class="co1">// execution starts at this case label</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'2'</span><span class="sy4">;</span>
         <span class="kw1">case</span> <span class="nu0">3</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'3'</span><span class="sy4">;</span>
-            <span class="br0">&#91;</span><span class="br0">&#91;</span>fallthrough<span class="br0">&#93;</span><span class="br0">&#93;</span><span class="sy4">;</span> <span class="co1">// C++17 attribute to silent the warning on fallthrough</span>
+            <span class="br0">[</span><span class="br0">[</span>fallthrough<span class="br0">]</span><span class="br0">]</span><span class="sy4">;</span> <span class="co1">// C++17 attribute to silent the warning on fallthrough</span>
         <span class="kw1">case</span> <span class="nu0">5</span><span class="sy4">:</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;45&quot;</span><span class="sy4">;</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"45"</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>           <span class="co1">// execution of subsequent statements is terminated</span>
         <span class="kw1">case</span> <span class="nu0">6</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'6'</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+&nbsp;
     <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-&#160;
-    <span class="kw1">switch</span> <span class="br0">&#40;</span>i<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+&nbsp;
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'a'</span><span class="sy4">;</span>
         <span class="kw1">default</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'d'</span><span class="sy4">;</span> <span class="co1">// there are no applicable constant expressions </span>
                               <span class="co1">// therefore default is executed</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+&nbsp;
     <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-&#160;
-    <span class="kw1">switch</span> <span class="br0">&#40;</span>i<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+&nbsp;
+    <span class="kw1">switch</span> <span class="br0">(</span>i<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> <span class="nu0">4</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">'a'</span><span class="sy4">;</span> <span class="co1">// nothing is executed</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+&nbsp;
     <span class="co1">// when enumerations are used in a switch statement, many compilers</span>
     <span class="co1">// issue warnings if one of the enumerators is not handled</span>
-    <span class="kw2">enum</span> color <span class="br0">&#123;</span> RED, GREEN, BLUE <span class="br0">&#125;</span><span class="sy4">;</span>
-    <span class="kw1">switch</span> <span class="br0">&#40;</span>RED<span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+    <span class="kw2">enum</span> color <span class="br0">{</span> RED, GREEN, BLUE <span class="br0">}</span><span class="sy4">;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span>RED<span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> RED<span class="sy4">:</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;red<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"red<span class="es1">\n</span>"</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>
         <span class="kw1">case</span> GREEN<span class="sy4">:</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;green<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"green<span class="es1">\n</span>"</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>
         <span class="kw1">case</span> BLUE<span class="sy4">:</span>
-            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;blue<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
+            <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"blue<span class="es1">\n</span>"</span><span class="sy4">;</span>
             <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+&nbsp;
     <span class="co1">// the C++17 init-statement syntax can be helpful when there is</span>
     <span class="co1">// no implicit conversion to integral or enumeration type</span>
     <span class="kw1">struct</span> Device
-    <span class="br0">&#123;</span>
-        <span class="kw2">enum</span> State <span class="br0">&#123;</span> SLEEP, READY, BAD <span class="br0">&#125;</span><span class="sy4">;</span>
-        <span class="kw4">auto</span> state<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span> <span class="kw1">return</span> m_state<span class="sy4">;</span> <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">{</span>
+        <span class="kw2">enum</span> State <span class="br0">{</span> SLEEP, READY, BAD <span class="br0">}</span><span class="sy4">;</span>
+        <span class="kw4">auto</span> state<span class="br0">(</span><span class="br0">)</span> <span class="kw4">const</span> <span class="br0">{</span> <span class="kw1">return</span> m_state<span class="sy4">;</span> <span class="br0">}</span>
+&nbsp;
         <span class="coMULTI">/* ... */</span>
-&#160;
+&nbsp;
     <span class="kw1">private</span><span class="sy4">:</span>
-        State m_state<span class="br0">&#123;</span><span class="br0">&#125;</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span><span class="sy4">;</span>
-&#160;
-    <span class="kw1">switch</span> <span class="br0">&#40;</span><span class="kw4">auto</span> dev <span class="sy1">=</span> Device<span class="br0">&#123;</span><span class="br0">&#125;</span><span class="sy4">;</span> dev.<span class="me1">state</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span>
-    <span class="br0">&#123;</span>
+        State m_state<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+    <span class="br0">}</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">switch</span> <span class="br0">(</span><span class="kw4">auto</span> dev <span class="sy1">=</span> Device<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> dev.<span class="me1">state</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">{</span>
         <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">SLEEP</span><span class="sy4">:</span>
             <span class="coMULTI">/* ... */</span>
             <span class="kw1">break</span><span class="sy4">;</span>
@@ -910,20 +581,20 @@ A <span class="mw-geshi cpp source-cpp"><span class="kw1">case</span></span> or 
         <span class="kw1">case</span> Device<span class="sy4">::</span><span class="me2">BAD</span><span class="sy4">:</span>
             <span class="coMULTI">/* ... */</span>
             <span class="kw1">break</span><span class="sy4">;</span>
-    <span class="br0">&#125;</span>
-&#160;
+    <span class="br0">}</span>
+&nbsp;
     <span class="co1">// pathological examples</span>
-&#160;
+&nbsp;
     <span class="co1">// the statement does not have to be a compound statement</span>
-    <span class="kw1">switch</span> <span class="br0">&#40;</span><span class="nu0">0</span><span class="br0">&#41;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;this does nothing<span class="es1">\n</span>&quot;</span><span class="sy4">;</span>
-&#160;
+    <span class="kw1">switch</span> <span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"this does nothing<span class="es1">\n</span>"</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// labels do not require a compound statement either</span>
-    <span class="kw1">switch</span> <span class="br0">&#40;</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="br0">&#41;</span>
+    <span class="kw1">switch</span> <span class="br0">(</span><span class="kw4">int</span> n <span class="sy1">=</span> <span class="nu0">1</span><span class="br0">)</span>
         <span class="kw1">case</span> <span class="nu0">0</span><span class="sy4">:</span>
         <span class="kw1">case</span> <span class="nu0">1</span><span class="sy4">:</span>
             <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> n <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">2345
@@ -935,7 +606,7 @@ red
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
-<tr>
+<tbody><tr>
 <th>DR
 </th>
 <th>Applied to
@@ -949,9 +620,9 @@ red
 </td>
 <td>C++98
 </td>
-<td><span class="t-spar">condition</span>&#x200a;&#xfeff;s of types that are not subject to<br />integral promotion could not be promoted
+<td><span class="t-spar">condition</span> ﻿s of types that are not subject to<br>integral promotion could not be promoted
 </td>
-<td>do not promote<br /><span class="t-spar">condition</span>&#x200a;&#xfeff;s of these types
+<td>do not promote<br><span class="t-spar">condition</span> ﻿s of these types
 </td></tr>
 <tr>
 <td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/2629.html">CWG 2629</a>
@@ -961,26 +632,26 @@ red
 <td><span class="t-spar">condition</span> could be a declaration of a floating-point variable
 </td>
 <td>prohibited
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/c/language/switch" title="c/language/switch">C documentation</a></span> for <span class="t-dsc-see-tt"><span>switch</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a>]</span> <span class="mw-headline" id="External_links">External links</span></h3>
 <table style="border-top:solid 1px;border-bottom:none;border-left:none;border-right:none;">
 
-<tr style="vertical-align:top;">
-<td>1.&#160;</td>
+<tbody><tr style="vertical-align:top;">
+<td>1.&nbsp;</td>
 <td><a href="https://en.wikipedia.org/wiki/Duff%27s_device" class="extiw" title="enwiki:Duff's device">Loop unrolling using Duff's Device</a>
 </td></tr>
 <tr style="vertical-align:top;">
-<td>2.&#160;</td>
+<td>2.&nbsp;</td>
 <td><a href="https://en.wikipedia.org/wiki/Coroutine#C" class="extiw" title="enwiki:Coroutine">Duff's device can be used to implement coroutines in C/C++</a>
-</td></tr></table>
+</td></tr></tbody></table>
 
 <!-- 
 NewPP limit report
@@ -999,7 +670,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=178554">https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=178554</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -1009,39 +680,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/language/switch" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/language/switch" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;oldid=178554" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/switch&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-ar"><a href="http://ar.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="ar" hreflang="ar">العربية</a></li><li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/language/switch" title="cpp/language/switch" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 20 December 2024, at 13:13.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -1052,8 +691,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 5.028 secs. -->
-	</body>
-<!-- Cached 20250108211401 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/language/switch by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:07 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250108211401 --><!-- Mirrored from en.cppreference.com/w/cpp/language/switch by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:07 GMT --></html>

@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/container/flat_multimap/replace by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:39:43 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/container/flat_multimap/replace by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:39:43 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>std::flat_multimap&lt;Key,T,Compare,KeyContainer,MappedContainer>::replace - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>std::flat_multimap&lt;Key,T,Compare,KeyContainer,MappedContainer&gt;::replace</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/container/flat_multimap/replace","wgTitle":"cpp/container/flat multimap/replace","wgCurRevisionId":169484,"wgArticleId":22552,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/container/flat_multimap/replace","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -109,93 +97,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_container_flat_multimap_replace skin-cppreference2 action-view cpp-page-template cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fcontainer%2Fflat+multimap%2Freplace&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fcontainer%2Fflat+multimap%2Freplace" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="replace.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/container/flat_multimap/replace&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="replace.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -282,149 +184,21 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../../container.html" title="cpp/container">container</a>&lrm; | <a href="../flat_multimap.html" title="cpp/container/flat multimap">flat multimap</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
                     <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-page-template" style="">
 <p>
 </p>
-<span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/replace_ad&amp;action=edit">&#91;edit template&#93;</a></span></div>
-<div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../container.html" title="cpp/container">Containers library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Sequence_containers" title="cpp/container">Sequence</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../array.html" title="cpp/container/array"><span class="t-lines"><span>array</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector.html" title="cpp/container/vector"><span class="t-lines"><span>vector</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../vector_bool.html" title="cpp/container/vector bool"><span class="t-lines"><span>vector<span class="t-dsc-small">&lt;bool&gt;</span></span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../inplace_vector.html" title="cpp/container/inplace vector"><span class="t-lines"><span>inplace_vector</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx26">(C++26)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../deque.html" title="cpp/container/deque"><span class="t-lines"><span>deque</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../forward_list.html" title="cpp/container/forward list"><span class="t-lines"><span>forward_list</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../list.html" title="cpp/container/list"><span class="t-lines"><span>list</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Associative_containers" title="cpp/container">Associative</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../set.html" title="cpp/container/set"><span class="t-lines"><span>set</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multiset.html" title="cpp/container/multiset"><span class="t-lines"><span>multiset</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../map.html" title="cpp/container/map"><span class="t-lines"><span>map</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../multimap.html" title="cpp/container/multimap"><span class="t-lines"><span>multimap</span></span></a></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Unordered_associative_containers_.28since_C.2B.2B11.29" title="cpp/container">Unordered associative</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_set.html" title="cpp/container/unordered set"><span class="t-lines"><span>unordered_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multiset.html" title="cpp/container/unordered multiset"><span class="t-lines"><span>unordered_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_map.html" title="cpp/container/unordered map"><span class="t-lines"><span>unordered_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../unordered_multimap.html" title="cpp/container/unordered multimap"><span class="t-lines"><span>unordered_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Container_adaptors" title="cpp/container">Adaptors</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../stack.html" title="cpp/container/stack"><span class="t-lines"><span>stack</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../queue.html" title="cpp/container/queue"><span class="t-lines"><span>queue</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../priority_queue.html" title="cpp/container/priority queue"><span class="t-lines"><span>priority_queue</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_set.html" title="cpp/container/flat set"><span class="t-lines"><span>flat_set</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multiset.html" title="cpp/container/flat multiset"><span class="t-lines"><span>flat_multiset</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_map.html" title="cpp/container/flat map"><span class="t-lines"><span>flat_map</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../flat_multimap.html" title="cpp/container/flat multimap"><span class="t-lines"><span>flat_multimap</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../../container.html#Views" title="cpp/container">Views</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../span.html" title="cpp/container/span"><span class="t-lines"><span>span</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../mdspan.html" title="cpp/container/mdspan"><span class="t-lines"><span>mdspan</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx23">(C++23)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Tables</td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Iterator_invalidation" title="cpp/container">Iterator invalidation</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Member_function_table" title="cpp/container">Member function table</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../../container.html#Non-member_function_table" title="cpp/container">Non-member function table</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../flat_multimap.html" title="cpp/container/flat multimap"><tt>std::flat_multimap</tt></a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"><a href="../flat_multimap.html#Member_types" title="cpp/container/flat multimap">Member types</a></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../flat_multimap.html#Member_functions" title="cpp/container/flat multimap">Member functions</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="flat_multimap.html" title="cpp/container/flat multimap/flat multimap"><span class="t-lines"><span>flat_multimap::flat_multimap</span></span></a></div><div><span class="t-lines"><span><code>&#160;&#160;</code></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator%3d.html" title="cpp/container/flat multimap/operator="><span class="t-lines"><span>flat_multimap::operator=</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../flat_multimap.html#Modifiers" title="cpp/container/flat multimap">Modifiers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="clear.html" title="cpp/container/flat multimap/clear"><span class="t-lines"><span>flat_multimap::clear</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase.html" title="cpp/container/flat multimap/erase"><span class="t-lines"><span>flat_multimap::erase</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap.html" title="cpp/container/flat multimap/swap"><span class="t-lines"><span>flat_multimap::swap</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="extract.html" title="cpp/container/flat multimap/extract"><span class="t-lines"><span>flat_multimap::extract</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>flat_multimap::replace</span></span></strong></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert.html" title="cpp/container/flat multimap/insert"><span class="t-lines"><span>flat_multimap::insert</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="insert_range.html" title="cpp/container/flat multimap/insert range"><span class="t-lines"><span>flat_multimap::insert_range</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace.html" title="cpp/container/flat multimap/emplace"><span class="t-lines"><span>flat_multimap::emplace</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="emplace_hint.html" title="cpp/container/flat multimap/emplace hint"><span class="t-lines"><span>flat_multimap::emplace_hint</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../flat_multimap.html#Lookup" title="cpp/container/flat multimap">Lookup</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="count.html" title="cpp/container/flat multimap/count"><span class="t-lines"><span>flat_multimap::count</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="find.html" title="cpp/container/flat multimap/find"><span class="t-lines"><span>flat_multimap::find</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="contains.html" title="cpp/container/flat multimap/contains"><span class="t-lines"><span>flat_multimap::contains</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equal_range.html" title="cpp/container/flat multimap/equal range"><span class="t-lines"><span>flat_multimap::equal_range</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="lower_bound.html" title="cpp/container/flat multimap/lower bound"><span class="t-lines"><span>flat_multimap::lower_bound</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="upper_bound.html" title="cpp/container/flat multimap/upper bound"><span class="t-lines"><span>flat_multimap::upper_bound</span></span></a></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"><a href="../flat_multimap.html#Iterators" title="cpp/container/flat multimap">Iterators</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="begin.html" title="cpp/container/flat multimap/begin"><span class="t-lines"><span>flat_multimap::begin</span><span>flat_multimap::cbegin</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="end.html" title="cpp/container/flat multimap/end"><span class="t-lines"><span>flat_multimap::end</span><span>flat_multimap::cend</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rbegin.html" title="cpp/container/flat multimap/rbegin"><span class="t-lines"><span>flat_multimap::rbegin</span><span>flat_multimap::crbegin</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="rend.html" title="cpp/container/flat multimap/rend"><span class="t-lines"><span>flat_multimap::rend</span><span>flat_multimap::crend</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../flat_multimap.html#Capacity" title="cpp/container/flat multimap">Capacity</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="size.html" title="cpp/container/flat multimap/size"><span class="t-lines"><span>flat_multimap::size</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="max_size.html" title="cpp/container/flat multimap/max size"><span class="t-lines"><span>flat_multimap::max_size</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="empty.html" title="cpp/container/flat multimap/empty"><span class="t-lines"><span>flat_multimap::empty</span></span></a></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../flat_multimap.html#Observers" title="cpp/container/flat multimap">Observers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="key_comp.html" title="cpp/container/flat multimap/key comp"><span class="t-lines"><span>flat_multimap::key_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="keys.html" title="cpp/container/flat multimap/keys"><span class="t-lines"><span>flat_multimap::keys</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="value_comp.html" title="cpp/container/flat multimap/value comp"><span class="t-lines"><span>flat_multimap::value_comp</span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="values.html" title="cpp/container/flat multimap/values"><span class="t-lines"><span>flat_multimap::values</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../flat_multimap.html#Non-member_functions" title="cpp/container/flat multimap">Non-member functions</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swap2.html" title="cpp/container/flat multimap/swap2"><span class="t-lines"><span>swap<span class="t-dsc-small">(std::flat_multimap)</span></span></span></a></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="erase_if.html" title="cpp/container/flat multimap/erase if"><span class="t-lines"><span>erase_if<span class="t-dsc-small">(std::flat_multimap)</span></span></span></a></div><div><span class="t-lines"><span><code>&#160;&#160;&#160;</code></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="operator_cmp.html" title="cpp/container/flat multimap/operator cmp"><span class="t-lines"><span>operator==</span><span>operator&lt;=&gt;</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../flat_multimap.html#Helper_classes" title="cpp/container/flat multimap">Helper classes</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="uses_allocator.html" title="cpp/container/flat multimap/uses allocator"><span class="t-lines"><span>uses_allocator<span class="t-dsc-small">&lt;std::flat_multimap&gt;</span></span></span></a></div></div></td></tr>
-</table></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="../flat_multimap.html#Tags" title="cpp/container/flat multimap">Tags</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../sorted_equivalent.html" title="cpp/container/sorted equivalent"><span class="t-lines"><span>sorted_equivalent</span></span></a></div><div><span class="t-lines"><span><code>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</code></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="../sorted_equivalent.html" title="cpp/container/sorted equivalent"><span class="t-lines"><span>sorted_equivalent_t</span></span></a></div></div></td></tr>
-</table></div></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="deduction_guides.html" title="cpp/container/flat multimap/deduction guides">Deduction guides</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/flat_multimap/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+<span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/replace_ad&amp;action=edit">[edit template]</a></span></div>
+
 <table class="t-dcl-begin"><tbody>
 
 <tr class="t-dcl t-since-cxx23">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> replace<span class="br0">&#40;</span> key_container_type<span class="sy3">&amp;&amp;</span> key_cont, mapped_container_type<span class="sy3">&amp;&amp;</span> mapped_cont <span class="br0">&#41;</span><span class="sy4">;</span></span></div></td>
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw4">void</span> replace<span class="br0">(</span> key_container_type<span class="sy3">&amp;&amp;</span> key_cont, mapped_container_type<span class="sy3">&amp;&amp;</span> mapped_cont <span class="br0">)</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx23">(since C++23)</span> </td>
 </tr>
@@ -432,14 +206,14 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <p>Replaces the underlying containers <a href="../flat_multimap.html#Member_objects" title="cpp/container/flat multimap"><code><i>c</i></code></a>. Equivalent to:
 </p>
-<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">c.<span class="me1">keys</span> <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">&#40;</span>key_cont<span class="br0">&#41;</span><span class="sy4">;</span>
-c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">&#40;</span>mapped_cont<span class="br0">&#41;</span><span class="sy4">;</span></pre></div></div>
+<div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">c.<span class="me1">keys</span> <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>key_cont<span class="br0">)</span><span class="sy4">;</span>
+c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4">::</span><span class="me2">move</span><span class="br0">(</span>mapped_cont<span class="br0">)</span><span class="sy4">;</span></pre></div></div>
 <p>The following conditions must be met:
 </p>
-<ul><li> The expression <span class="t-c"><span class="mw-geshi cpp source-cpp">key_cont.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">==</span> mapped_cont.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>,
+<ul><li> The expression <span class="t-c"><span class="mw-geshi cpp source-cpp">key_cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> mapped_cont.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span></span></span> is <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw2">true</span></span></span>,
 </li><li> The elements of <span class="t-c"><span class="mw-geshi cpp source-cpp">key_cont</span></span> are sorted with respect to <a href="../flat_multimap.html#Member_objects" title="cpp/container/flat multimap"><code><i>compare</i></code></a>.<p> Otherwise, the behavior is undefined.
-</li></ul>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+</p></li></ul>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Parameters"><span class="tocnumber">1</span> <span class="toctext">Parameters</span></a></li>
 <li class="toclevel-1"><a href="#Return_value"><span class="tocnumber">2</span> <span class="toctext">Return value</span></a></li>
@@ -447,12 +221,12 @@ c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4
 <li class="toclevel-1"><a href="#Example"><span class="tocnumber">4</span> <span class="toctext">Example</span></a></li>
 <li class="toclevel-1"><a href="#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/replace_ad&amp;action=edit&amp;section=T-1" title="Template:cpp/container/replace ad">edit</a>]</span> <span class="mw-headline" id="Parameters">Parameters</span></h3>
 <table class="t-par-begin">
 
 
-<tr class="t-par">
+<tbody><tr class="t-par">
 <td> keys_cont
 </td>
 <td> -
@@ -465,7 +239,7 @@ c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4
 <td> -
 </td>
 <td> a container of mapped values of type <code>MappedContainer</code>, the contents of which will be moved into <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="sy2">*</span>this</span></span>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/replace_ad&amp;action=edit&amp;section=T-2" title="Template:cpp/container/replace ad">edit</a>]</span> <span class="mw-headline" id="Return_value">Return value</span></h3>
 <p>(none)
 </p>
@@ -479,26 +253,26 @@ c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4
 <span class="co2">#include &lt;flat_map&gt;</span>
 <span class="co2">#include &lt;print&gt;</span>
 <span class="co2">#include &lt;vector&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <a href="../vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> keys<span class="br0">&#123;</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">&#125;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>std<span class="sy4">::</span><a href="../../algorithm/ranges/is_sorted.html"><span class="kw3019">ranges::<span class="me2">is_sorted</span></span></a><span class="br0">&#40;</span>keys<span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span> values<span class="br0">&#123;</span><span class="nu16">2.2</span>, <span class="nu16">3.3</span>, <span class="nu16">1.1</span><span class="br0">&#125;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>keys.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">==</span> values.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span> keys<span class="br0">{</span><span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>std<span class="sy4">::</span><a href="../../algorithm/ranges/is_sorted.html"><span class="kw3019">ranges::<span class="me2">is_sorted</span></span></a><span class="br0">(</span>keys<span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../vector.html"><span class="kw1277">std::<span class="me2">vector</span></span></a><span class="sy1">&lt;</span><span class="kw4">double</span><span class="sy1">&gt;</span> values<span class="br0">{</span><span class="nu16">2.2</span>, <span class="nu16">3.3</span>, <span class="nu16">1.1</span><span class="br0">}</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>keys.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> values.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <a href="../flat_multimap.html"><span class="kw3360">std::<span class="me2">flat_multimap</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">double</span><span class="sy1">&gt;</span> map<span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>map.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    map.<span class="me1">replace</span><span class="br0">&#40;</span>keys, values<span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>map.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>map.<span class="me1">keys</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>map.<span class="me1">values</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>keys.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">&#40;</span>values.<span class="me1">empty</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    <a href="../../io/println.html"><span class="kw3402">std::<span class="me2">println</span></span></a><span class="br0">&#40;</span><span class="st0">&quot;{}&quot;</span>, map<span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>map.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    map.<span class="me1">replace</span><span class="br0">(</span>keys, values<span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>map.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>map.<span class="me1">keys</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>map.<span class="me1">values</span><span class="br0">(</span><span class="br0">)</span> <span class="sy1">==</span> <span class="nu0">3</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>keys.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+    <a href="../../error/assert.html"><span class="kw778">assert</span></a><span class="br0">(</span>values.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    <a href="../../io/println.html"><span class="kw3402">std::<span class="me2">println</span></span></a><span class="br0">(</span><span class="st0">"{}"</span>, map<span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 <p>Output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">{1: 2.2, 2: 3.3, 3: 1.1}</pre></div></div> 
@@ -506,12 +280,12 @@ c.<span class="me1">values</span> <span class="sy1">=</span> std<span class="sy4
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/replace_ad&amp;action=edit&amp;section=T-5" title="Template:cpp/container/replace ad">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="extract.html" title="cpp/container/flat multimap/extract"> <span class="t-lines"><span>extract</span></span></a></div></div>
 </td>
-<td>  extracts the underlying containers <br /> <span class="t-mark">(public member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/dsc_extract&amp;action=edit">&#91;edit&#93;</a></span>
+<td>  extracts the underlying containers <br> <span class="t-mark">(public member function)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/container/dsc_extract&amp;action=edit">[edit]</a></span>
 </td></tr>
-</table></p>
+</tbody></table><p></p>
 
 <!-- 
 NewPP limit report
@@ -530,7 +304,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;oldid=169484">https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;oldid=169484</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -540,39 +314,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/container/flat_multimap/replace" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/container/flat_multimap/replace" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;oldid=169484" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/container/flat_multimap/replace&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-de"><a href="http://de.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="de" hreflang="de">Deutsch</a></li><li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="es" hreflang="es">Español</a></li><li class="interwiki-fr"><a href="http://fr.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="fr" hreflang="fr">Français</a></li><li class="interwiki-it"><a href="http://it.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="it" hreflang="it">Italiano</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-pt"><a href="http://pt.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="pt" hreflang="pt">Português</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/container/flat_multimap/replace" title="cpp/container/flat multimap/replace" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 1 February 2024, at 14:19.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -583,8 +325,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 1.222 secs. -->
-	</body>
-<!-- Cached 20250103135215 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/container/flat_multimap/replace by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:39:43 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250103135215 --><!-- Mirrored from en.cppreference.com/w/cpp/container/flat_multimap/replace by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:39:43 GMT --></html>

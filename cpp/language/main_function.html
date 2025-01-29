@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/language/main_function by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:05 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/language/main_function by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:05 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>Main function - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>Main function</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/language/main_function","wgTitle":"cpp/language/main function","wgCurRevisionId":172278,"wgArticleId":9805,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/language/main_function","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -109,93 +97,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_language_main_function skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Flanguage%2Fmain+function&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Flanguage%2Fmain+function" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="main_function.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk"><span><a href="https://en.cppreference.com/w/Talk:cpp/language/main_function"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="main_function.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -282,246 +184,18 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../language.html" title="cpp/language">language</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../language.html" title="cpp/language">C++ language</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5">General topics</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../preprocessor.html" title="cpp/preprocessor">Preprocessor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../comment.html" title="cpp/comment">Comments</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../keyword.html" title="cpp/keyword">Keywords</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="escape.html" title="cpp/language/escape">Escape sequences</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="statements.html" title="cpp/language/statements">Flow control</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Conditional execution statements</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="if.html" title="cpp/language/if"><tt>if</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="switch.html" title="cpp/language/switch"><tt>switch</tt></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Iteration statements (loops)</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="for.html" title="cpp/language/for"><tt>for</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="range-for.html" title="cpp/language/range-for">range-<code>for</code></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="while.html" title="cpp/language/while"><tt>while</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="do.html" title="cpp/language/do"><code>do-while</code></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Jump statements</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="continue.html" title="cpp/language/continue"><tt>continue</tt></a> - <a href="break.html" title="cpp/language/break"><tt>break</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="goto.html" title="cpp/language/goto"><tt>goto</tt></a> - <a href="return.html" title="cpp/language/return"><tt>return</tt></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="functions.html" title="cpp/language/functions">Functions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="lambda.html" title="cpp/language/lambda">Lambda function expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="inline.html" title="cpp/language/inline"><span class="mw-geshi cpp source-cpp"><span class="kw1">inline</span></span> specifier</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="except_spec.html" title="cpp/language/except spec">Dynamic exception specifications</a> <span class="t-mark">(<span title="deprecated in C++11">until C++17*</span>)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="noexcept_spec.html" title="cpp/language/noexcept spec"><span class="mw-geshi cpp source-cpp"><span class="kw1">noexcept</span></span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Exceptions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="throw.html" title="cpp/language/throw"><span class="mw-geshi cpp source-cpp"><span class="kw1">throw</span></span>-expression</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="try.html" title="cpp/language/try"><span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="catch.html" title="cpp/language/catch">handler</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Namespaces</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="namespace.html" title="cpp/language/namespace">Namespace declaration</a><code>&#160;&#160;</code></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="namespace_alias.html" title="cpp/language/namespace alias">Namespace aliases</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Types</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="types.html" title="cpp/language/types">Fundamental types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="enum.html" title="cpp/language/enum">Enumeration types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function.html" title="cpp/language/function">Function types</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class/struct types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="union.html" title="cpp/language/union">Union types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Specifiers</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="cv.html" title="cpp/language/cv"><code>const</code>/<code>volatile</code></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="decltype.html" title="cpp/language/decltype"><tt>decltype</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="auto.html" title="cpp/language/auto"><tt>auto</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="constexpr.html" title="cpp/language/constexpr"><tt>constexpr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="consteval.html" title="cpp/language/consteval"><tt>consteval</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constinit.html" title="cpp/language/constinit"><tt>constinit</tt></a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-</table></div></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="storage_duration.html" title="cpp/language/storage duration">Storage duration specifiers</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="initialization.html" title="cpp/language/initialization">Initialization</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="default_initialization.html" title="cpp/language/default initialization">Default-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="value_initialization.html" title="cpp/language/value initialization">Value-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="zero_initialization.html" title="cpp/language/zero initialization">Zero-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="copy_initialization.html" title="cpp/language/copy initialization">Copy-initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="direct_initialization.html" title="cpp/language/direct initialization">Direct-initialization</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="aggregate_initialization.html" title="cpp/language/aggregate initialization">Aggregate initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="list_initialization.html" title="cpp/language/list initialization">List-initialization</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>&#160;&#160;</code></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constant_initialization.html" title="cpp/language/constant initialization">Constant initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="reference_initialization.html" title="cpp/language/reference initialization">Reference initialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-</table></div>
-</div>
-<div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h1"><td colspan="5"><a href="expressions.html" title="cpp/language/expressions">Expressions</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="value_category.html" title="cpp/language/value category">Value categories</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="eval_order.html" title="cpp/language/eval order">Order of evaluation</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="operators.html" title="cpp/language/operators">Operators</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="operator_precedence.html" title="cpp/language/operator precedence">Operator precedence</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="operator_alternative.html" title="cpp/language/operator alternative">Alternative representations</a></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="expressions.html#Literals" title="cpp/language/expressions">Literals</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="bool_literal.html" title="cpp/language/bool literal">Boolean</a> - <a href="integer_literal.html" title="cpp/language/integer literal">Integer</a> - <a href="floating_literal.html" title="cpp/language/floating literal">Floating-point</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="character_literal.html" title="cpp/language/character literal">Character</a> - <a href="string_literal.html" title="cpp/language/string literal">String</a> - <a href="nullptr.html" title="cpp/language/nullptr"><tt>nullptr</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="user_literal.html" title="cpp/language/user literal">User-defined</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Utilities</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="attributes.html" title="cpp/language/attributes">Attributes</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Types</td></tr>
-<tr class="t-nv"><td colspan="5"><a href="typedef.html" title="cpp/language/typedef"><code>typedef</code> declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="type_alias.html" title="cpp/language/type alias">Type alias declaration</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Casts</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="implicit_conversion.html" title="cpp/language/implicit conversion">Implicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="static_cast.html" title="cpp/language/static cast"><tt>static_cast</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="const_cast.html" title="cpp/language/const cast"><tt>const_cast</tt></a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="explicit_cast.html" title="cpp/language/explicit cast">Explicit conversions</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="dynamic_cast.html" title="cpp/language/dynamic cast"><tt>dynamic_cast</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="reinterpret_cast.html" title="cpp/language/reinterpret cast"><tt>reinterpret_cast</tt></a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Memory allocation</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="new.html" title="cpp/language/new"><code>new</code> expression</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="delete.html" title="cpp/language/delete"><code>delete</code> expression</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="classes.html" title="cpp/language/classes">Classes</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class.html" title="cpp/language/class">Class declaration</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="constructor.html" title="cpp/language/constructor">Constructors</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="this.html" title="cpp/language/this"><code>this</code> pointer</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="access.html" title="cpp/language/access">Access specifiers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="friend.html" title="cpp/language/friend"><span class="mw-geshi cpp source-cpp"><span class="kw1">friend</span></span> specifier</a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Class-specific function properties</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="virtual.html" title="cpp/language/virtual">Virtual function</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="override.html" title="cpp/language/override"><span class="mw-geshi cpp source-cpp">override</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span><code>&#160;&#160;</code></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="final.html" title="cpp/language/final"><span class="mw-geshi cpp source-cpp">final</span> specifier</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="explicit.html" title="cpp/language/explicit"><tt>explicit</tt></a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="static.html" title="cpp/language/static"><tt>static</tt></a></td></tr>
-<tr class="t-nv"><td colspan="5"><br />
-</td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5">Special member functions</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="default_constructor.html" title="cpp/language/default constructor">Default constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="copy_constructor.html" title="cpp/language/copy constructor">Copy constructor</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="move_constructor.html" title="cpp/language/move constructor">Move constructor</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="copy_assignment.html" title="cpp/language/as operator" class="mw-redirect">Copy assignment</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="move_assignment.html" title="cpp/language/move operator" class="mw-redirect">Move assignment</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="destructor.html" title="cpp/language/destructor">Destructor</a></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5"><a href="templates.html" title="cpp/language/templates">Templates</a></td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="class_template.html" title="cpp/language/class template">Class template</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="function_template.html" title="cpp/language/function template">Function template</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="template_specialization.html" title="cpp/language/template specialization">Template specialization</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="pack.html" title="cpp/language/pack">Parameter packs</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-</table></div></td></tr>
-<tr class="t-nv-h1"><td colspan="5">Miscellaneous</td></tr>
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="asm.html" title="cpp/language/asm">Inline assembly</a></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="history.html" title="cpp/language/history">History of C++</a></td></tr>
-</table></div></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/language/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="basic_concepts.html" title="cpp/language/basic concepts"> Basic Concepts</a><div class="t-navbar-menu"><div><div style="display:inline-block">
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv"><td colspan="5"><a href="../comment.html" title="cpp/comment">Comments</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="ascii.html" title="cpp/language/ascii">ASCII</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="punctuators.html" title="cpp/language/punctuators">Punctuation</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="identifiers.html" title="cpp/language/identifiers">Names and identifiers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="type.html" title="cpp/language/type">Types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="types.html" title="cpp/language/types">Fundamental types</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="object.html" title="cpp/language/object">Objects</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="scope.html" title="cpp/language/scope">Scope</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="lifetime.html" title="cpp/language/lifetime">Object lifetime</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="storage_duration.html" title="cpp/language/storage duration">Storage duration and linkage</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="definition.html" title="cpp/language/definition">Definitions and ODR</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="lookup.html" title="cpp/language/lookup">Name lookup</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="qualified_lookup.html" title="cpp/language/qualified lookup"> Qualified name lookup</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="unqualified_lookup.html" title="cpp/language/unqualified lookup"> Unqualified name lookup</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="as_if.html" title="cpp/language/as if">The as-if rule</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="ub.html" title="cpp/language/ub">Undefined behavior</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="memory_model.html" title="cpp/language/memory model">Memory model</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="multithread.html" title="cpp/language/multithread">Multi-threaded executions and data races</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="charset.html" title="cpp/language/charset">Character sets and encodings</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="translation_phases.html" title="cpp/language/translation phases">Phases of translation</a></td></tr>
-<tr class="t-nv"><td colspan="5"><strong class="selflink">The <code>main</code> function</strong></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="modules.html" title="cpp/language/modules">Modules</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-</table></div>
-</div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/language/basics/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <p>A program shall contain a global function named <span class="t-c"><span class="mw-geshi cpp source-cpp">main</span></span>, which is the designated start of the program in hosted environment. It shall have one of the following forms:
 </p>
 <table class="t-sdsc-begin">
 
-<tr>
+<tbody><tr>
 <td colspan="10" class="t-sdsc-sep">
 </td></tr>
 <tr class="t-sdsc">
@@ -562,16 +236,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 
 <tr>
 <td colspan="10" class="t-sdsc-sep">
-</td></tr></table>
+</td></tr></tbody></table>
 <div class="t-li1"><span class="t-li">1)</span> A <code>main</code> function running independently of environment-provided arguments.</div>
 <div class="t-li1"><span class="t-li">2)</span> A <code>main</code> function accepting environment-provided arguments.</div>
-<div class="t-li1"><span class="t-li"></span> The names of <span class="t-spar">argc</span> and <span class="t-spar">argv</span> are arbitrary, as well as the representation of the types of the parameters: <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> ac, <span class="kw4">char</span><span class="sy2">**</span> av<span class="br0">&#41;</span></span> is equally valid.</div>
+<div class="t-li1"><span class="t-li"></span> The names of <span class="t-spar">argc</span> and <span class="t-spar">argv</span> are arbitrary, as well as the representation of the types of the parameters: <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> ac, <span class="kw4">char</span><span class="sy2">**</span> av<span class="br0">)</span></span> is equally valid.</div>
 <div class="t-li1"><span class="t-li">3)</span> A <code>main</code> function of implement-defined type, returning <span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span>.</div>
 <div class="t-li1"><span class="t-li"></span> The C++ standard recommends implementation-defined <code>main</code> functions to place the extra (optional) parameters after <span class="t-spar">argv</span>.</div>
 <table class="t-par-begin">
 
 
-<tr class="t-par">
+<tbody><tr class="t-par">
 <td> <span class="t-spar">argc</span>
 </td>
 <td> -
@@ -583,7 +257,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </td>
 <td> -
 </td>
-<td> Pointer to the first element of an array of <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy2">+</span> <span class="nu0">1</span></span></span> pointers, of which the last one is null and the previous ones, if any, point to <a href="../string/multibyte.html" title="cpp/string/multibyte">null-terminated multibyte strings</a> that represent the arguments passed to the program from the execution environment. If <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span></span></span> is not a null pointer (or, equivalently, if <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy1">&gt;</span> <span class="nu0">0</span></span></span>), it points to a string that represents the name used to invoke the program, or to an empty string.
+<td> Pointer to the first element of an array of <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy2">+</span> <span class="nu0">1</span></span></span> pointers, of which the last one is null and the previous ones, if any, point to <a href="../string/multibyte.html" title="cpp/string/multibyte">null-terminated multibyte strings</a> that represent the arguments passed to the program from the execution environment. If <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> is not a null pointer (or, equivalently, if <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy1">&gt;</span> <span class="nu0">0</span></span></span>), it points to a string that represents the name used to invoke the program, or to an empty string.
 </td></tr>
 <tr class="t-par">
 <td> <span class="t-spar">body</span>
@@ -591,8 +265,8 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td> -
 </td>
 <td> The body of the <code>main</code> function.
-</td></tr></table>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+</td></tr></tbody></table>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Explanation"><span class="tocnumber">1</span> <span class="toctext">Explanation</span></a></li>
 <li class="toclevel-1 tocsection-2"><a href="#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a></li>
@@ -601,10 +275,10 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-5"><a href="#Defect_reports"><span class="tocnumber">5</span> <span class="toctext">Defect reports</span></a></li>
 <li class="toclevel-1 tocsection-6"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=1" title="Edit section: Explanation">edit</a>]</span> <span class="mw-headline" id="Explanation">Explanation</span></h3>
 <p>The <code>main</code> function is called at program startup after <a href="initialization.html" title="cpp/language/initialization">initialization</a> of the non-local objects with static <a href="storage_duration.html" title="cpp/language/storage duration">storage duration</a>. It is the designated entry point to a program that is executed in <i>hosted</i> environment (that is, with an operating system). The entry points to <i>freestanding</i> programs (boot loaders, OS kernels, etc) are implementation-defined.
-</p><p>The parameters of the two-parameter form of the <code>main</code> function allow arbitrary multibyte character strings to be passed from the execution environment (these are typically known as <i>command line arguments</i>), the pointers <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">&#91;</span><span class="nu0">1</span><span class="br0">&#93;</span></span></span> .. <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">&#91;</span>argc <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">&#93;</span></span></span> point at the first characters in each of these strings. <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">&#91;</span><span class="nu0">0</span><span class="br0">&#93;</span></span></span> (if non-null) is the pointer to the initial character of a null-terminated multibyte string that represents the name used to invoke the program itself (or an empty string <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">&quot;&quot;</span></span></span> if this is not supported by the execution environment). The strings are modifiable, although these modifications do not propagate back to the execution environment: they can be used, for example, with <span class="t-lc"><a href="../string/byte/strtok.html" title="cpp/string/byte/strtok">std::strtok</a></span>. The size of the array pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">argv</span></span> is at least <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy2">+</span> <span class="nu0">1</span></span></span>, and the last element, <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">&#91;</span>argc<span class="br0">&#93;</span></span></span>, is guaranteed to be a null pointer.
+</p><p>The parameters of the two-parameter form of the <code>main</code> function allow arbitrary multibyte character strings to be passed from the execution environment (these are typically known as <i>command line arguments</i>), the pointers <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span></span></span> .. <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">[</span>argc <span class="sy2">-</span> <span class="nu0">1</span><span class="br0">]</span></span></span> point at the first characters in each of these strings. <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span></span></span> (if non-null) is the pointer to the initial character of a null-terminated multibyte string that represents the name used to invoke the program itself (or an empty string <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="st0">""</span></span></span> if this is not supported by the execution environment). The strings are modifiable, although these modifications do not propagate back to the execution environment: they can be used, for example, with <span class="t-lc"><a href="../string/byte/strtok.html" title="cpp/string/byte/strtok">std::strtok</a></span>. The size of the array pointed to by <span class="t-c"><span class="mw-geshi cpp source-cpp">argv</span></span> is at least <span class="t-c"><span class="mw-geshi cpp source-cpp">argc <span class="sy2">+</span> <span class="nu0">1</span></span></span>, and the last element, <span class="t-c"><span class="mw-geshi cpp source-cpp">argv<span class="br0">[</span>argc<span class="br0">]</span></span></span>, is guaranteed to be a null pointer.
 </p><p>The <code>main</code> function has the following several special properties:
 </p>
 <div class="t-li1"><span class="t-li">1)</span> The body of the <code>main</code> function does not need to contain the <a href="return.html" title="cpp/language/return"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span></span> statement</a>: if control reaches the end of <code>main</code> without encountering a return statement, the effect is that of executing <span class="t-c"><span class="mw-geshi cpp source-cpp"><span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span></span></span>.</div>
@@ -618,23 +292,23 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div class="t-li1"><span class="t-li">2)</span> It cannot be predefined and cannot be overloaded: effectively, the name <code>main</code> in the global namespace is reserved for functions (although it can be used to name classes, namespaces, enumerations, and any entity in a non-global namespace, except that an entity named <code>main</code> cannot be declared with C <a href="language_linkage.html" title="cpp/language/language linkage">language linkage</a> in any namespace.</div>
 <div class="t-li1"><span class="t-li">3)</span> It cannot be <span class="t-rev-inl t-since-cxx11"><span>defined as deleted or</span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span> declared with any language linkage<span class="t-rev-inl t-since-cxx11"><span>, <a href="constexpr.html" title="cpp/language/constexpr"><code>constexpr</code></a></span><span><span class="t-mark-rev t-since-cxx11">(since C++11)</span></span></span><span class="t-rev-inl t-since-cxx20"><span>, <a href="consteval.html" title="cpp/language/consteval"><code>consteval</code></a></span><span><span class="t-mark-rev t-since-cxx20">(since C++20)</span></span></span>, <a href="inline.html" title="cpp/language/inline"><code>inline</code></a>, or <a href="static.html" title="cpp/language/static"><code>static</code></a>.</div>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx14"><td>
-<div class="t-li1"><span class="t-li">4)</span> The return type of the <code>main</code> function cannot be deduced (<span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>...<span class="br0">&#125;</span></span> is not allowed).</div>
+<tbody><tr class="t-rev t-since-cxx14"><td>
+<div class="t-li1"><span class="t-li">4)</span> The return type of the <code>main</code> function cannot be deduced (<span class="mw-geshi cpp source-cpp"><span class="kw4">auto</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>...<span class="br0">}</span></span> is not allowed).</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx14">(since C++14)</span></td></tr>
-</table>
+</tbody></table>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
+<tbody><tr class="t-rev t-since-cxx20"><td>
 <div class="t-li1"><span class="t-li">5)</span> The <code>main</code> function cannot be a <a href="coroutines.html" title="cpp/language/coroutines">coroutine</a>.</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
+</tbody></table>
 <table class="t-rev-begin">
-<tr class="t-rev t-since-cxx20"><td>
+<tbody><tr class="t-rev t-since-cxx20"><td>
 <div class="t-li1"><span class="t-li">6)</span> The <code>main</code> function cannot attach to a named <a href="modules.html" title="cpp/language/modules">module</a>.</div>
 </td>
 <td><span class="t-mark-rev t-since-cxx20">(since C++20)</span></td></tr>
-</table>
+</tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=2" title="Edit section: Notes">edit</a>]</span> <span class="mw-headline" id="Notes">Notes</span></h3>
 <p>If the <code>main</code> function is defined with a <a href="try.html#Function_try_block" title="cpp/language/try">function <span class="mw-geshi cpp source-cpp"><span class="kw1">try</span></span> block</a>, the exceptions thrown by the destructors of static objects (which are destroyed by the implied <span class="t-lc"><a href="../utility/program/exit.html" title="cpp/utility/program/exit">std::exit</a></span>) are not <a href="catch.html" title="cpp/language/catch">caught</a> by it.
 </p><p>The manner in which the arguments given at the OS command line are converted into the multibyte character arrays referenced by <span class="t-c"><span class="mw-geshi cpp source-cpp">argv</span></span> may involve implementation-defined processing:
@@ -642,41 +316,41 @@ html { font-variant-ligatures: no-common-ligatures; }
 <ul><li> <a rel="nofollow" class="external text" href="https://docs.microsoft.com/en-us/cpp/cpp/main-function-command-line-args">Parsing C++ Command-Line Arguments</a> MSDN
 </li><li> <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_01">Shell Introduction</a> POSIX
 </li></ul>
-<p>A very common implementation-defined form of <span class="mw-geshi cpp source-cpp">main<span class="br0">&#40;</span><span class="br0">&#41;</span></span> has a third argument (in addition to <code>argc</code> and <code>argv</code>), of type <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="sy2">**</span></span>, pointing at <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/exec.html">an array of pointers to the execution environment variables</a>.
+<p>A very common implementation-defined form of <span class="mw-geshi cpp source-cpp">main<span class="br0">(</span><span class="br0">)</span></span> has a third argument (in addition to <code>argc</code> and <code>argv</code>), of type <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span><span class="sy2">**</span></span>, pointing at <a rel="nofollow" class="external text" href="https://pubs.opengroup.org/onlinepubs/9699919799/functions/exec.html">an array of pointers to the execution environment variables</a>.
 </p>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=3" title="Edit section: Example">edit</a>]</span> <span class="mw-headline" id="Example">Example</span></h3>
-<div class="t-example"><p>Demonstrates how to inform a program about where to find its input and where to write its results.<br />
+<div class="t-example"><p>Demonstrates how to inform a program about where to find its input and where to write its results.<br>
 A possible invocation: <span class="t-c"><span class="mw-geshi cpp source-cpp">.<span class="sy2">/</span>convert table_in.<span class="me1">dat</span> table_out.<span class="me1">dat</span></span></span></p><div class="t-example-live-link"><div class="coliru-btn coliru-btn-run-init">Run this code</div></div>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;cstdlib&gt;</span>
 <span class="co2">#include &lt;iomanip&gt;</span>
 <span class="co2">#include &lt;iostream&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
-    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;argc == &quot;</span> <span class="sy1">&lt;&lt;</span> argc <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-&#160;
-    <span class="kw1">for</span> <span class="br0">&#40;</span><span class="kw4">int</span> ndx<span class="br0">&#123;</span><span class="br0">&#125;</span><span class="sy4">;</span> ndx <span class="sy3">!</span><span class="sy1">=</span> argc<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">&#41;</span>
-        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;argv[&quot;</span> <span class="sy1">&lt;&lt;</span> ndx <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] == &quot;</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1819">std::<span class="me2">quoted</span></span></a><span class="br0">&#40;</span>argv<span class="br0">&#91;</span>ndx<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;argv[&quot;</span> <span class="sy1">&lt;&lt;</span> argc <span class="sy1">&lt;&lt;</span> <span class="st0">&quot;] == &quot;</span>
-              <span class="sy1">&lt;&lt;</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">&#40;</span>argv<span class="br0">&#91;</span>argc<span class="br0">&#93;</span><span class="br0">&#41;</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
-&#160;
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"argc == "</span> <span class="sy1">&lt;&lt;</span> argc <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+&nbsp;
+    <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> ndx<span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span> ndx <span class="sy3">!</span><span class="sy1">=</span> argc<span class="sy4">;</span> <span class="sy2">++</span>ndx<span class="br0">)</span>
+        <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"argv["</span> <span class="sy1">&lt;&lt;</span> ndx <span class="sy1">&lt;&lt;</span> <span class="st0">"] == "</span> <span class="sy1">&lt;&lt;</span> <a href="../io/manip/quoted.html"><span class="kw1819">std::<span class="me2">quoted</span></span></a><span class="br0">(</span>argv<span class="br0">[</span>ndx<span class="br0">]</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+    <a href="../io/cout.html"><span class="kw1775">std::<span class="me2">cout</span></span></a> <span class="sy1">&lt;&lt;</span> <span class="st0">"argv["</span> <span class="sy1">&lt;&lt;</span> argc <span class="sy1">&lt;&lt;</span> <span class="st0">"] == "</span>
+              <span class="sy1">&lt;&lt;</span> <span class="kw1">static_cast</span><span class="sy1">&lt;</span><span class="kw4">void</span><span class="sy2">*</span><span class="sy1">&gt;</span><span class="br0">(</span>argv<span class="br0">[</span>argc<span class="br0">]</span><span class="br0">)</span> <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+&nbsp;
     <span class="coMULTI">/* ... */</span>
-&#160;
+&nbsp;
     <span class="kw1">return</span> argc <span class="sy1">==</span> <span class="nu0">3</span> <span class="sy4">?</span> <a href="../utility/program/EXIT_status.html"><span class="kw976">EXIT_SUCCESS</span></a> <span class="sy4">:</span> <a href="../utility/program/EXIT_status.html"><span class="kw977">EXIT_FAILURE</span></a><span class="sy4">;</span> <span class="co1">// optional return value</span>
-<span class="br0">&#125;</span></pre></div></div>
+<span class="br0">}</span></pre></div></div>
 <p>Possible output:
 </p>
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="text source-text"><pre class="de1">argc == 3
-argv[0] == &quot;./convert&quot;
-argv[1] == &quot;table_in.dat&quot;
-argv[2] == &quot;table_out.dat&quot;
+argv[0] == "./convert"
+argv[1] == "table_in.dat"
+argv[2] == "table_out.dat"
 argv[3] == 0</pre></div></div> 
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=4" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
 <div style="margin-left:0px">
 <table class="mw-collapsible mw-collapsed" style="background: transparent; text-align: left; border: 1px solid silver; margin: 0.2em auto auto; width:100%; clear: both; padding: 1px;">
 
-<tr>
+<tbody><tr>
 <th style="background: #F0F2F5; font-size:87%; padding:0.2em 0.3em; text-align:center;"><span style="font-size:115%">Extended content</span>
 </th></tr>
 <tr>
@@ -684,16 +358,16 @@ argv[3] == 0</pre></div></div>
 <div class="t-ref-std-c++23">
 <ul><li> C++23 standard (ISO/IEC 14882:2024): 
 </li></ul>
-<dl><dd><ul><li> 6.9.3.1 main function &#91;basic.start.main&#93;&#32;
+<dl><dd><ul><li> 6.9.3.1 main function [basic.start.main] 
 </li></ul>
 </dd></dl>
 </div>
-</td></tr></table></div>
+</td></tr></tbody></table></div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=5" title="Edit section: Defect reports">edit</a>]</span> <span class="mw-headline" id="Defect_reports">Defect reports</span></h3>
 <p>The following behavior-changing defect reports were applied retroactively to previously published C++ standards.
 </p>
 <table class="dsctable" style="font-size:0.8em">
-<tr>
+<tbody><tr>
 <th>DR
 </th>
 <th>Applied to
@@ -709,7 +383,7 @@ argv[3] == 0</pre></div></div>
 </td>
 <td>supported parameter names of <code>main</code> were overly restricted
 </td>
-<td>all valid parameter<br />names are supported
+<td>all valid parameter<br>names are supported
 </td></tr>
 <tr>
 <td><a rel="nofollow" class="external text" href="https://cplusplus.github.io/CWG/issues/1886.html">CWG 1886</a>
@@ -737,15 +411,15 @@ argv[3] == 0</pre></div></div>
 <td>whether the <code>main</code> function is used after <a rel="nofollow" class="external text" href="https://wg21.link/N3214">N3214</a> was unclear
 </td>
 <td>it is considered used when named
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=edit&amp;section=6" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td colspan="2"> <div class="t-dsc-see"><span><a href="https://en.cppreference.com/w/c/language/main_function" title="c/language/main function">C documentation</a></span> for <span class=""><span><code>main</code> function</span></span></div>
 </td></tr>
 
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -764,7 +438,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;oldid=172278">https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;oldid=172278</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -774,39 +448,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/language/main_function" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/language/main_function" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;oldid=172278" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/language/main_function&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/language/main_function" title="cpp/language/main function" lang="es" hreflang="es">Español</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/language/main_function" title="cpp/language/main function" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/language/main_function" title="cpp/language/main function" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/language/main_function" title="cpp/language/main function" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 6 June 2024, at 22:14.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -817,8 +459,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 3.157 secs. -->
-	</body>
-<!-- Cached 20250103105321 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/language/main_function by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:06 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250103105321 --><!-- Mirrored from en.cppreference.com/w/cpp/language/main_function by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:08:06 GMT --></html>

@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr" class="client-nojs">
+<!DOCTYPE html><html lang="en" dir="ltr" class="client-nojs"><!-- Mirrored from en.cppreference.com/w/cpp/concepts/assignable_from by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:37:55 GMT --><!-- Added by HTTrack --><head><meta http-equiv="content-type" content="text/html;charset=UTF-8"><!-- /Added by HTTrack -->
 
-<!-- Mirrored from en.cppreference.com/w/cpp/concepts/assignable_from by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:37:55 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-<title>std::assignable_from - cppreference.com</title>
-<meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.21.2" />
-<link rel="alternate" type="application/x-wiki" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit" />
-<link rel="edit" title="Edit" href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit" />
-<link rel="shortcut icon" href="https://en.cppreference.com/favicon.ico" />
-<link rel="search" type="application/opensearchdescription+xml" href="https://en.cppreference.com/mwiki/opensearch_desc.php" title="cppreference.com (en)" />
-<link rel="EditURI" type="application/rsd+xml" href="https://en.cppreference.com/mwiki/api.php?action=rsd" />
-<link rel="alternate" type="application/atom+xml" title="cppreference.com Atom feed" href="https://en.cppreference.com/mwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.ColiruCompiler%2CMathJax%2CStandardRevisions%7Cext.rtlcite%7Cmediawiki.legacy.commonPrint%2Cshared%7Cskins.cppreference2&amp;only=styles&amp;skin=cppreference2&amp;*" />
-<meta name="ResourceLoaderDynamicStyles" content="" />
-<link rel="stylesheet" href="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=cppreference2&amp;*" />
+<title>std::assignable_from</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.2">
+
+
+
+
+
+
+
+<meta name="ResourceLoaderDynamicStyles" content="">
+
 <style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}#toc{display:none}.editsection{display:none}
 /* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-css:7:472787eddcf4605d11de8c7ef047234f */</style>
 
-<script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
-<script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"cpp/concepts/assignable_from","wgTitle":"cpp/concepts/assignable from","wgCurRevisionId":177887,"wgArticleId":18631,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"cpp/concepts/assignable_from","wgRestrictionEdit":[],"wgRestrictionMove":[]});
-}</script><script>if(window.mw){
-mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":0,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":0,"showtoolbar":1,"skin":"cppreference2","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
-"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"gadget-ColiruCompiler":1,"gadget-StandardRevisions":1,"gadget-MathJax":1});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
-/* cache key: mwiki1-mwiki_en_:resourceloader:filter:minify-js:7:173cd59b4efc63a37dd7498667b0fea2 */
-}</script>
-<script>if(window.mw){
-mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
-}</script>
+
+
+
 <style type="text/css">/*<![CDATA[*/
 .source-cpp {line-height: normal;}
 .source-cpp li, .source-cpp pre {
@@ -85,93 +73,7 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </style><!--[if lt IE 7]><style type="text/css">body{behavior:url("/mwiki/skins/cppreference2/csshover.min.htc")}</style><![endif]--></head>
 <body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-cpp_concepts_assignable_from skin-cppreference2 action-view cpp-navbar">
         <!-- header -->
-        <div id="mw-head" class="noprint">
-            <div id="cpp-head-first-base">
-                <div id="cpp-head-first">
-                    <h5><a href="https://en.cppreference.com/">
-                        cppreference.com                        </a></h5>
-                    <div id="cpp-head-search">
-                        
-<!-- 0 -->
-<div id="p-search">
-<form action="https://duckduckgo.com/" method="get">
-  <input type="hidden" name="sites" value="cppreference.com">
-  <input type="search" name="q">
-  <input type="submit" value="Search">
-</form>
-</div>
-
-<!-- /0 -->
-                    </div>
-                    <div id="cpp-head-personal">
-                        
-<!-- 0 -->
-<div id="p-personal" class="">
-<span id="pt-createaccount"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fconcepts%2Fassignable+from&amp;type=signup">Create account</a></span>	<div class="menu">
-        <ul>
-<li id="pt-login"><a href="https://en.cppreference.com/mwiki/index.php?title=Special:UserLogin&amp;returnto=cpp%2Fconcepts%2Fassignable+from" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>        </ul>
-    </div>
-</div>
-
-<!-- /0 -->
-                    </div>
-
-                </div>
-            </div>
-            <div id="cpp-head-second-base">
-                <div id="cpp-head-second">
-                    <div id="cpp-head-tools-left">
-                        
-<!-- 0 -->
-<div id="p-namespaces" class="vectorTabs">
-	<h5>Namespaces</h5>
-	<ul>
-					<li  id="ca-nstab-main" class="selected"><span><a href="assignable_from.html"  title="View the content page [c]" accesskey="c">Page</a></span></li>
-					<li  id="ca-talk" class="new"><span><a href="https://en.cppreference.com/mwiki/index.php?title=Talk:cpp/concepts/assignable_from&amp;action=edit&amp;redlink=1"  title="Discussion about the content page [t]" accesskey="t">Discussion</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-variants" class="vectorMenu emptyPortlet">
-		<h5><span>Variants</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                    <div id="cpp-head-tools-right">
-                        
-<!-- 0 -->
-<div id="p-views" class="vectorTabs">
-	<h5>Views</h5>
-	<ul>
-					<li id="ca-view" class="selected"><span><a href="assignable_from.html" >View</a></span></li>
-					<li id="ca-edit"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit"  title="You can edit this page. Please use the preview button before saving [e]" accesskey="e">Edit</a></span></li>
-					<li id="ca-history" class="collapsible"><span><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">History</a></span></li>
-			</ul>
-</div>
-
-<!-- /0 -->
-
-<!-- 1 -->
-<div id="p-cactions" class="vectorMenu emptyPortlet">
-	<h5><span>Actions</span><a href="#"></a></h5>
-	<div class="menu">
-		<ul>
-					</ul>
-	</div>
-</div>
-
-<!-- /1 -->
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- /header -->
         <!-- content -->
 <style type="text/css">
@@ -258,83 +160,13 @@ html { font-variant-ligatures: no-common-ligatures; }
                 <!-- bodyContent -->
                 <div id="bodyContent">
                                         <!-- tagline -->
-                    <div id="siteSub">From cppreference.com</div>
+                    
                     <!-- /tagline -->
                                         <!-- subtitle -->
-                    <div id="contentSub"><span class="subpages">&lt; <a href="../../cpp.html" title="cpp">cpp</a>&lrm; | <a href="../concepts.html" title="cpp/concepts">concepts</a></span></div>
+                    
                     <!-- /subtitle -->
                                                             <!-- bodycontent -->
-                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="t-navbar" style=""><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../../cpp.html" title="cpp">C++</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="line-height:1.1em;">
-<tr class="t-nv"><td colspan="5"><a href="../compiler_support.html" title="cpp/compiler support">Compiler support</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../freestanding.html" title="cpp/freestanding">Freestanding and hosted</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../language.html" title="cpp/language">Language</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../standard_library.html" title="cpp/standard library">Standard library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../header.html" title="cpp/header">Standard library headers</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../named_req.html" title="cpp/named req">Named requirements</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../feature_test.html" title="cpp/feature test">Feature test macros</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html#Language_support" title="cpp/utility">Language support library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../concepts.html" title="cpp/concepts">Concepts library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../error.html" title="cpp/error">Diagnostics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../memory.html" title="cpp/memory">Memory management library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../meta.html" title="cpp/meta">Metaprogramming library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../utility.html" title="cpp/utility">General utilities library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../container.html" title="cpp/container">Containers library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../iterator.html" title="cpp/iterator">Iterators library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../ranges.html" title="cpp/ranges">Ranges library</a> <span class="t-mark-rev t-since-cxx20">(C++20)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../algorithm.html" title="cpp/algorithm">Algorithms library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../string.html" title="cpp/string">Strings library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../text.html" title="cpp/text">Text processing library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../numeric.html" title="cpp/numeric">Numerics library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../chrono.html" title="cpp/chrono">Date and time library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../io.html" title="cpp/io">Input/output library</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../filesystem.html" title="cpp/filesystem">Filesystem library</a> <span class="t-mark-rev t-since-cxx17">(C++17)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../thread.html" title="cpp/thread">Concurrency support library</a> <span class="t-mark-rev t-since-cxx11">(C++11)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../execution.html" title="cpp/execution">Execution support library</a> <span class="t-mark-rev t-since-cxx26">(C++26)</span></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../experimental.html" title="cpp/experimental">Technical specifications</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../symbol_index.html" title="cpp/symbol index">Symbols index</a></td></tr>
-<tr class="t-nv"><td colspan="5"><a href="../links/libs.html" title="cpp/links/libs">External libraries</a></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div><div class="t-navbar-head"><a href="../concepts.html" title="cpp/concepts">Concepts library</a><div class="t-navbar-menu"><div><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"><a href="../concepts.html#Core_language_concepts" title="cpp/concepts">Core language concepts</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="same_as.html" title="cpp/concepts/same as"><span class="t-lines"><span>same_as</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="derived_from.html" title="cpp/concepts/derived from"><span class="t-lines"><span>derived_from</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="convertible_to.html" title="cpp/concepts/convertible to"><span class="t-lines"><span>convertible_to</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="common_reference_with.html" title="cpp/concepts/common reference with"><span class="t-lines"><span>common_reference_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="common_with.html" title="cpp/concepts/common with"><span class="t-lines"><span>common_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="integral.html" title="cpp/concepts/integral"><span class="t-lines"><span>integral</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="signed_integral.html" title="cpp/concepts/signed integral"><span class="t-lines"><span>signed_integral</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="unsigned_integral.html" title="cpp/concepts/unsigned integral"><span class="t-lines"><span>unsigned_integral</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="floating_point.html" title="cpp/concepts/floating point"><span class="t-lines"><span>floating_point</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="swappable.html" title="cpp/concepts/swappable"><span class="t-lines"><span>swappable</span><span>swappable_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="destructible.html" title="cpp/concepts/destructible"><span class="t-lines"><span>destructible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="constructible_from.html" title="cpp/concepts/constructible from"><span class="t-lines"><span>constructible_from</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="default_initializable.html" title="cpp/concepts/default initializable"><span class="t-lines"><span>default_initializable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span><code>&#160;&#160;</code></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="move_constructible.html" title="cpp/concepts/move constructible"><span class="t-lines"><span>move_constructible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="copy_constructible.html" title="cpp/concepts/copy constructible"><span class="t-lines"><span>copy_constructible</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><strong class="selflink"><span class="t-lines"><span>assignable_from</span></span></strong></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div></td><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5"><a href="../concepts.html#Comparison_concepts" title="cpp/concepts">Comparison concepts</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equality_comparable.html" title="cpp/concepts/equality comparable"><span class="t-lines"><span>equality_comparable</span><span>equality_comparable_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="totally_ordered.html" title="cpp/concepts/totally ordered"><span class="t-lines"><span>totally_ordered</span><span>totally_ordered_with</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../concepts.html#Object_concepts" title="cpp/concepts">Object concepts</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="movable.html" title="cpp/concepts/movable"><span class="t-lines"><span>movable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="copyable.html" title="cpp/concepts/copyable"><span class="t-lines"><span>copyable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="semiregular.html" title="cpp/concepts/semiregular"><span class="t-lines"><span>semiregular</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="regular.html" title="cpp/concepts/regular"><span class="t-lines"><span>regular</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv-h2"><td colspan="5"><a href="../concepts.html#Callable_concepts" title="cpp/concepts">Callable concepts</a></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="invocable.html" title="cpp/concepts/invocable"><span class="t-lines"><span>invocable</span><span>regular_invocable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="predicate.html" title="cpp/concepts/predicate"><span class="t-lines"><span>predicate</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="relation.html" title="cpp/concepts/relation"><span class="t-lines"><span>relation</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="equivalence_relation.html" title="cpp/concepts/equivalence relation"><span class="t-lines"><span>equivalence_relation</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="strict_weak_order.html" title="cpp/concepts/strict weak order"><span class="t-lines"><span>strict_weak_order</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-</table></div>
-<div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-col-table"><td><div><table class="t-nv-begin" cellpadding="0" style="">
-<tr class="t-nv-h2"><td colspan="5">Exposition-only concepts</td></tr>
-<tr class="t-nv"><td colspan="5"><div class="t-nv-ln-table"><div><a href="boolean-testable.html" title="cpp/concepts/boolean-testable"><span class="t-lines"><span><i>boolean-testable</i></span></span></a></div><div><span class="t-lines"><span>&#x200a;&#xfeff;<span class="t-mark-rev t-since-cxx20">(C++20)</span></span></span></div></div></td></tr>
-</table></div></td></tr>
-</table></div><div><span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/concepts/navbar_content&amp;action=edit">&#91;edit&#93;</a></span></div></div></div></div><div class="t-navbar-sep">&#160;</div></div>
+                    <div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr">
 <table class="t-dcl-begin"><tbody>
 <tr class="t-dsc-header">
 <td> <div>Defined in header <code><a href="../header/concepts.html" title="cpp/header/concepts">&lt;concepts&gt;</a></code>
@@ -343,16 +175,16 @@ html { font-variant-ligatures: no-common-ligatures; }
 <td></td>
 </tr>
 <tr class="t-dcl t-since-cxx20">
-<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> LHS, <span class="kw1">class</span> RHS <span class="sy1">&gt;</span><br />
-<p>concept assignable_from <span class="sy1">=</span><br />
-&#160; &#160; <a href="../types/is_lvalue_reference.html"><span class="kw472">std::<span class="me2">is_lvalue_reference_v</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span><br />
-&#160; &#160; <a href="common_reference_with.html"><span class="kw2954">std::<span class="me2">common_reference_with</span></span></a><span class="sy1">&lt;</span><br />
-&#160; &#160; &#160; &#160; <span class="kw4">const</span> <a href="../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span><span class="sy3">&amp;</span>,<br />
-&#160; &#160; &#160; &#160; <span class="kw4">const</span> <a href="../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>RHS<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span><br />
-&#160; &#160; requires<span class="br0">&#40;</span>LHS lhs, RHS<span class="sy3">&amp;&amp;</span> rhs<span class="br0">&#41;</span> <span class="br0">&#123;</span><br />
-&#160; &#160; &#160; &#160; <span class="br0">&#123;</span> lhs <span class="sy1">=</span> <a href="../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>RHS<span class="sy1">&gt;</span><span class="br0">&#40;</span>rhs<span class="br0">&#41;</span> <span class="br0">&#125;</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="same_as.html"><span class="kw2951">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span><span class="sy4">;</span><br />
+<td> <div><span class="mw-geshi cpp source-cpp"><span class="kw1">template</span><span class="sy1">&lt;</span> <span class="kw1">class</span> LHS, <span class="kw1">class</span> RHS <span class="sy1">&gt;</span><br>
+<p>concept assignable_from <span class="sy1">=</span><br>
+&nbsp; &nbsp; <a href="../types/is_lvalue_reference.html"><span class="kw472">std::<span class="me2">is_lvalue_reference_v</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span><br>
+&nbsp; &nbsp; <a href="common_reference_with.html"><span class="kw2954">std::<span class="me2">common_reference_with</span></span></a><span class="sy1">&lt;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <a href="../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span><span class="sy3">&amp;</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="kw4">const</span> <a href="../types/remove_reference.html"><span class="kw612">std::<span class="me2">remove_reference_t</span></span></a><span class="sy1">&lt;</span>RHS<span class="sy1">&gt;</span><span class="sy3">&amp;</span><span class="sy1">&gt;</span> <span class="sy3">&amp;&amp;</span><br>
+&nbsp; &nbsp; requires<span class="br0">(</span>LHS lhs, RHS<span class="sy3">&amp;&amp;</span> rhs<span class="br0">)</span> <span class="br0">{</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span class="br0">{</span> lhs <span class="sy1">=</span> <a href="../utility/forward.html"><span class="kw1125">std::<span class="me2">forward</span></span></a><span class="sy1">&lt;</span>RHS<span class="sy1">&gt;</span><span class="br0">(</span>rhs<span class="br0">)</span> <span class="br0">}</span> <span class="sy2">-</span><span class="sy1">&gt;</span> <a href="same_as.html"><span class="kw2951">std::<span class="me2">same_as</span></span></a><span class="sy1">&lt;</span>LHS<span class="sy1">&gt;</span><span class="sy4">;</span><br>
 </p>
-&#160; &#160; <span class="br0">&#125;</span><span class="sy4">;</span></span></div></td>
+&nbsp; &nbsp; <span class="br0">}</span><span class="sy4">;</span></span></div></td>
 <td class="t-dcl-nopad">  </td>
 <td> <span class="t-mark-rev t-since-cxx20">(since C++20)</span> </td>
 </tr>
@@ -360,7 +192,7 @@ html { font-variant-ligatures: no-common-ligatures; }
 </tbody></table>
 <p>The concept <code>assignable_from&lt;LHS, RHS&gt;</code> specifies that an expression of the type and value category specified by <code>RHS</code> can be assigned to an lvalue expression whose type is specified by <code>LHS</code>.
 </p>
-<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1 tocsection-1"><a href="#Semantic_requirements"><span class="tocnumber">1</span> <span class="toctext">Semantic requirements</span></a></li>
 <li class="toclevel-1"><a href="#Equality_preservation"><span class="tocnumber">2</span> <span class="toctext">Equality preservation</span></a></li>
@@ -369,17 +201,17 @@ html { font-variant-ligatures: no-common-ligatures; }
 <li class="toclevel-1 tocsection-4"><a href="#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
 <li class="toclevel-1 tocsection-5"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
 </ul>
-</td></tr></table>
+</td></tr></tbody></table>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit&amp;section=1" title="Edit section: Semantic requirements">edit</a>]</span> <span class="mw-headline" id="Semantic_requirements">Semantic requirements</span></h3>
 <p>Given
 </p>
-<ul><li> <code>lhs</code>, an lvalue that refers to an object <code>lcopy</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">&#40;</span><span class="br0">&#40;</span>lhs<span class="br0">&#41;</span><span class="br0">&#41;</span></span></span> is <code>LHS</code>,
-</li><li> <code>rhs</code>, an expression such that <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">&#40;</span><span class="br0">&#40;</span>rhs<span class="br0">&#41;</span><span class="br0">&#41;</span></span></span> is <code>RHS</code>,
+<ul><li> <code>lhs</code>, an lvalue that refers to an object <code>lcopy</code> such that <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">(</span><span class="br0">(</span>lhs<span class="br0">)</span><span class="br0">)</span></span></span> is <code>LHS</code>,
+</li><li> <code>rhs</code>, an expression such that <span class="t-c"><span class="mw-geshi cpp source-cpp">decltype<span class="br0">(</span><span class="br0">(</span>rhs<span class="br0">)</span><span class="br0">)</span></span></span> is <code>RHS</code>,
 </li><li> <code>rcopy</code>, a distinct object that is equal to <code>rhs</code>,
 </li></ul>
 <p><code>assignable_from&lt;LHS, RHS&gt;</code> is modeled only if
 </p>
-<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/addressof.html"><span class="kw761">std::<span class="me2">addressof</span></span></a><span class="br0">&#40;</span>lhs <span class="sy1">=</span> rhs<span class="br0">&#41;</span> <span class="sy1">==</span> <a href="../memory/addressof.html"><span class="kw761">std::<span class="me2">addressof</span></span></a><span class="br0">&#40;</span>lcopy<span class="br0">&#41;</span></span></span> (i.e., the assignment expression yields an lvalue referring to the left operand);
+<ul><li> <span class="t-c"><span class="mw-geshi cpp source-cpp"><a href="../memory/addressof.html"><span class="kw761">std::<span class="me2">addressof</span></span></a><span class="br0">(</span>lhs <span class="sy1">=</span> rhs<span class="br0">)</span> <span class="sy1">==</span> <a href="../memory/addressof.html"><span class="kw761">std::<span class="me2">addressof</span></span></a><span class="br0">(</span>lcopy<span class="br0">)</span></span></span> (i.e., the assignment expression yields an lvalue referring to the left operand);
 </li><li> After evaluating <span class="t-c"><span class="mw-geshi cpp source-cpp">lhs <span class="sy1">=</span> rhs</span></span>:
 <ul><li>  <code>lhs</code> is equal to <code>rcopy</code>, unless <code>rhs</code> is a non-const xvalue that refers to <code>lcopy</code> (i.e., the assignment is a self-move-assignment),
 </li><li> if <code>rhs</code> is a glvalue:
@@ -399,59 +231,59 @@ html { font-variant-ligatures: no-common-ligatures; }
 <div dir="ltr" class="mw-geshi" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include &lt;atomic&gt;</span>
 <span class="co2">#include &lt;concepts&gt;</span>
 <span class="co2">#include &lt;string&gt;</span>
-&#160;
-<span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span>
-<span class="br0">&#123;</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
     <span class="co1">// Normal basic usage, checks lvalue reference assignment</span>
-    static_assert<span class="br0">&#40;</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
-    static_assert<span class="br0">&#40;</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    static_assert<span class="br0">(</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
+    static_assert<span class="br0">(</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// Fundamental types don't support assignment to an rvalue</span>
-    static_assert<span class="br0">&#40;</span><span class="sy3">!</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    static_assert<span class="br0">(</span><span class="sy3">!</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><span class="kw4">int</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// std::assignable_from doesn't accept all valid assignment expressions:</span>
-&#160;
+&nbsp;
     <span class="co1">// rvalue reference assignment</span>
-    static_assert<span class="br0">&#40;</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    static_assert<span class="br0">(</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy3">&amp;&amp;</span>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// rvalue assignment</span>
-    static_assert<span class="br0">&#40;</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-&#160;
+    static_assert<span class="br0">(</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a>, <a href="../string/basic_string.html"><span class="kw1238">std::<span class="me2">string</span></span></a><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp;
     <span class="co1">// std::atomic::operator= returns by value</span>
-    static_assert<span class="br0">&#40;</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../atomic/atomic.html"><span class="kw2083">std::<span class="me2">atomic</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-    static_assert<span class="br0">&#40;</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../atomic/atomic.html"><span class="kw2083">std::<span class="me2">atomic</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">&#41;</span><span class="sy4">;</span>
-<span class="br0">&#125;</span></pre></div></div>
+    static_assert<span class="br0">(</span><a href="../types/is_assignable.html"><span class="kw552">std::<span class="me2">is_assignable_v</span></span></a><span class="sy1">&lt;</span><a href="../atomic/atomic.html"><span class="kw2083">std::<span class="me2">atomic</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+    static_assert<span class="br0">(</span><span class="sy3">!</span>std<span class="sy4">::</span><span class="me2">assignable_from</span><span class="sy1">&lt;</span><a href="../atomic/atomic.html"><span class="kw2083">std::<span class="me2">atomic</span></span></a><span class="sy1">&lt;</span><span class="kw4">int</span><span class="sy1">&gt;</span><span class="sy3">&amp;</span>, <span class="kw4">int</span><span class="sy1">&gt;</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit&amp;section=4" title="Edit section: References">edit</a>]</span> <span class="mw-headline" id="References">References</span></h3>
 <div class="t-ref-std-c++23">
 <ul><li> C++23 standard (ISO/IEC 14882:2024): 
 </li></ul>
-<dl><dd><ul><li> 18.4.8 Concept <code>assignable_from</code> &#91;concept.assignable&#93;&#32;
+<dl><dd><ul><li> 18.4.8 Concept <code>assignable_from</code> [concept.assignable] 
 </li></ul>
 </dd></dl>
 </div>
 <div class="t-ref-std-c++20">
 <ul><li> C++20 standard (ISO/IEC 14882:2020): 
 </li></ul>
-<dl><dd><ul><li> 18.4.8 Concept <code>assignable_from</code> &#91;concept.assignable&#93;&#32;
+<dl><dd><ul><li> 18.4.8 Concept <code>assignable_from</code> [concept.assignable] 
 </li></ul>
 </dd></dl>
 </div>
 <h3><span class="editsection">[<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=edit&amp;section=5" title="Edit section: See also">edit</a>]</span> <span class="mw-headline" id="See_also">See also</span></h3>
 <table class="t-dsc-begin">
 
-<tr class="t-dsc">
+<tbody><tr class="t-dsc">
 <td>  <div class="t-dsc-member-div"><div><a href="../types/is_assignable.html" title="cpp/types/is assignable"> <span class="t-lines"><span>is_assignable</span><span>is_trivially_assignable</span><span>is_nothrow_assignable</span></span></a></div><div><span class="t-lines"><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span><span><span class="t-mark-rev t-since-cxx11">(C++11)</span></span></span></div></div>
 </td>
-<td>   checks if a type has an assignment operator for a specific argument  <br /> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/types/dsc_is_assignable&amp;action=edit">&#91;edit&#93;</a></span>
+<td>   checks if a type has an assignment operator for a specific argument  <br> <span class="t-mark">(class template)</span> <span class="editsection noprint plainlinks" title="Edit this template"><a rel="nofollow" class="external text" href="https://en.cppreference.com/mwiki/index.php?title=Template:cpp/types/dsc_is_assignable&amp;action=edit">[edit]</a></span>
 </td></tr>
-</table>
+</tbody></table>
 
 <!-- 
 NewPP limit report
@@ -470,7 +302,7 @@ Expensive parser function count: 0/100
                     Retrieved from "<a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;oldid=177887">https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;oldid=177887</a>"                    </div>
                     <!-- /printfooter -->
                                                             <!-- catlinks -->
-                    <div id='catlinks' class='catlinks catlinks-allhidden'></div>                    <!-- /catlinks -->
+                    <div id="catlinks" class="catlinks catlinks-allhidden"></div>                    <!-- /catlinks -->
                                                             <div class="visualClear"></div>
                     <!-- debughtml -->
                                         <!-- /debughtml -->
@@ -480,39 +312,7 @@ Expensive parser function count: 0/100
         </div>
         <!-- /content -->
         <!-- footer -->
-        <div id="cpp-footer-base" class="noprint">
-            <div id="footer">
-                        <div id="cpp-navigation">
-            <h5>Navigation</h5>
-            <ul>
-<li id="n-Support-us"><a href="http://www.cppreference.com/support" rel="nofollow">Support us</a></li><li id="n-recentchanges"><a href="https://en.cppreference.com/w/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-FAQ"><a href="https://en.cppreference.com/w/Cppreference:FAQ">FAQ</a></li><li id="n-Offline-version"><a href="https://en.cppreference.com/w/Cppreference:Archives">Offline version</a></li>            </ul>
-        </div>
-                        <div id="cpp-toolbox">
-            <h5><span>Toolbox</span><a href="#"></a></h5>
-            <ul>
-<li id="t-whatlinkshere"><a href="https://en.cppreference.com/w/Special:WhatLinksHere/cpp/concepts/assignable_from" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.cppreference.com/w/Special:RecentChangesLinked/cpp/concepts/assignable_from" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://upload.cppreference.com/w/Special:Upload" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.cppreference.com/w/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-print"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li><li id="t-permalink"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;oldid=177887" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.cppreference.com/mwiki/index.php?title=cpp/concepts/assignable_from&amp;action=info">Page information</a></li>            </ul>
-        </div>
-                        <div id="cpp-languages">
-            <div><ul><li>In other languages</li></ul></div>
-            <div><ul>
-<li class="interwiki-es"><a href="http://es.cppreference.com/w/cpp/concepts/assignable_from" title="cpp/concepts/assignable from" lang="es" hreflang="es">Español</a></li><li class="interwiki-ja"><a href="http://ja.cppreference.com/w/cpp/concepts/assignable_from" title="cpp/concepts/assignable from" lang="ja" hreflang="ja">日本語</a></li><li class="interwiki-ru"><a href="http://ru.cppreference.com/w/cpp/concepts/assignable_from" title="cpp/concepts/assignable from" lang="ru" hreflang="ru">Русский</a></li><li class="interwiki-zh"><a href="http://zh.cppreference.com/w/cpp/concepts/assignable_from" title="cpp/concepts/assignable from" lang="zh" hreflang="zh">中文</a></li>            </ul></div>
-        </div>
-            <ul id="footer-info">
-                                    <li id="footer-info-lastmod"> This page was last modified on 24 November 2024, at 13:33.</li>
-                            </ul>
-                    <ul id="footer-places">
-                                    <li id="footer-places-privacy"><a href="https://en.cppreference.com/w/Cppreference:Privacy_policy" title="Cppreference:Privacy policy">Privacy policy</a></li>
-                                    <li id="footer-places-about"><a href="https://en.cppreference.com/w/Cppreference:About" title="Cppreference:About">About cppreference.com</a></li>
-                                    <li id="footer-places-disclaimer"><a href="https://en.cppreference.com/w/Cppreference:General_disclaimer" title="Cppreference:General disclaimer">Disclaimers</a></li>
-                            </ul>
-                                    <ul id="footer-icons" class="noprint">
-                                    <li id="footer-poweredbyico">
-                                            <a href="http://www.mediawiki.org/"><img src="https://en.cppreference.com/mwiki/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>                                            <a href="http://qbnz.com/highlighter/"><img src="http://upload.cppreference.com/mwiki/images/2/2b/powered_by_geshi_88x31.png" alt="Powered by GeSHi" height="31" width="88" /></a>                                            <a href="http://www.tigertech.net/referral/cppreference.com"><img src="http://upload.cppreference.com/mwiki/images/9/94/powered_by_tigertech_88x31.png" alt="Hosted by Tiger Technologies" height="31" width="88" /></a>                                        </li>
-                                </ul>
-                        <div style="clear:both">
-            </div>
-            </div>
-        </div>
+        
         <!-- /footer -->
         <script>if(window.mw){
 mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
@@ -523,8 +323,9 @@ mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.pag
 }</script>
 <script src="https://en.cppreference.com/mwiki/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=cppreference2&amp;*"></script>
 <!-- Served in 1.145 secs. -->
-	</body>
-<!-- Cached 20250103113717 -->
+	
 
-<!-- Mirrored from en.cppreference.com/w/cpp/concepts/assignable_from by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:37:55 GMT -->
-</html>
+
+
+
+</body><!-- Cached 20250103113717 --><!-- Mirrored from en.cppreference.com/w/cpp/concepts/assignable_from by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Jan 2025 11:37:55 GMT --></html>
